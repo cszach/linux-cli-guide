@@ -123,7 +123,7 @@ item.
 
 Let's say we have a stack of fruit over here. They are numbered in order from
 the least recently added item (number 1) to the most recently added item (number
-2).
+5).
 
 |     1      |   2    |     3      |  4   |     5     |
 |   :---:    | :---:  |   :---:    |:---: |   :---:   |
@@ -369,6 +369,25 @@ directory will also be deleted).
 
 Basic operations with files
 ---------------------------
+
+### Viewing text files
+
+#### `cat` and `tac`
+
+The `cat` command (con**cat**enate) is usually used to display the content of a
+text file to the screen.
+
+Examples:
+
+- `cat myfile`: Print the content of the file `myfile` in the current working
+directory to the terminal screen
+- `cat /home/john/.bashrc`: Print the content of the file `.bashrc` in
+`/home/john` directory
+
+The `tac` command is similar to `cat`, but it prints the file in the reversed
+order (last line in the file is printed first, then go up until the first line).
+
+###
 
 License
 -------
