@@ -1,4 +1,4 @@
-<h1 align="center">42tm's Bash Reference</h1>
+<h1 align="center">42tm's Bash Guide</h1>
 
 <p align="center">
     <img src="repo-icon.png" width="200" height="200">
