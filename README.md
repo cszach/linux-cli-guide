@@ -28,6 +28,8 @@ Table of Content
         - [`dirs`](#dirs)
         - [`popd`](#popd)
     5. [Viewing items in a directory: `ls` and `tree`](#viewing-items-in-a-directory-ls-and-tree)
+        - [`ls`](#ls)
+        - [`tree`](#tree)
 
 Basic operations with directories
 ---------------------------------
@@ -96,7 +98,7 @@ user's name).
 
 ### Moving between directories using `cd`
 
-`cd` moves you to another folder on the system.
+`cd` (<b>c</b>hange <b>d</b>irectory) moves you to another folder on the system.
 
 |Example input|Description|
 |:--:|---|
@@ -154,14 +156,15 @@ pushed into it. You will see it in action by learning the `pushd`, `popd`, and
 
 #### `pushd`
 
-Just like `cd`, `pushd` moves you to a new directory. However, `pushd` does one
-more thing: adding the new directory to the directory stack.
+Just like `cd`, `pushd` (**push** <b>d</b>irectory) moves you to a new
+directory. However, `pushd` does one more thing: adding the new directory to the
+directory stack.
 
 Side notes: `cd .` is useless, but `pushd .` can be useful.
 
 #### `dirs`
 
-`dirs` displays the directory stack.
+`dirs` (<b>dir</b>ectory <b>s</b>tack) displays the directory stack.
 
 Let's say you started at your home directory. Then you do
 `pushd Pictures/Miscellaneous/`, and then `pushd ~/Videos/`, and then stop at
@@ -204,16 +207,17 @@ To remove all the elements in the directory stack, type `dirs -c`.
 
 Useful options for `dirs`, summarized in a table:
 
-|Option|Description|
-|:---:|---|
-|-l|Instead of writing the `~` symbol, write the actual path that the symbol refers to.|
-|-p|Print each element on its own line.|
-|-c|Clear the stack: Remove all the items in the directory stack.|
+|Option|    Hint    |                                    Description                                    |
+|:---: |    ---     |                                        ---                                        |
+|  -l  |  **l**ong  |Instead of writing the `~` symbol, write the actual path that the symbol refers to.|
+|  -p  |**p**er line|Print each element on its own line.                                                |
+|  -c  | **c**lear  |Clear the stack: Remove all the items in the directory stack.                      |
 
 #### `popd`
 
-`popd` pops the most recently `pushd`ed path, and moves you to the directory
-that is now the last element in our directory stack (after the pop operation).
+`popd` (**pop** <b>d</b>irectory) pops the most recently `pushd`ed path, and
+moves you to the directory that is now the last element in our directory stack
+(after the pop operation).
 
 Example: Let's say your directory stack currently looks like this (this is from
 a previous example):
@@ -237,6 +241,94 @@ you will be moved to `~/Videos`, and `~/Templates` will be gone from the stack:
 `popd` won't do anything (but warns you) if the directory stack is empty.
 
 ### Viewing items in a directory: `ls` and `tree`
+
+#### `ls`
+
+`ls` (<b>l</b>i<b>s</b>t) is used to list files. If you only enter `ls` (with
+no option), it will list all files and folders (excluding hidden ones) in the
+current working directory. You can specify a directory's path to `ls` as an
+argument, and `ls` will list the files and folders in that directory (e.g.
+`ls /etc` will list all the files and folders in `/etc`).
+
+It has several helpful options:
+
+|Option|  Hint   |                                       Description                                       |
+|:---: |   ---   |                                           ---                                           |
+|  -A  | **a**ll |List all files and folders, including the hidden ones.                                   |
+|  -l  |**l**ong |Display list in long format (see below for more information).                            |
+|  -s  |**s**ize |Display size of each file, should be used with the -h option.                            |
+|  -h  |**h**uman|Display size in a human readable form (e.g. "5.5M" for 5.5 megabytes instead of "5500"). |
+
+Note that you must put the options before the directory you wish to look inside
+(e.g. `ls -l -A /proc` will list all the files and folders (including hidden
+ones) in the `/proc` directory with long listing format).
+
+If you use the long listing format, you will see something like this:
+
+```
+drwxrwxr-x.  3 john john 4096 Jul 13 21:40 basecalc
+drwxrwxr-x.  9 john john 4096 Jul 19 18:39 firefox-dev
+drwxrwxr-x. 16 john john 4096 Jul 17 14:16 inkscape
+-rw-rw-r--.  1 john john  578 Jul 19 11:04 Inkscape-Dependencies.txt
+drwxrwxr-x.  2 john john 4096 Jun 21 21:17 iso
+drwxrwxr-x.  4 john john 4096 Jul  8 13:38 TerminalImageViewer
+drwx------.  3 john john 4096 Jul 12 22:57 tor-browser
+```
+
+...which is to say, there are 7 columns. The meaning of each column is as
+follows:
+
+1. File permission
+2. Number of links
+3. File/Folder's owner
+4. File/Folder's owner group
+5. File size (in bytes, but can be made easier to interpret with -h option)
+6. When was the file/folder last modified? (this one actually spans to multiple
+columns)
+7. The file/folder's name
+
+#### `tree`
+
+`ls dir` lists the files and folders inside the `dir` directory, but if `dir`
+actually has sub-directories in it, `ls` won't list the items inside those
+sub-directories. There's actually an option for `ls` to do that, but why would
+you use it when you have `tree`?
+
+The `tree` command lists file and folders, recursively, in a hierarchical tree
+format. This means that `tree` displays the hierarchical relationship between
+files and folders (e.g. which folder does this file reside in). An example of
+an output of `tree` is as follow:
+
+```
+wfind
+├── example
+│   ├── file1
+│   ├── file2
+│   └── file3
+├── lib
+│   ├── wfind.cpp
+│   └── wfind.hpp
+├── main.cpp
+├── Makefile
+├── README.md
+├── UNLICENSE
+└── wfind
+
+2 directories, 10 files
+```
+
+By looking at the output above, you can interpret that `file1`, `file2`, `file3`
+are inside the `example` folder, `wfind.cpp` is in `lib` folder, and, of course,
+`lib` and `example` folders are inside the `wfind` folder.
+
+Just like `ls`, `tree` does not list hidden files by default. Instead, you have
+to throw the `-a` option in. Here are some useful `tree` options:
+
+|Option|                             Description                              |
+|:---: |                                 ---                                  |
+|  -a  |List all files and folders, including the hidden ones.                |
+|  -d  |List folders only, don't list files.                                  |
+|  -f  |Print the absolute path, not just the name of the files/folders found.|
 
 License
 -------
