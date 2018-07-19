@@ -18,6 +18,17 @@ However, you will see the difference as you go along. Let's get started.
 Table of Content
 ----------------
 
+1. [Basic operations with directories](#basic-operations-with-directories)
+    1. [Brief description of the Linux file system hierarchy](#brief-description-of-the-linux-file-system-hierarchy)
+    2. [`pwd`](#pwd)
+    3. [Moving between directories using `cd`](#moving-between-directories-using-cd)
+    4. [Moving between directories, advanced: `pushd`, `popd`, and `dirs`](#moving-between-directories-advanced-pushd-popd-and-dirs)
+        - [The notion of stack and directory stack](#the-notion-of-stack-and-directory-stack)
+        - [`pushd`](#pushd)
+        - [`dirs`](#dirs)
+        - [`popd`](#popd)
+    5. [Viewing items in a directory: `ls` and `tree`](#viewing-items-in-a-directory-ls-and-tree)
+
 Basic operations with directories
 ---------------------------------
 
