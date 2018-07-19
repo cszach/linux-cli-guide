@@ -436,8 +436,9 @@ lines printed to the console
 
 Just like `cat`, `head` and `tail` can take multiple files as input. However,
 when taking multiple files as input, `head` and `tail` do explicitly write the
-name of each of the file before printing the first lines of that file. See
-example below. The command is `head -5 COPYING COPYING.LESSER`.
+name of each of the file before printing the first lines of that file. This
+behavior isn't presented in `cat`. See example below. The command is
+`head -5 COPYING COPYING.LESSER`.
 
 ```
 ==> COPYING <==
