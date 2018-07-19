@@ -384,10 +384,50 @@ directory to the terminal screen
 - `cat /home/john/.bashrc`: Print the content of the file `.bashrc` in
 `/home/john` directory
 
+You can also print multiple files out. Example:
+
+```
+> cat file1 file2 file3
+This is content inside file1.
+This is content inside file2.
+This is content inside file3.
+```
+
 The `tac` command is similar to `cat`, but it prints the file in the reversed
 order (last line in the file is printed first, then go up until the first line).
 
-###
+#### `less`
+
+The problem with `cat` is, it prints the content of the file and then return you
+to the command prompt. Which means if you `cat` a long text file, the content of
+the file will not be fully displayed inside your screen, and you will have to
+use shortcuts like `Shift` + `Fn` + `Up arrow key` and `Shift` + `Fn` + `Down
+arrow key` to scroll. But things got worse. If the text file is thousands of
+lines long, the first lines will be gone.
+
+To solve this problem, you need a program that provides you an interface to view
+text file with up and down arrow keys for scrolling. And that program is `less`.
+Doing `less large_file.txt` allows you to view the file `large_file.txt`, and
+you can use the up and down arrow keys for scrolling. To return to the command
+prompt, hit the Q key.
+
+#### `head` and `tail`
+
+`head` prints the first few lines of a text file only. By default, it prints
+the first 10 lines. You can customize the number using the `-n` option.
+
+Examples:
+- `head script.sh`: Print the first 10 lines in the file `script.sh`
+- `head -n 25 script.sh`: Print the first 25 lines in the file `script.sh`
+- `head -25 script.sh`: Shorthand for `head -n 25 script.sh`
+
+In contrast, the `tail` command prints the last few lines in a text file. Other
+than that, `tail` is the same as `head` at the basic level:
+
+- Just like `head`, `tail` prints out 10 lines by default
+- `tail` also has the `-n` option which lets the user changes the number of
+lines printed to the console
+- `tail` also has a shorthand for `-n`
 
 License
 -------
