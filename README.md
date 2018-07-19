@@ -32,6 +32,11 @@ Table of Content
         - [`tree`](#tree)
     6. [Creating a new directory](#creating-a-new-directory)
     7. [Removing a directory](#removing-a-directory)
+2. [Basic operations with files](#basic-operations-with-files)
+    1. [Viewing text files](#viewing-text-files)
+        1. [`cat` and `tac`](#cat-and-tac)
+        2. [`less`](#less)
+        3. [`head` and `tail`](#head-and-tail)
 
 Basic operations with directories
 ---------------------------------
@@ -428,6 +433,27 @@ than that, `tail` is the same as `head` at the basic level:
 - `tail` also has the `-n` option which lets the user changes the number of
 lines printed to the console
 - `tail` also has a shorthand for `-n`
+
+Just like `cat`, `head` and `tail` can take multiple files as input. However,
+when taking multiple files as input, `head` and `tail` do explicitly write the
+name of each of the file before printing the first lines of that file. See
+example below. The command is `head -5 COPYING COPYING.LESSER`.
+
+```
+==> COPYING <==
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+
+==> COPYING.LESSER <==
+                   GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+```
 
 License
 -------
