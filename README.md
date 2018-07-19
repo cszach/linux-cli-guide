@@ -30,6 +30,8 @@ Table of Content
     5. [Viewing items in a directory: `ls` and `tree`](#viewing-items-in-a-directory-ls-and-tree)
         - [`ls`](#ls)
         - [`tree`](#tree)
+    6. [Creating a new directory](#creating-a-new-directory)
+    7. [Removing a directory](#removing-a-directory)
 
 Basic operations with directories
 ---------------------------------
@@ -329,6 +331,44 @@ to throw the `-a` option in. Here are some useful `tree` options:
 |  `-a`  |   **a**ll   |List all files and folders, including the hidden ones.                |
 |  `-d`  |**d**irectory|List folders only, don't list files.                                  |
 |  `-f`  |  **f**ull   |Print the absolute path, not just the name of the files/folders found.|
+
+### Creating a new directory
+
+To create a new directory, use the `mkdir` (<b>m</b>a<b>k</b>e <b>dir</b>ectory)
+command:
+
+```
+mkdir newdir
+```
+
+...replacing "newdir" with the name of the new directory at your choice. This
+will create a new directory in the current working directory. If you want to
+create a new directory in somewhere else that is not the current working
+directory, say, `/home/john/Programs`, you can do:
+
+```
+mkdir /home/john/Programs/newdir
+```
+
+Note that in the above command, if the parent directory `/home/john/Programs`
+does not exist, an error will be thrown. If you want `mkdir` to create those
+parent directories for you (in case they don't exist), simply feed it with the
+`-p` option.
+
+```
+mkdir -p /home/john/Programs/newdir
+```
+
+### Removing a directory
+
+`rm -r dir`, replacing "dir" with the name of the directory you want to remove.
+The `rm` command (<b>r</b>e<b>m</b>ove) can also be used to delete files, which
+we will discuss later. The `-r` option must be specified so that `rm` can remove
+the directory <b>r</b>ecursively (meaning all files and folders inside that
+directory will also be deleted).
+
+Basic operations with files
+---------------------------
 
 License
 -------
