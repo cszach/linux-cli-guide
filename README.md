@@ -18,6 +18,17 @@ However, you will see the difference as you go along. Let's get started.
 Table of Content
 ----------------
 
+1. [Basic operations with directories](#basic-operations-with-directories)
+    1. [Brief description of the Linux file system hierarchy](#brief-description-of-the-linux-file-system-hierarchy)
+    2. [`pwd`](#pwd)
+    3. [Moving between directories using `cd`](#moving-between-directories-using-cd)
+    4. [Moving between directories, advanced: `pushd`, `popd`, and `dirs`](#moving-between-directories-advanced-pushd-popd-and-dirs)
+        - [The notion of stack and directory stack](#the-notion-of-stack-and-directory-stack)
+        - [`pushd`](#pushd)
+        - [`dirs`](#dirs)
+        - [`popd`](#popd)
+    5. [Viewing items in a directory: `ls` and `tree`](#viewing-items-in-a-directory-ls-and-tree)
+
 Basic operations with directories
 ---------------------------------
 
@@ -90,11 +101,11 @@ user's name).
 |Example input|Description|
 |:--:|---|
 |`cd /home/john/Pictures`|Move to directory `/home/john/Pictures` (absolute path).|
-|`cd ../Code/Project1`|Move to directory `../Code/Project1` (relative path). Remember that the `..` symbol is used<br>to refer to the parent directory, as discussed in the introduction above.|
+|`cd ../Code/Project1`|Move to directory `../Code/Project1` (relative path). Remember that the `..` symbol is<br>used to refer to the parent directory, as discussed in the introduction above.|
 |`cd ~`|Move to the home directory. The `~` symbol refers to the home directory.|
 |`cd -`|Move to the previous directory that you were in. For example, if you were in `/home/john`,<br>and then you moved to `/home/john/Pictures/Family`, doing `cd -` will move you back<br>to `/home/john`.|
 |`cd ..`|Move to the parent directory.|
-|`cd .`|Move to the current directory. This is useless, but is still shown up as an example to get you<br>to remember what the dot symbol `.` is for.|
+|`cd .`|Move to the current directory. This is useless, but is still shown up as an example to get<br>you to remember what the dot symbol `.` is for.|
 
 ### Moving between directories, advanced: `pushd`, `popd`, and `dirs`
 
