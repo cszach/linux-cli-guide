@@ -207,11 +207,11 @@ To remove all the elements in the directory stack, type `dirs -c`.
 
 Useful options for `dirs`, summarized in a table:
 
-|Option|    Hint    |                                    Description                                    |
-|:---: |    ---     |                                        ---                                        |
-|  -l  |  **l**ong  |Instead of writing the `~` symbol, write the actual path that the symbol refers to.|
-|  -p  |**p**er line|Print each element on its own line.                                                |
-|  -c  | **c**lear  |Clear the stack: Remove all the items in the directory stack.                      |
+| Option |    Hint    |                                    Description                                    |
+| :---:  |    ---     |                                        ---                                        |
+|  `-l`  |  **l**ong  |Instead of writing the `~` symbol, write the actual path that the symbol refers to.|
+|  `-p`  |**p**er line|Print each element on its own line.                                                |
+|  `-c`  | **c**lear  |Clear the stack: Remove all the items in the directory stack.                      |
 
 #### `popd`
 
@@ -252,12 +252,12 @@ argument, and `ls` will list the files and folders in that directory (e.g.
 
 It has several helpful options:
 
-|Option|  Hint   |                                       Description                                       |
-|:---: |   ---   |                                           ---                                           |
-|  -A  | **a**ll |List all files and folders, including the hidden ones.                                   |
-|  -l  |**l**ong |Display list in long format (see below for more information).                            |
-|  -s  |**s**ize |Display size of each file, should be used with the -h option.                            |
-|  -h  |**h**uman|Display size in a human readable form (e.g. "5.5M" for 5.5 megabytes instead of "5500"). |
+| Option |  Hint   |                                       Description                                       |
+| :---:  |   ---   |                                           ---                                           |
+|  `-A`  | **a**ll |List all files and folders, including the hidden ones.                                   |
+|  `-l`  |**l**ong |Display list in long format (see below for more information).                            |
+|  `-s`  |**s**ize |Display size of each file, should be used with the -h option.                            |
+|  `-h`  |**h**uman|Display size in a human readable form (e.g. "5.5M" for 5.5 megabytes instead of "5500"). |
 
 Note that you must put the options before the directory you wish to look inside
 (e.g. `ls -l -A /proc` will list all the files and folders (including hidden
@@ -324,11 +324,11 @@ are inside the `example` folder, `wfind.cpp` is in `lib` folder, and, of course,
 Just like `ls`, `tree` does not list hidden files by default. Instead, you have
 to throw the `-a` option in. Here are some useful `tree` options:
 
-|Option|                             Description                              |
-|:---: |                                 ---                                  |
-|  -a  |List all files and folders, including the hidden ones.                |
-|  -d  |List folders only, don't list files.                                  |
-|  -f  |Print the absolute path, not just the name of the files/folders found.|
+| Option |    Hint     |                             Description                              |
+| :---:  |     ---     |                                 ---                                  |
+|  `-a`  |   **a**ll   |List all files and folders, including the hidden ones.                |
+|  `-d`  |**d**irectory|List folders only, don't list files.                                  |
+|  `-f`  |  **f**ull   |Print the absolute path, not just the name of the files/folders found.|
 
 License
 -------
