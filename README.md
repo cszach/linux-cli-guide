@@ -1,6 +1,8 @@
 <h1 align="center">42tm's Bash Reference</h1>
 
-<img align="center" src="repo-icon.png" width="200" height="200"/>
+<p align="center">
+    <img src="repo-icon.png" width="200" height="200"/>
+</p>
 
 Introduction
 ------------
