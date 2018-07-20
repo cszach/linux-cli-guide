@@ -456,6 +456,77 @@ behavior isn't presented in `cat`. See example below. The command is
  Everyone is permitted to copy and distribute verbatim copies
 ```
 
+### Input/Output
+
+#### File handles
+
+When a program (e.g. a Bash command) is ran, three file handles can be used
+by the program. They are **stdin** (<b>st</b>an<b>d</b>ard <b>in</b>put),
+**stdout** (<b>st</b>an<b>d</b>ard <b>out</b>put), and **stderr**
+(<b>st</b>an<b>d</b>ard <b>err</b>or).
+
+| Handle's name |Handle's symbolic name|                       Description                       |      Example      |
+|     :---:     |        :---:         |                           ---                           |        ---        |
+|Standard input |        stdin         |Where the program reads to get information from the user.|Keyboard           |
+|Standard output|        stdout        |Where the program writes output to.                      |The terminal screen|
+|Standard error |        stderr        |Where the program writes error information to.           |Log file           |
+
+#### I/O Redirection
+
+Now that we've learned about file handles, let's talk about I/O redirection
+("I/O" is short for "Input/Output"). I/O redirection refers to the redirection
+of the three file handles so that we can get the input from somewhere else
+and/or print the output to somewhere else.
+
+Take the `cat` command that we talked about earlier, for example. If you tried
+running `cat`, you know that `cat` writes the content of a file (or many files)
+to the terminal screen. But what if you want it to write to a file instead? This
+can simply done by I/O redirection. In particular, you use the greater than sign
+(">") after the `cat` command, followed by the name of the file that you want
+`cat` to write its output to. Here's an example:
+
+```
+cat file1 file2 file3 > myfile
+```
+
+In the above example, instead of writing the contents of the files `file1`,
+`file2` and `file3` to the terminal screen, `cat` writes to `myfile` instead.
+`myfile` should now contain the content of `file1`, `file2` and `file3`
+concatenated together.
+
+We just redirected the stdout. What about stdin? You can feed a command with
+input from a file, by using the less than sign ("<"). Here's an example:
+
+```
+cat < myfile
+```
+
+Again, we use `cat` as example, because `cat` can take stdin from a file. In the
+above example, `cat` takes `myfile` to consume for input data. It should print
+out the content of `myfile` (which is the same as doing `cat myfile`).
+
+What about stderr? Usually, stderr is written to the terminal screen and a log
+file, but you can also redirect stderr. Redirecting `stderr` is the same as
+redirecting `stdout`, but the only difference is, you type "2>" instead of ">".
+
+```
+rm myfile 2> error_file.txt
+```
+
+In the above example, `rm myfile2` is executed and any error message produced
+by the `rm` command should not be written out to the terminal screen but to the
+text file `error_file.txt` instead.
+
+Finally, if you want to redirect both stdout and stderr to a text file, use the
+">&" symbol.
+
+```
+tree . >& output.txt
+```
+
+In the example above, all normal output and error information coming from `tree`
+should be written to the text file `output.txt` instead of the terminal screen.
+
 License
 -------
 
