@@ -37,6 +37,9 @@ Table of Content
         1. [`cat` and `tac`](#cat-and-tac)
         2. [`less`](#less)
         3. [`head` and `tail`](#head-and-tail)
+    2. [Input/Output](#inputoutput)
+        1. [File handles](#file-handles)
+        2. [I/O Redirection](#io-redirection)
 
 Basic operations with directories
 ---------------------------------
