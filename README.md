@@ -52,8 +52,7 @@ commands.
 
 ### Brief description of the Linux file system hierarchy
 
-<small><b>Tags</b>: `new-concept`, `directory`, `folder`, `file`, `hierarchy`,
-`path`</small>
+###### Tags: `new-concept`, `directory`, `folder`, `file`, `hierarchy`, `path`
 
 The files & folders system in GNU/Linux (so-called "Linux") is hierarchical,
 like Windows. This means that a folder can contain files, as well as other
@@ -102,7 +101,7 @@ command line interface. Hence, in this document, you will see the term
 
 ### `pwd`
 
-<small><b>Tags</b>: `new-command`, `new-concept`, `directory`</small>
+###### Tags: `new-command`, `new-concept`, `directory`
 
 At any time in the command line, you are in a directory, and it's called the
 "current working directory". To see the _absolute path_ of that directory, enter
@@ -113,7 +112,7 @@ user's name).
 
 ### Moving between directories using `cd`
 
-<small><b>Tags</b>: `new-command`, `directory`, `navigating`</small>
+###### Tags: `new-command`, `directory`, `navigating`
 
 `cd` (<b>c</b>hange <b>d</b>irectory) moves you to another folder on the system.
 
@@ -128,12 +127,12 @@ user's name).
 
 ### Moving between directories, advanced: `pushd`, `popd`, and `dirs`
 
-<small><b>Tags</b>: `new-command`, `new-concept`, `directory`, `navigating`
-</small>
+###### Tags: `new-command`, `new-concept`, `directory`, `navigating`
+
 
 #### The notion of stack and directory stack
 
-<small><b>Tags</b>: `new-concept`, `directory`</small>
+###### Tags: `new-concept`, `directory`
 
 Stacks to computer science is like telescopes to astronomy. In computing, you
 can think of a stack as a collection of items. There are two basic operations
@@ -178,7 +177,7 @@ pushed into it. You will see it in action by learning the `pushd`, `popd`, and
 
 #### `pushd`
 
-<small><b>Tags</b>: `new-command`, `directory`, `navigating`</small>
+###### Tags: `new-command`, `directory`, `navigating`
 
 Just like `cd`, `pushd` (**push** <b>d</b>irectory) moves you to a new
 directory. However, `pushd` does one more thing: adding the new directory to the
@@ -188,7 +187,7 @@ Side notes: `cd .` is useless, but `pushd .` can be useful.
 
 #### `dirs`
 
-<small><b>Tags</b>: `new-command`, `directory`</small>
+###### Tags: `new-command`, `directory`
 
 `dirs` (<b>dir</b>ectory <b>s</b>tack) displays the directory stack.
 
@@ -241,7 +240,7 @@ Useful options for `dirs`, summarized in a table:
 
 #### `popd`
 
-<small><b>Tags</b>: `new-command`, `directory`</small>
+###### Tags: `new-command`, `directory`
 
 `popd` (**pop** <b>d</b>irectory) pops the most recently `pushd`ed path, and
 moves you to the directory that is now the last element in our directory stack
@@ -270,11 +269,11 @@ you will be moved to `~/Videos`, and `~/Templates` will be gone from the stack:
 
 ### Viewing items in a directory: `ls` and `tree`
 
-<small><b>Tags</b>: `new-command`, `view`, `directory`</small>
+###### Tags: `new-command`, `view`, `directory`
 
 #### `ls`
 
-<small><b>Tags</b>: `new-command`, `view`, `directory`</small>
+###### Tags: `new-command`, `view`, `directory`
 
 `ls` (<b>l</b>i<b>s</b>t) is used to list files. If you only enter `ls` (with
 no option), it will list all files and folders (excluding hidden ones) in the
@@ -321,7 +320,7 @@ columns)
 
 #### `tree`
 
-<small><b>Tags</b>: `new-command`, `view`, `directory`, `hierarchy`</small>
+###### Tags: `new-command`, `view`, `directory`, `hierarchy`
 
 `ls dir` lists the files and folders inside the `dir` directory, but if `dir`
 actually has sub-directories in it, `ls` won't list the items inside those
@@ -366,7 +365,7 @@ to throw the `-a` option in. Here are some useful `tree` options:
 
 ### Creating a new directory
 
-<small><b>Tags</b>: `new-command`, `new`, `directory`</small>
+###### Tags: `new-command`, `new`, `directory`
 
 To create a new directory, use the `mkdir` (<b>m</b>a<b>k</b>e <b>dir</b>ectory)
 command:
@@ -395,7 +394,7 @@ mkdir -p /home/john/Programs/newdir
 
 ### Removing a directory
 
-<small><b>Tags</b>: `new-command`, `remove`, `directory`</small>
+###### Tags: `new-command`, `remove`, `directory`
 
 `rm -r dir`, replacing "dir" with the name of the directory you want to remove.
 The `rm` command (<b>r</b>e<b>m</b>ove) can also be used to delete files, which
@@ -408,7 +407,7 @@ Basic operations with files
 
 ### Viewing text files
 
-<small><b>Tags</b>: `view`, `file`, `text-file`</small>
+###### Tags: `view`, `file`, `text-file`
 
 #### `cat` and `tac`
 
@@ -491,11 +490,11 @@ behavior isn't presented in `cat`. See example below. The command is
 
 ### Input/Output
 
-<small><b>Tags</b>: `new-concept`, `file`, `io`</small>
+###### Tags: `new-concept`, `file`, `io`
 
 #### File handles
 
-<small><b>Tags</b>: `new-concept`, `file`, `io`</small>
+###### Tags: `new-concept`, `file`, `io`
 
 When a program (e.g. a Bash command) is ran, three file handles can be used
 by the program. They are **stdin** (<b>st</b>an<b>d</b>ard <b>in</b>put),
@@ -510,7 +509,7 @@ by the program. They are **stdin** (<b>st</b>an<b>d</b>ard <b>in</b>put),
 
 #### I/O Redirection
 
-<small><b>Tags</b>: `file`, `io`</small>
+###### Tags: `file`, `io`
 
 Now that we've learned about file handles, let's talk about I/O redirection
 ("I/O" is short for "Input/Output"). I/O redirection refers to the redirection
