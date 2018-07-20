@@ -34,12 +34,12 @@ Table of Content
     7. [Removing a directory](#removing-a-directory)
 2. [Basic operations with files](#basic-operations-with-files)
     1. [Viewing text files](#viewing-text-files)
-        1. [`cat` and `tac`](#cat-and-tac)
-        2. [`less`](#less)
-        3. [`head` and `tail`](#head-and-tail)
+        - [`cat` and `tac`](#cat-and-tac)
+        - [`less`](#less)
+        - [`head` and `tail`](#head-and-tail)
     2. [Input/Output](#inputoutput)
-        1. [File handles](#file-handles)
-        2. [I/O Redirection](#io-redirection)
+        - [File handles](#file-handles)
+        - [I/O Redirection](#io-redirection)
 
 Basic operations with directories
 ---------------------------------
