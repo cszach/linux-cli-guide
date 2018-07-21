@@ -20,10 +20,10 @@ Table of Content
 
 |No.|Chapter|Sections|
 |:---:|:---|:---|
-|1|[Basic operations with directories](#basic-operations-with-directories)|<ol><li>[Brief description of the Linux file system hierarchy](#brief-description-of-the-linux-file-system-hierarchy)</li><li>[`pwd`](#pwd)</li><li>[Moving between directories using `cd`](#moving-between-directories-using-cd)</li><li>[Moving between directories, advanced: `pushd`, `popd`, and `dirs`](#moving-between-directories-advanced-pushd-popd-and-dirs)</li><li>[Viewing items in a directory: `ls` and `tree`](#viewing-items-in-a-directory-ls-and-tree)</li><li>[Creating a new directory](#creating-a-new-directory)</li><li>[Removing a directory](#removing-a-directory)</li></ol>|
-|2|[Basic operations with files](#basic-operations-with-files)|<ol><li>[Viewing text files](#viewing-text-files)</li><li>[Input/Output](#inputoutput)</li><li>[File timestamps](#file-timestamps)</li></ol>|
+|1|[Basic operations with directories](#basic-operations-with-directories)|<br/><ol><li>[Brief description of the Linux file system hierarchy](#brief-description-of-the-linux-file-system-hierarchy)</li><li>[`pwd`](#pwd)</li><li>[Moving between directories using `cd`](#moving-between-directories-using-cd)</li><li>[Moving between directories, advanced: `pushd`, `popd`, and `dirs`](#moving-between-directories-advanced-pushd-popd-and-dirs)</li><li>[Viewing items in a directory: `ls` and `tree`](#viewing-items-in-a-directory-ls-and-tree)</li><li>[Creating a new directory](#creating-a-new-directory)</li><li>[Removing a directory](#removing-a-directory)</li></ol>|
+|2|[Basic operations with files](#basic-operations-with-files)|<br/><ol><li>[Viewing text files](#viewing-text-files)</li><li>[Input/Output](#inputoutput)</li><li>[File timestamps](#file-timestamps)</li></ol>|
 
-> **Note**: To see the full table of content that lists all the headers in this document, see [toc.md](tod.md)
+> **Note**: To see the full table of content that lists all the headers in this document, see [toc.md](toc.md)
 
 Basic operations with directories
 ---------------------------------
