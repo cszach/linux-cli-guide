@@ -18,29 +18,12 @@ However, you will see the difference as you go along. Let's get started.
 Table of Content
 ----------------
 
-1. [Basic operations with directories](#basic-operations-with-directories)
-    1. [Brief description of the Linux file system hierarchy](#brief-description-of-the-linux-file-system-hierarchy)
-    2. [`pwd`](#pwd)
-    3. [Moving between directories using `cd`](#moving-between-directories-using-cd)
-    4. [Moving between directories, advanced: `pushd`, `popd`, and `dirs`](#moving-between-directories-advanced-pushd-popd-and-dirs)
-        - [The notion of stack and directory stack](#the-notion-of-stack-and-directory-stack)
-        - [`pushd`](#pushd)
-        - [`dirs`](#dirs)
-        - [`popd`](#popd)
-    5. [Viewing items in a directory: `ls` and `tree`](#viewing-items-in-a-directory-ls-and-tree)
-        - [`ls`](#ls)
-        - [`tree`](#tree)
-    6. [Creating a new directory](#creating-a-new-directory)
-    7. [Removing a directory](#removing-a-directory)
-2. [Basic operations with files](#basic-operations-with-files)
-    1. [Viewing text files](#viewing-text-files)
-        - [`cat` and `tac`](#cat-and-tac)
-        - [`less`](#less)
-        - [`head` and `tail`](#head-and-tail)
-    2. [Input/Output](#inputoutput)
-        - [File handles](#file-handles)
-        - [I/O Redirection](#io-redirection)
-    3. [File timestamps](#file-timestamps)
+|No.|Chapter|Sections|
+|:---:|:---|:---|
+|1|[Basic operations with directories](#basic-operations-with-directories)|<ol><li>[Brief description of the Linux file system hierarchy](#brief-description-of-the-linux-file-system-hierarchy)</li><li>[`pwd`](#pwd)</li><li>[Moving between directories using `cd`](#moving-between-directories-using-cd)</li><li>[Moving between directories, advanced: `pushd`, `popd`, and `dirs`](#moving-between-directories-advanced-pushd-popd-and-dirs)</li><li>[Viewing items in a directory: `ls` and `tree`](#viewing-items-in-a-directory-ls-and-tree)</li><li>[Creating a new directory](#creating-a-new-directory)</li><li>[Removing a directory](#removing-a-directory)</li></ol>|
+|2|[Basic operations with files](#basic-operations-with-files)|<ol><li>[Viewing text files](#viewing-text-files)</li><li>[Input/Output](#inputoutput)</li><li>[File timestamps](#file-timestamps)</li></ol>|
+
+> **Note**: To see the full table of content that lists all the headers in this document, see [toc.md](tod.md)
 
 Basic operations with directories
 ---------------------------------
