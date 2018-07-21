@@ -40,6 +40,7 @@ Table of Content
     2. [Input/Output](#inputoutput)
         - [File handles](#file-handles)
         - [I/O Redirection](#io-redirection)
+    3. [File timestamps](#file-timestamps)
 
 Basic operations with directories
 ---------------------------------
@@ -564,6 +565,34 @@ tree . >& output.txt
 
 In the example above, all normal output and error information coming from `tree`
 should be written to the text file `output.txt` instead of the terminal screen.
+
+### File timestamps
+
+###### Tags: `file`, `new-concept`, `extend`, `timestamp`
+
+#### Notion of file timestamp & Types of file timestamps in GNU/Linux
+
+###### Tags: `file`, `new-concept`, `timestamp`
+
+A file's timestamp is the time when something happened to the file (e.g. when
+the file's content was last changed). In GNU/Linux (as well as other Unix &
+Unix-like operating systems), each file has 3 timestamps: access time,
+modification time, and change time. The following table gives you more
+information about these timestamps:
+
+|    Timestamp    |Abbreviation|                                         Description                                         |
+|      :--:       |    :--:    |                                             ---                                             |
+|   Access time   |   atime    |The time when the file was last read (e.g. by a program like `cat`).                         |
+|Modification time|   mtime    |The time when the file's content was last changed.                                           |
+|   Change time   |   ctime    |The time when anything of the file was last changed (e.g. content, permission, owner, etc.). |
+
+#### Viewing a file's timestamp: `stat` and `ls`
+
+### Using `touch`
+
+#### Creating a new file
+
+#### Changing a file's timestamps
 
 License
 -------
