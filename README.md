@@ -35,7 +35,7 @@ brief description of the Linux file system first, before diving into the
 commands.
 
 ### Brief description of the Linux file system hierarchy
-###### Tags: `new-concept`, `directory`, `folder`, `file`, `hierarchy`, `path`
+###### Tags: `#new-concept`, `#directory`, `#folder`, `#file`, `#hierarchy`, `#path`
 
 The files & folders system in GNU/Linux (so-called "Linux") is hierarchical,
 like Windows. This means that a folder can contain files, as well as other
@@ -83,7 +83,7 @@ command line interface. Hence, in this document, you will see the term
 "directory" appears more.
 
 ### `pwd`
-###### Tags: `new-command`, `new-concept`, `directory`
+###### Tags: `#new-command`, `#new-concept`, `#directory`
 
 At any time in the command line, you are in a directory, and it's called the
 "current working directory". To see the _absolute path_ of that directory, enter
@@ -93,7 +93,7 @@ jumped into the command line, the working directory is the home directory
 user's name).
 
 ### Moving between directories using `cd`
-###### Tags: `new-command`, `directory`, `navigating`
+###### Tags: `#new-command`, `#directory`, `#navigating`
 
 `cd` (<b>c</b>hange <b>d</b>irectory) moves you to another folder on the system.
 
@@ -107,11 +107,11 @@ user's name).
 |`cd .`|Move to the current directory. This is useless, but is still shown up as an example to get<br>you to remember what the dot symbol `.` is for.|
 
 ### Moving between directories, advanced: `pushd`, `popd`, and `dirs`
-###### Tags: `new-command`, `new-concept`, `directory`, `navigating`
+###### Tags: `#new-command`, `#new-concept`, `#directory`, `#navigating`
 
 
 #### The notion of stack and directory stack
-###### Tags: `new-concept`, `directory`
+###### Tags: `#new-concept`, `#directory`
 
 Stacks to computer science is like telescopes to astronomy. In computing, you
 can think of a stack as a collection of items. There are two basic operations
@@ -155,7 +155,7 @@ pushed into it. You will see it in action by learning the `pushd`, `popd`, and
 `dirs` command below.
 
 #### `pushd`
-###### Tags: `new-command`, `directory`, `navigating`
+###### Tags: `#new-command`, `#directory`, `#navigating`
 
 Just like `cd`, `pushd` (**push** <b>d</b>irectory) moves you to a new
 directory. However, `pushd` does one more thing: adding the new directory to the
@@ -164,7 +164,7 @@ directory stack.
 Side notes: `cd .` is useless, but `pushd .` can be useful.
 
 #### `dirs`
-###### Tags: `new-command`, `directory`
+###### Tags: `#new-command`, `#directory`
 
 `dirs` (<b>dir</b>ectory <b>s</b>tack) displays the directory stack.
 
@@ -216,7 +216,7 @@ Useful options for `dirs`, summarized in a table:
 |  `-c`  | **c**lear  |Clear the stack: Remove all the items in the directory stack.                      |
 
 #### `popd`
-###### Tags: `new-command`, `directory`
+###### Tags: `#new-command`, `#directory`
 
 `popd` (**pop** <b>d</b>irectory) pops the most recently `pushd`ed path, and
 moves you to the directory that is now the last element in our directory stack
@@ -244,10 +244,10 @@ you will be moved to `~/Videos`, and `~/Templates` will be gone from the stack:
 `popd` won't do anything (but warns you) if the directory stack is empty.
 
 ### Viewing items in a directory: `ls` and `tree`
-###### Tags: `new-command`, `view`, `directory`
+###### Tags: `#new-command`, `#view`, `#directory`
 
 #### `ls`
-###### Tags: `new-command`, `view`, `directory`
+###### Tags: `#new-command`, `#view`, `#directory`
 
 `ls` (<b>l</b>i<b>s</b>t) is used to list files. If you only enter `ls` (with
 no option), it will list all files and folders (excluding hidden ones) in the
@@ -293,7 +293,7 @@ columns)
 7. The file/folder's name
 
 #### `tree`
-###### Tags: `new-command`, `view`, `directory`, `hierarchy`
+###### Tags: `#new-command`, `#view`, `#directory`, `#hierarchy`
 
 `ls dir` lists the files and folders inside the `dir` directory, but if `dir`
 actually has sub-directories in it, `ls` won't list the items inside those
@@ -337,7 +337,7 @@ to throw the `-a` option in. Here are some useful `tree` options:
 |  `-f`  |  **f**ull   |Print the absolute path, not just the name of the files/folders found.|
 
 ### Creating a new directory
-###### Tags: `new-command`, `new`, `directory`
+###### Tags: `#new-command`, `#new`, `#directory`
 
 To create a new directory, use the `mkdir` (<b>m</b>a<b>k</b>e <b>dir</b>ectory)
 command:
@@ -365,7 +365,7 @@ mkdir -p /home/john/Programs/newdir
 ```
 
 ### Removing a directory
-###### Tags: `new-command`, `remove`, `directory`
+###### Tags: `#new-command`, `#remove`, `#directory`
 
 `rm -r dir`, replacing "dir" with the name of the directory you want to remove.
 The `rm` command (<b>r</b>e<b>m</b>ove) can also be used to delete files, which
@@ -377,7 +377,7 @@ Basic operations with files
 ---------------------------
 
 ### Viewing text files
-###### Tags: `view`, `file`, `text-file`
+###### Tags: `#view`, `#file`, `#text-file`, `#new-command`
 
 #### `cat` and `tac`
 
@@ -459,10 +459,10 @@ behavior isn't presented in `cat`. See example below. The command is
 ```
 
 ### Input/Output
-###### Tags: `new-concept`, `file`, `io`
+###### Tags: `#new-concept`, `#file`, `#io`
 
 #### File handles
-###### Tags: `new-concept`, `file`, `io`
+###### Tags: `#new-concept`, `#file`, `#io`
 
 When a program (e.g. a Bash command) is ran, three file handles can be used
 by the program. They are **stdin** (<b>st</b>an<b>d</b>ard <b>in</b>put),
@@ -476,7 +476,7 @@ by the program. They are **stdin** (<b>st</b>an<b>d</b>ard <b>in</b>put),
 |Standard error |        stderr        |Where the program writes error information to.           |Log file           |
 
 #### I/O Redirection
-###### Tags: `file`, `io`
+###### Tags: `#file`, `#io`
 
 Now that we've learned about file handles, let's talk about I/O redirection
 ("I/O" is short for "Input/Output"). I/O redirection refers to the redirection
@@ -533,10 +533,10 @@ In the example above, all normal output and error information coming from `tree`
 should be written to the text file `output.txt` instead of the terminal screen.
 
 ### File timestamps
-###### Tags: `file`, `new-concept`, `extend`, `timestamp`
+###### Tags: `#file`, `#new-concept`, `#extend`, `#timestamp`
 
 #### Notion of file timestamp & Types of file timestamps in GNU/Linux
-###### Tags: `file`, `new-concept`, `timestamp`
+###### Tags: `#file`, `#new-concept`, `#timestamp`
 
 A file's timestamp is the time when something happened to the file (e.g. when
 the file's content was last changed). In GNU/Linux (as well as other Unix &
