@@ -8,22 +8,39 @@ Description
 -----------
 
 This repository contains a beginner-friendly Bash guide and all the resources
-used by it.
+used by the guide. Understanding of the most basic computer concepts (e.g. file,
+folder, program) is the only prerequisite for taking this guide, although
+besides that, you should also have a GNU/Linux distribution installed (either
+on your computer's disk or in a virtual machine) so that you can learn by doing.
+
+Repository structure goes as follows:
+
+- `README.md`: This document, which is the guide itself
+- `tags_glossary.md`: Glossary for the tags used in the guide
+- `toc.md`: Full table of content which lists all the headers in the guide
+- `img/`: Images used in the guide
+- `svg/`: Original SVG images of some of the exported PNG images appear in the guide
+- `repo-icon.png`: The icon for the repository, seen above
+- `LICENSE`: This repository's license text
 
 Table of Content
 ----------------
 
 |No.|Chapter|Sections|
 |:---:|:---|:---|
+|0|[Preamble](#preamble)||
 |1|[Basic operations with directories](#basic-operations-with-directories)|<br/><ol><li>[Brief description of the Linux file system hierarchy](#brief-description-of-the-linux-file-system-hierarchy)</li><li>[`pwd`](#pwd)</li><li>[Moving between directories using `cd`](#moving-between-directories-using-cd)</li><li>[Moving between directories, advanced: `pushd`, `popd`, and `dirs`](#moving-between-directories-advanced-pushd-popd-and-dirs)</li><li>[Viewing items in a directory: `ls` and `tree`](#viewing-items-in-a-directory-ls-and-tree)</li><li>[Creating a new directory](#creating-a-new-directory)</li><li>[Removing a directory](#removing-a-directory)</li></ol>|
 |2|[Basic operations with files](#basic-operations-with-files)|<br/><ol><li>[Viewing text files](#viewing-text-files)</li><li>[Input/Output](#inputoutput)</li><li>[File timestamps](#file-timestamps)</li></ol>|
 
-> **Note**: To see the full table of content that lists all the headers in this document, see [toc.md](toc.md)
+> **Note**: The guide is in the repository's README file, and the above table of
+content only applies for the guide only, thus not all big headers in the README
+file are listed.
 
-Introduction
-------------
+> **Another note**: To see the full table of content that lists all the headers
+in this guide, see [toc.md](toc.md)
 
-### Preamble
+Preamble
+--------
 
 This is a GNU/Linux bash guide. The guide will go from the most simple commands
 to more advanced ones, hence this guide can be used for learning (i.e. education
@@ -37,35 +54,6 @@ a bunch of commands. The guide also contains explanations on some concepts
 that are required for GNU/Linux command line users to know before learning the
 commands. If you've already learned the concepts and just want a reference, see
 [42tm's Bash Reference](http://github.com/42tm/bash-ref).
-
-### Prerequisites
-
-1. You have a GNU/Linux machine installed (duh...), either on your disk or in a
-virtual machine
-2. You know how to open a terminal window
-3. You understand the most basic computer concepts (e.g. file, folder, ...)
-
-### Related Bash guides/references on GitHub
-
-- [The Art of Command Line][rr1] by [jlevy][rra1]: A guide that covers both
-Bash commands and Bash programming. However it assumes that you already knew
-the basic stuff.
-- [Pure Bash Bible][rr2] by [dylanaraps][rra2]: A document focused on Bash
-programming "using only built-in `bash` features".
-- [42tm's Bash Reference][rr3] by [42tm][rra3]: A reference for Bash from 42tm
-that gets upstreamed with 42tm's Bash Guide (this document).
-- [`bash-guide`][rr4] by [Idnan][rra4]: A supposedly guide for Bash, however it
-is more of a reference because the explanations are short and some (if not all)
-technical terms are not explained.
-
-[rr1]: http://github.com/jlevy/the-art-of-command-line
-[rra1]: http://github.com/jlevy
-[rr2]: http://github.com/dylanaraps/pure-bash-bible
-[rra2]: http://github.com/dylanaraps
-[rr3]: http://github.com/42tm/bash-ref
-[rra3]: http://github.com/42tm
-[rr4]: http://github.com/Idnan/bash-guide
-[rra4]: http://github.com/Idnan
 
 Basic operations with directories
 ---------------------------------
@@ -599,6 +587,29 @@ information about these timestamps:
 #### Creating a new file
 
 #### Changing a file's timestamps
+
+Related Bash guides/references on GitHub
+----------------------------------------
+
+- [The Art of Command Line][rr1] by [jlevy][rra1]: A guide that covers both
+Bash commands and Bash programming. However it assumes that you already knew
+the basic stuff.
+- [Pure Bash Bible][rr2] by [dylanaraps][rra2]: A document focused on Bash
+programming "using only built-in `bash` features".
+- [42tm's Bash Reference][rr3] by [42tm][rra3]: A reference for Bash from 42tm
+that gets upstreamed with 42tm's Bash Guide (this document).
+- [`bash-guide`][rr4] by [Idnan][rra4]: A supposedly guide for Bash, however it
+is more of a reference because the explanations are short and some (if not all)
+technical terms are not explained.
+
+[rr1]: http://github.com/jlevy/the-art-of-command-line
+[rra1]: http://github.com/jlevy
+[rr2]: http://github.com/dylanaraps/pure-bash-bible
+[rra2]: http://github.com/dylanaraps
+[rr3]: http://github.com/42tm/bash-ref
+[rra3]: http://github.com/42tm
+[rr4]: http://github.com/Idnan/bash-guide
+[rra4]: http://github.com/Idnan
 
 License
 -------
