@@ -4,16 +4,11 @@
     <img src="repo-icon.png" width="200" height="200">
 </p>
 
-Introduction
-------------
+Description
+-----------
 
-This is a GNU/Linux bash guide. The guide will go from the most simple commands
-to more advanced ones, hence this guide can be used for learning (i.e. education
-purposes). New GNU/Linux users who wish to learn Bash commands can take this
-guide. For each command, we will also introduce the helpful options.
-
-At a ground surface, this might just look like another Bash guide on GitHub.
-However, you will see the difference as you go along. Let's get started.
+This repository contains a beginner-friendly Bash guide and all the resources
+used by it.
 
 Table of Content
 ----------------
@@ -24,6 +19,53 @@ Table of Content
 |2|[Basic operations with files](#basic-operations-with-files)|<br/><ol><li>[Viewing text files](#viewing-text-files)</li><li>[Input/Output](#inputoutput)</li><li>[File timestamps](#file-timestamps)</li></ol>|
 
 > **Note**: To see the full table of content that lists all the headers in this document, see [toc.md](toc.md)
+
+Introduction
+------------
+
+### Preamble
+
+This is a GNU/Linux bash guide. The guide will go from the most simple commands
+to more advanced ones, hence this guide can be used for learning (i.e. education
+purposes). New GNU/Linux users who wish to learn Bash commands can take this
+guide. For each command, we will also introduce the helpful options.
+
+At a ground surface, this might just look like another Bash guide on GitHub.
+However, unlike other Bash guides on GitHub, this one is more oriented towards
+beginners, and focus on making good use of commands instead of just learning
+a bunch of commands. The guide also contains explanations on some concepts
+that are required for GNU/Linux command line users to know before learning the
+commands. If you've already learned the concepts and just want a reference, see
+[42tm's Bash Reference](http://github.com/42tm/bash-ref).
+
+### Prerequisites
+
+1. You have a GNU/Linux machine installed (duh...), either on your disk or in a
+virtual machine
+2. You know how to open a terminal window
+3. You understand the most basic computer concepts (e.g. file, folder, ...)
+
+### Related Bash guides/references on GitHub
+
+- [The Art of Command Line][rr1] by [jlevy][rra1]: A guide that covers both
+Bash commands and Bash programming. However it assumes that you already knew
+the basic stuff.
+- [Pure Bash Bible][rr2] by [dylanaraps][rra2]: A document focused on Bash
+programming "using only built-in `bash` features".
+- [42tm's Bash Reference][rr3] by [42tm][rra3]: A reference for Bash from 42tm
+that gets upstreamed with 42tm's Bash Guide (this document).
+- [`bash-guide`][rr4] by [Idnan][rra4]: A supposedly guide for Bash, however it
+is more of a reference because the explanations are short and some (if not all)
+technical terms are not explained.
+
+[rr1]: http://github.com/jlevy/the-art-of-command-line
+[rra1]: http://github.com/jlevy
+[rr2]: http://github.com/dylanaraps/pure-bash-bible
+[rra2]: http://github.com/dylanaraps
+[rr3]: http://github.com/42tm/bash-ref
+[rra3]: http://github.com/42tm
+[rr4]: http://github.com/Idnan/bash-guide
+[rra4]: http://github.com/Idnan
 
 Basic operations with directories
 ---------------------------------
