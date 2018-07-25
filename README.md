@@ -580,7 +580,60 @@ information about these timestamps:
 |Modification time|   mtime    |The time when the file's content was last changed.                                           |
 |   Change time   |   ctime    |The time when anything of the file was last changed (e.g. content, permission, owner, etc.). |
 
-#### Viewing a file's timestamp: `stat` and `ls`
+Knowing about file timestamps is very useful, especially when you are a Linux
+system administrator. For example, you might want to delete files that haven't
+been accessed (read) for more than 90 days. We'll learn how to do that later,
+but first, you need to know how to view the timestamps, and that is shown in
+this section below.
+
+#### Viewing a file's timestamp using `ls`
+###### Tags: `#file`, `#extend`, `#timestamp`, `#view`
+
+The `ls` lists files in a directory by specifying the path of the directory to
+it, but you can also specify file names to it. For example:
+
+```
+> ls myfile1.txt
+myfile1.txt
+> ls myfile1.txt myfile2.txt myfile3.txt
+myfile1.txt myfile2.txt myfile3.txt
+```
+
+Specifying files' paths without an option to `ls` seems useless, so we'll use
+the `-l` option instead. The `-l` option tells `ls` to list files in long
+format that includes some information associating with the each of the file,
+including the modification time (mtime), as [previously mentioned](#ls) (see
+that section again if you want to refresh your memory on these). Example output
+of `ls -l report.txt`:
+
+```
+-rwxrwxr-x. 1 john john 7170 May 20 13:45 report.txt
+```
+
+In the above example output, the mtime is written ("May 20 13:45"), indicating
+that the file `report.txt` was last modified on 20 of May at 13:45. With
+additional option, you can get `ls` to print out the atime or ctime instead of
+the mtime. The options for those are `-u` and `-c`, respectively.
+
+```
+> ls -l -u README.md
+-rwxrwxr-x. 1 jane jane 7170 Jul 25 14:30 README.md
+```
+
+The above example output shows that the last time the file `README.md` was read
+(the atime) is 25 of July, at 14:30.
+
+```
+> ls -l -c punchcard
+-rwxrwxr-x. 1 you_create you_create 7170 May 20 13:45 punchcard
+```
+
+The above example output shows that the last time the file `punchcard` was
+changed (the ctime) is 20 of May, at 13:45.
+
+### Viewing file's details
+
+
 
 ### Using `touch`
 
