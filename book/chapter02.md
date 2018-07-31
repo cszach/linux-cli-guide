@@ -231,7 +231,82 @@ changed (the ctime) is 20 of May, at 13:45.
 #### `stat`
 
 `stat` (<b>stat</b>us) is a command line utility that is used to print various
-information of a file.
+information of a file. Simply give it a file's path or directory's path. Below
+is an example.
+
+```
+> stat git-punchcard
+File: git-punchcard
+Size: 7170      	Blocks: 24         IO Block: 4096   regular file
+Device: fd02h/64770d	Inode: 7215076     Links: 1
+Access: (0775/-rwxrwxr-x)  Uid: ( 1000/john)   Gid: ( 1001/john)
+Context: unconfined_u:object_r:user_home_t:s0
+Access: 2018-07-30 22:33:35.718549094 +0700
+Modify: 2018-05-20 13:44:09.077679229 +0700
+Change: 2018-05-20 13:44:16.043662333 +0700
+Birth: -
+```
+
+In the example above, the input command `stat git-punchcard` and its output are
+shown. Several information about the file can be gathered from the output:
+- The file's size is 7170 bytes (or 7.1 kilobytes).
+- It is a regular file (can also be "directory" or "symbolic link").
+- Its inode number is 7215076 (a file's inode number is like its index number
+within the file system).
+- Its access permission ("`Access: (0775/-rwxrwxr-x`"), we'll cover this later,
+but this is a pretty important information, so keep in mind).
+- The user who owns this file is "john" ("`Uid: ( 1000/john)`") and the group
+that owns the file is "john" ("`Gid: ( 1001/john)`"). Again, we'll learn about
+users and groups later.
+- It's access time (atime), modification time (mtime), and change time (ctime).
+
+As mentioned, you can also give `stat` a directory's path.
+
+#### `file`
+
+Unlike `stat`, `file` is an utility that focuses on displaying information that
+is specific to a certain file type.
+
+Most files have an extension each. For example, the file `report.txt`'s
+extension is "txt", which indicates that it is a text file. That is not the case
+100% of the time, however. For instance, you can change the `report.txt` file's
+extension to "pdf", which is a PDF file's extension. Now we end up with
+`report.pdf`, but `report.pdf` is still a text file: Changing a file's extension
+in its name doesn't change the file's actual type. Hence you cannot rely on the
+file's extension to determine a file's type. The Windows operating system relies
+on the file's extension to determine the file type and the default application
+to open files with that type, but that's not a good approach.
+
+This is where the `file` command comes into play. The `file` command determines
+a file's type by analyzing that file's content instead of the file's extension.
+After knowing the file's actual type, `file` might also display more information
+that is specific to that file's type. Let's look at some examples.
+
+```
+> file git-punchcard
+git-punchcard: Python script, ASCII text executable
+```
+
+In the above example, it appears that the file `git-punchcard` is an ASCII text
+file. Furthermore, it's a Python script (code and script are text, basically).
+`file` also tells us that `git-punchcard` is executable.
+
+```
+> file image.png
+image.png: PNG image data, 1100 x 400, 8-bit/color RGB, non-interlaced
+```
+
+In the above example, the file `image.png` appears to be a PNG image that is
+1100 pixels in width and 400 pixels in height. The image uses 8-bit RGB color
+profile.
+
+```
+> file venture.mp3
+venture.mp3: Audio file with ID3 version 2.3.0, contains:MPEG ADTS, layer III, v1, 320 kbps, 44.1 kHz, JntStereo
+```
+
+In the above example, we can interpret that the file `venture.mp3` is an audio
+file using ID3 metadata scheme version 2.3.0 with a bit-rate of 320kbps.
 
 ### Using `touch`
 
