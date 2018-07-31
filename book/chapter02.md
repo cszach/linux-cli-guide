@@ -1,5 +1,5 @@
-Basic operations with files
----------------------------
+<h3 align="center">Chapter 2</h3>
+<h1 align="center">Basic operations with files</h1>
 
 ### Viewing text files
 ###### Tags: `#view`, `#file`, `#text-file`, `#new-command`

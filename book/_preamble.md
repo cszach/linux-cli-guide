@@ -1,5 +1,4 @@
-Preamble
---------
+<h1 align="center">Preamble</h1>
 
 This is a GNU/Linux bash guide. The guide will go from the most simple commands
 to more advanced ones, hence this guide can be used for learning (i.e. education

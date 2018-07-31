@@ -1,5 +1,5 @@
-Basic operations with directories
----------------------------------
+<h3 align="center">Chapter 1</h3>
+<h1 align="center">Basic operations with directories</h1>
 
 This section introduces the basic commands that get you moving between different
 locations in the file system and viewing the items in a folder or many folders.
