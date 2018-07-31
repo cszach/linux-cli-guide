@@ -227,6 +227,7 @@ The above example output shows that the last time the file `punchcard` was
 changed (the ctime) is 20 of May, at 13:45.
 
 ### Viewing file's details
+###### Tags: `#view`, `#file`, `#new-command`
 
 #### `stat`
 
@@ -309,10 +310,12 @@ In the above example, we can interpret that the file `venture.mp3` is an audio
 file using ID3 metadata scheme version 2.3.0 with a bit-rate of 320kbps.
 
 ### Using `touch`
+###### Tags: `#new`, `#timestamp`, `#file`, `#new-command`
 
 `touch` has two functions: Creating new file and updating a file's timestamp
 
 #### Creating a new file
+###### Tags: `#new`, `#file`
 
 Simply throw a name as an argument to `touch`:
 
@@ -323,6 +326,7 @@ Simply throw a name as an argument to `touch`:
 That's it. In the example above, an empty file called `newfile` will be created.
 
 #### Changing a file's timestamps
+###### Tags: `#file`, `#timestamp`
 
 If you give `touch` a file that is already presented on the system, however,
 `touch` will set the file's timestamps (all of the timestamps) to the current
