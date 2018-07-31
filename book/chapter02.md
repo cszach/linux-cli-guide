@@ -1,10 +1,26 @@
 <h3 align="center">Chapter 2</h3>
 <h1 align="center">Basic operations with files</h1>
 
-### Viewing text files
+**New commands**: [`cat`](#cat-and-tac), [`tac`](#cat-and-tac), [`less`](#less),
+[`head`](#head-and-tail), [`tail`](#head-and-tail), [`stat`](#stat),
+[`file`](#file), [`touch`](#using-touch)  
+**Commands extended**: [`ls`](#viewing-a-files-timestamp-using-ls)  
+**New concepts**: [File handles](#file-handles),
+[File timestamps](#notion-of-file-timestamp--types-of-file-timestamps-in-gnulinux)
+
+Table of Content
+----------------
+
+1. [Viewing text files](#viewing-text-files)
+2. [Input/Output](#inputoutput)
+3. [File timestamps](#file-timestamps)
+4. [Viewing file's details](#viewing-files-details)
+5. [Using `touch`](#using-touch)
+
+## Viewing text files
 ###### Tags: `#view`, `#file`, `#text-file`, `#new-command`
 
-#### `cat` and `tac`
+### `cat` and `tac`
 
 The `cat` command (con**cat**enate) is usually used to display the content of a
 text file to the screen.
@@ -28,7 +44,7 @@ This is content inside file3.
 The `tac` command is similar to `cat`, but it prints the file in the reversed
 order (last line in the file is printed first, then go up until the first line).
 
-#### `less`
+### `less`
 
 The problem with `cat` is, it prints the content of the file and then return you
 to the command prompt. Which means if you `cat` a long text file, the content of
@@ -43,7 +59,7 @@ Doing `less large_file.txt` allows you to view the file `large_file.txt`, and
 you can use the up and down arrow keys for scrolling. To return to the command
 prompt, hit the Q key.
 
-#### `head` and `tail`
+### `head` and `tail`
 
 `head` prints the first few lines of a text file only. By default, it prints
 the first 10 lines. You can customize the number using the `-n` option.
@@ -83,10 +99,10 @@ behavior isn't presented in `cat`. See example below. The command is
  Everyone is permitted to copy and distribute verbatim copies
 ```
 
-### Input/Output
+## Input/Output
 ###### Tags: `#new-concept`, `#file`, `#io`
 
-#### File handles
+### File handles
 ###### Tags: `#new-concept`, `#file`, `#io`
 
 When a program (e.g. a Bash command) is ran, three file handles can be used
@@ -100,7 +116,7 @@ by the program. They are **stdin** (<b>st</b>an<b>d</b>ard <b>in</b>put),
 |Standard output|        stdout        |Where the program writes output to.                      |The terminal screen|
 |Standard error |        stderr        |Where the program writes error information to.           |Log file           |
 
-#### I/O Redirection
+### I/O Redirection
 ###### Tags: `#file`, `#io`
 
 Now that we've learned about file handles, let's talk about I/O redirection
@@ -157,10 +173,10 @@ tree . >& output.txt
 In the example above, all normal output and error information coming from `tree`
 should be written to the text file `output.txt` instead of the terminal screen.
 
-### File timestamps
+## File timestamps
 ###### Tags: `#file`, `#new-concept`, `#extend`, `#timestamp`
 
-#### Notion of file timestamp & Types of file timestamps in GNU/Linux
+### Notion of file timestamp & Types of file timestamps in GNU/Linux
 ###### Tags: `#file`, `#new-concept`, `#timestamp`
 
 A file's timestamp is the time when something happened to the file (e.g. when
@@ -181,7 +197,7 @@ been accessed (read) for more than 90 days. We'll learn how to do that later,
 but first, you need to know how to view the timestamps, and that is shown in
 this section below.
 
-#### Viewing a file's timestamp using `ls`
+### Viewing a file's timestamp using `ls`
 ###### Tags: `#file`, `#extend`, `#timestamp`, `#view`
 
 The `ls` lists files in a directory by specifying the path of the directory to
@@ -226,10 +242,10 @@ The above example output shows that the last time the file `README.md` was read
 The above example output shows that the last time the file `punchcard` was
 changed (the ctime) is 20 of May, at 13:45.
 
-### Viewing file's details
+## Viewing file's details
 ###### Tags: `#view`, `#file`, `#new-command`
 
-#### `stat`
+### `stat`
 
 `stat` (<b>stat</b>us) is a command line utility that is used to print various
 information of a file. Simply give it a file's path or directory's path. Below
@@ -263,7 +279,7 @@ users and groups later.
 
 As mentioned, you can also give `stat` a directory's path.
 
-#### `file`
+### `file`
 
 Unlike `stat`, `file` is an utility that focuses on displaying information that
 is specific to a certain file type.
@@ -309,12 +325,12 @@ venture.mp3: Audio file with ID3 version 2.3.0, contains:MPEG ADTS, layer III, v
 In the above example, we can interpret that the file `venture.mp3` is an audio
 file using ID3 metadata scheme version 2.3.0 with a bit-rate of 320kbps.
 
-### Using `touch`
+## Using `touch`
 ###### Tags: `#new`, `#timestamp`, `#file`, `#new-command`
 
 `touch` has two functions: Creating new file and updating a file's timestamp
 
-#### Creating a new file
+### Creating a new file
 ###### Tags: `#new`, `#file`
 
 Simply throw a name as an argument to `touch`:
@@ -325,7 +341,7 @@ Simply throw a name as an argument to `touch`:
 
 That's it. In the example above, an empty file called `newfile` will be created.
 
-#### Changing a file's timestamps
+### Changing a file's timestamps
 ###### Tags: `#file`, `#timestamp`
 
 If you give `touch` a file that is already presented on the system, however,
