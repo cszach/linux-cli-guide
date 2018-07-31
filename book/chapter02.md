@@ -310,6 +310,52 @@ file using ID3 metadata scheme version 2.3.0 with a bit-rate of 320kbps.
 
 ### Using `touch`
 
+`touch` has two functions: Creating new file and updating a file's timestamp
+
 #### Creating a new file
 
+Simply throw a name as an argument to `touch`:
+
+```
+> touch newfile
+```
+
+That's it. In the example above, an empty file called `newfile` will be created.
+
 #### Changing a file's timestamps
+
+If you give `touch` a file that is already presented on the system, however,
+`touch` will set the file's timestamps (all of the timestamps) to the current
+time (meaning the time when you ran the `touch` command). Let's have an example.
+Here we have a file called `image.png`:
+
+```
+> stat image.png
+  File: image.png
+  Size: 21292     	Blocks: 48         IO Block: 4096   regular file
+Device: fd02h/64770d	Inode: 7215568     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/you_create)   Gid: ( 1001/you_create)
+Context: unconfined_u:object_r:user_home_t:s0
+Access: 2018-07-31 12:30:52.089412120 +0700
+Modify: 2018-07-28 11:19:05.686188118 +0700
+Change: 2018-07-28 11:19:05.686188118 +0700
+ Birth: -
+```
+
+As you can see, the file's timestamps vary. Now if we do `touch image.png`...
+
+```
+> touch image.png
+> stat image.png
+  File: image.png
+  Size: 21292     	Blocks: 48         IO Block: 4096   regular file
+Device: fd02h/64770d	Inode: 7215568     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/you_create)   Gid: ( 1001/you_create)
+Context: unconfined_u:object_r:user_home_t:s0
+Access: 2018-07-31 20:45:30.299611928 +0700
+Modify: 2018-07-31 20:45:30.299611928 +0700
+Change: 2018-07-31 20:45:30.299611928 +0700
+ Birth: -
+```
+
+...all three timestamps are updated to the current time.
