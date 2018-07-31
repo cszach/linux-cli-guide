@@ -213,9 +213,9 @@ myfile1.txt myfile2.txt myfile3.txt
 Specifying files' paths without an option to `ls` seems useless, so we'll use
 the `-l` option instead. The `-l` option tells `ls` to list files in long
 format that includes some information associating with the each of the file,
-including the modification time (mtime), as [previously mentioned](#ls) (see
-that section again if you want to refresh your memory on these). Example output
-of `ls -l report.txt`:
+including the modification time (mtime), as [previously mentioned](chapter01.md#ls)
+(see that section again if you want to refresh your memory on these). Example
+output of `ls -l report.txt`:
 
 ```
 -rwxrwxr-x. 1 john john 7170 May 20 13:45 report.txt
