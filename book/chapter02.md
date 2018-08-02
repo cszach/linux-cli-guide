@@ -16,7 +16,7 @@ Table of Content
 3. [File timestamps](#file-timestamps)
 4. [Viewing file's details](#viewing-files-details)
 5. [Using `touch`](#using-touch)
-6. [Adding content to a file]
+6. [Adding and editing file's content](#adding-and-editing-files-content)
 
 ## Viewing text files
 ###### Tags: `#view`, `#file`, `#text-file`, `#new-command`
@@ -433,3 +433,68 @@ Example arguments for the `-t` option:
 |1701121620.50 |12 of January, 2017, at 16:20:50 (4:20:50 PM)|
 
 > **Note**: You can also use `touch` to change a directory's timestamps :+1:.
+
+## Adding and editing file's content
+###### Tags: `#file`, `#editing`, `#io`, `#extend`, `#text-file`
+
+### Adding content to a text file
+
+There are 2 simple commands that we've covered that can be used to add text
+content to a text file: `echo` and `cat`, plus the use of I/O redirection.
+
+> **Note**: See the section on [I/O redirection](#io-redirection) again if you
+need to refresh your memory on this topic.
+
+In addition to the greater than sign (">") and the less than sign ("<") that
+we've learned in the section about I/O redirection, there are also the double
+greater than sign (">>"). The greater than sign is used to append standard
+output. For instance, if you have a non-empty file `demo.txt`, doing `echo "This
+is some text" > demo.txt` will overwrite `demo.txt`'s existing content, meaning
+`demo.txt` will only have the line "This is some text". But if you use the
+double greater than sign operator ("`echo "This is some text" >> demo.txt`"),
+the line "This is some text" will be added at the end of the file, and the
+file's existing content will still be there.
+
+As for `cat`, this command will write whatever you've entered in to stdout if
+you give it no argument. You can try that out, just type `cat`, that's it, and
+hit Enter.
+
+```
+> cat
+Line 1
+Line 1
+Line 2
+Line 2
+Line 3
+Line 3
+```
+
+You can quit by hitting Ctrl + D (or Ctrl + C). The main point here is, we can
+actually use this feature, redirect the stdout to a file, thus populating that
+file with text. The file does not necessary have to be presented before you do
+this.
+
+```
+> cat > somefile
+Line 1  
+Line 2
+Line 3
+> cat somefile
+Line 1
+Line 2
+Line 3
+```
+
+As for editing a text file, you can use a text editor. There are text editors
+that are made to operate in the command line environment, but there are, of
+course, graphical text editors. There should be at least one graphical text
+editor that comes pre-installed on your system (ummm...assuming you've installed
+a GNU/Linux distribution that comes with a graphical interface and not something
+like Arch Linux). If you are using the GNOME desktop environment, there should
+be GEdit. If you are using KDE desktop environment, there can be KWrite, KEdit,
+or Kate. Graphical editors should be easy for you to use, if you've had some
+experience with computers before.
+
+> **Note**: A desktop environment is a little bit out of scope to explain in
+> details in this tutorial, but basically it provides your computer a graphical
+> interface, usually along with graphical programs that share the same look.
