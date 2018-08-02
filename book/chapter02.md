@@ -16,6 +16,7 @@ Table of Content
 3. [File timestamps](#file-timestamps)
 4. [Viewing file's details](#viewing-files-details)
 5. [Using `touch`](#using-touch)
+6. [Adding content to a file]
 
 ## Viewing text files
 ###### Tags: `#view`, `#file`, `#text-file`, `#new-command`
@@ -340,6 +341,11 @@ Simply throw a name as an argument to `touch`:
 ```
 
 That's it. In the example above, an empty file called `newfile` will be created.
+You can also create multiple new empty files.
+
+```
+> touch newfile1 newfile2 newfile3
+```
 
 ### Changing a file's timestamps
 ###### Tags: `#file`, `#timestamp`
@@ -379,3 +385,51 @@ Change: 2018-07-31 20:45:30.299611928 +0700
 ```
 
 ...all three timestamps are updated to the current time.
+
+You might be wondering, "what's the point of updating a file's timestamps?".
+One example of real usage of that is this: A lot of GNU/Linux users (mostly
+those that are system administrators) have scripts to clean old files that are
+ran between intervals. For example, one might want to delete old log files that
+haven't been accessed for at least 10 months. If one of those log files still
+needs to be kept, however, one can use `touch` to update that file's
+timestamps so that the automated file deleting task won't delete that particular
+log file.
+
+If you don't want `touch` to update all of the file timestamps but a particular
+timestamp only, there are `touch`'s options for that. Below is a table of useful
+`touch` options. The option(s) must be specified before the file name(s).
+
+|Option|          Hint          |                                 Description                                 |
+|:---: |         :---:          |                                     ---                                     |
+| `-a` |   <b>a</b>ccess time   |Change the access time (atime) only.                                         |
+| `-m` |<b>m</b>odification time|Change the modification time (mtime) only.                                   |
+| `-r` |    <b>r</b>eference    |Make a file's atime and mtime the same as a reference file's atime and mtime.|
+| `-t` |      <b>t</b>ime       |Manually specify time instead of using the current time.                     |
+
+For `-r` option, you must also specify a reference file as an argument. This
+option updates the targeted file's atime and mtime to match the reference file's
+atime and mtime. The ctime is updated to the current time as usual. For instace,
+running the command below will match `crash-report.txt`'s atime and mtime to
+`reffile`'s atime and mtime, respectively.
+
+```
+> touch -r var/reffile crash-report.txt
+```
+
+For `-t` option, you must specify a particular time as an argument. This time is
+in the format CCYYMMDDhhmm.ss, in which:
+- CC is for first two digits of a year, YY is for the last two digits of a year,
+M is for month, D is for day of the month, h is for hour, m is for minute, s is
+for second
+- CC, YY, and .ss are optional parts, but if you do specify the CC part, you
+must also specify the YY part
+
+Example arguments for the `-t` option:
+
+|   Argument   |                   Meaning                   |
+|    :---:     |                     ---                     |
+|   08202200   |20 of August this year, at 22:00 (10PM)      |
+| 201612300830 |30 of December, 2016, at 8:30 (8:30 AM)      |
+|1701121620.50 |12 of January, 2017, at 16:20:50 (4:20:50 PM)|
+
+> **Note**: You can also use `touch` to change a directory's timestamps :+1:.
