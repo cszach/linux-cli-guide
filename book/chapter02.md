@@ -16,7 +16,7 @@ Table of Content
 3. [File timestamps](#file-timestamps)
 4. [Viewing file's details](#viewing-files-details)
 5. [Using `touch`](#using-touch)
-6. [Adding and editing file's content](#adding-and-editing-files-content)
+6. [Adding and editing file's content](#adding-and-editing-a-files-content)
 
 ## Viewing text files
 ###### Tags: `#view`, `#file`, `#text-file`, `#new-command`
@@ -434,10 +434,11 @@ Example arguments for the `-t` option:
 
 > **Note**: You can also use `touch` to change a directory's timestamps :+1:.
 
-## Adding and editing file's content
+## Adding and editing a file's content
 ###### Tags: `#file`, `#editing`, `#io`, `#extend`, `#text-file`
 
 ### Adding content to a text file
+###### Tags: `#file`, `#text-file`, `#io`, `#extend`
 
 There are 2 simple commands that we've covered that can be used to add text
 content to a text file: `echo` and `cat`, plus the use of I/O redirection.
@@ -485,6 +486,9 @@ Line 2
 Line 3
 ```
 
+### Editing a text file's content
+###### Tags: `#file`, `#text-file`, `#editing`, `#new-command`, `#new-program`
+
 As for editing a text file, you can use a text editor. There are text editors
 that are made to operate in the command line environment, but there are, of
 course, graphical text editors. There should be at least one graphical text
@@ -498,3 +502,7 @@ experience with computers before.
 > **Note**: A desktop environment is a little bit out of scope to explain in
 > details in this tutorial, but basically it provides your computer a graphical
 > interface, usually along with graphical programs that share the same look.
+
+> **Note**: You can invoke a graphical text editor from your terminal emulator
+> window. For example, to start GEdit - the default text editor in GNOME, type
+> "`gedit`". Of course, this assumes that you are in a graphical environment.
