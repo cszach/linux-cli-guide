@@ -17,8 +17,11 @@ Table of Content
 4. [Viewing file's details](#viewing-files-details)
 5. [Using `touch`](#using-touch)
 6. [Adding and editing file's content](#adding-and-editing-a-files-content)
+7. [Deleting a file](#deleting-a-file)
+8. [Symbolic links and hard links](#symbolic-links-and-hard-links)
 
-## Viewing text files
+Viewing text files
+------------------
 ###### Tags: `#view`, `#file`, `#text-file`, `#new-command`
 
 ### `cat` and `tac`
@@ -100,7 +103,8 @@ behavior isn't presented in `cat`. See example below. The command is
  Everyone is permitted to copy and distribute verbatim copies
 ```
 
-## Input/Output
+Input/Output
+------------
 ###### Tags: `#new-concept`, `#file`, `#io`
 
 ### File handles
@@ -174,7 +178,8 @@ tree . >& output.txt
 In the example above, all normal output and error information coming from `tree`
 should be written to the text file `output.txt` instead of the terminal screen.
 
-## File timestamps
+File timestamps
+---------------
 ###### Tags: `#file`, `#new-concept`, `#extend`, `#timestamp`
 
 ### Notion of file timestamp & Types of file timestamps in GNU/Linux
@@ -243,7 +248,8 @@ The above example output shows that the last time the file `README.md` was read
 The above example output shows that the last time the file `punchcard` was
 changed (the ctime) is 20 of May, at 13:45.
 
-## Viewing file's details
+Viewing file's details
+----------------------
 ###### Tags: `#view`, `#file`, `#new-command`
 
 ### `stat`
@@ -326,7 +332,8 @@ venture.mp3: Audio file with ID3 version 2.3.0, contains:MPEG ADTS, layer III, v
 In the above example, we can interpret that the file `venture.mp3` is an audio
 file using ID3 metadata scheme version 2.3.0 with a bit-rate of 320kbps.
 
-## Using `touch`
+Using `touch`
+-------------
 ###### Tags: `#new`, `#timestamp`, `#file`, `#new-command`
 
 `touch` has two functions: Creating new file and updating a file's timestamp
@@ -434,7 +441,8 @@ Example arguments for the `-t` option:
 
 > **Note**: You can also use `touch` to change a directory's timestamps :+1:.
 
-## Adding and editing a file's content
+Adding and editing a file's content
+-----------------------------------
 ###### Tags: `#file`, `#editing`, `#io`, `#extend`, `#text-file`
 
 ### Adding content to a text file
@@ -506,3 +514,97 @@ experience with computers before.
 > **Note**: You can invoke a graphical text editor from your terminal emulator
 > window. For example, to start GEdit - the default text editor in GNOME, type
 > "`gedit`". Of course, this assumes that you are in a graphical environment.
+
+- **Graphical text editors**: GEdit, KEdit, Atom, Geany, GVim, ...
+- **CLI text editors**: Nano, Vim, Emacs, ...
+
+Deleting a file
+---------------
+###### Tags: `#file`, `#extend`, `#remove`
+
+[As mentioned in chapter 1](#removing-a-directory), the `rm` command can be used
+to delete files. Simply give `rm` the name(s) of the file(s) you want to delete.
+
+This command removes `file1`:
+```
+rm file1
+```
+
+This command removes `file1`, `file2`, `file3`:
+```
+rm file1 file2 file3
+```
+
+Note that the `-r` option, which is necessary to remove directories, isn't
+necessary when you delete files only. But there's no harm doing it.
+
+This command removes `file1` and `file2`, which are 2 example files used here,
+and `dir1` and `dir2`, which are directories.
+```
+rm -r file1 file2 dir1 dir2
+```
+
+`rm` has several other useful options, which are `-i` and `-I`. If you use `-i`,
+`rm` will prompt you before every removal. Enter "y" to remove, "n" to keep.
+
+```
+> rm -r -i file1 file2 file3 dir1 dir2
+rm: remove regular empty file 'file1'? y
+rm: remove regular empty file 'file2'? y
+rm: remove regular empty file 'file3'? n
+rm: remove directory 'dir1'? y
+rm: descend into directory 'dir2'? y
+rm: remove regular empty file 'dir2/file2'? n
+rm: remove regular empty file 'dir2/file1'? y
+rm: remove directory 'dir2'? n
+```
+
+In the example above:
+- The files `./file1`, `./file2` are deleted.
+- Empty directory `./dir1` is deleted.
+- File `./file3` is **not** removed.
+- Directory `./dir2` is _not_ empty, so `rm` has to prompt the user before
+deleting _every_ file and _every_ folder before removing. If a directory inside
+`./dir2` is also not empty, `rm` will do the same as it does with `./dir2`.
+- `./dir2/file1` is removed, `./dir2/file2` is **not**.
+- `./dir2` is **not** removed. Even if the user typed "y", it still wouldn't be
+removed, because if it is removed, `./dir2/file2` must also be removed, but
+earlier the user confirmed that `./dir2/file2` shall not be removed.
+
+> **Note**: In case you are wondering what the "./" thing shown above is: The
+dot symbol (".") refers to the current working directory, and the "/" is the
+directory delimiter as usual. So `./file1` is `file1` in the current working
+directory. The dot symbol was first mentioned and explained in
+[early chapter 1][edc1].
+
+[edc1]: chapter01.md#brief-description-of-the-linux-file-system-hierarchy
+
+> **Note**: The Bash input used to generate the example files and folders in
+the above example is `mkdir dir1 dir2; touch file1 file2 file3 dir2/file1
+dir2/file2`.
+
+The `-I` option makes `rm` prompts if you are trying to remove more than 3
+files, or removing recursively (with the `-r` option). `rm` with `-I` prompts
+_only once_.
+
+```
+> rm -I report.txt git-c.txt log-0245.txt log-0362.txt
+rm: remove 4 arguments? y
+```
+
+`-i` and `-I` are options that make you think twice before removing files or
+directories, avoiding mistakes. Note that **`rm` deletes stuff permanently**
+(i.e. it does not move the specified files/folders into Trash or Recycle Bin or
+anything like that).
+
+This table summarizes `rm`'s useful options:
+
+|Option|Hint|Description|
+|:---:|:---:|---|
+|`-r` (or `--recursive`)|<b>r</b>ecursively|Remove directories recursively. Must be invoked when removing a non-empty directory.|
+|`-i`||Prompt before _every_ removal.|
+|`-I`||Prompt once before removing recursively or removing more than 3 files.|
+|`-f` (or `--force`)|<b>f</b>orce|If a specified file or directory does not exist, ignore and move on. Also, never prompt the user to confirm.|
+
+Symbolic links and hard links
+-----------------------------
