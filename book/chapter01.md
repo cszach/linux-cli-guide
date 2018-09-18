@@ -1,6 +1,17 @@
 <h3 align="center">Chapter 1</h3>
 <h1 align="center">Basic operations with directories</h1>
 
+**New commands**: [`pwd`](#pwd), [`cd`](#moving-between-directories-using-cd),
+[`pushd`](#pushd), [`dirs`](#dirs), [`popd`](#popd), [`ls`](#ls),
+[`tree`](#tree), [`mkdir`](#creating-a-new-directory),
+[`rm`](#removing-a-directory)  
+**New concepts**: [Linux file system hierarchy][al1], [Root folder (`/`)][al1],
+[Absolute path][al1], [Relative path][al1], [Current working directory](#pwd),
+[Stack][al2], [Directory stack][al2]
+
+[al1]: #brief-description-of-the-Linux-file-system-hierarchy
+[al2]: #the-notion-of-stack-and-directory-stack
+
 This section introduces the basic commands that get you moving between different
 locations in the file system and viewing the items in a folder or many folders.
 If you are relatively new to the GNU/Linux system, you might want to read the
@@ -30,20 +41,21 @@ to a folder. For example, in the system illustrated above, the relative path of
 the `boot.log` file relative to the `var` directory is `log/boot.log`. Unlike
 absolute paths, relative paths don't begin with `/`.
 
-As you might have noticed, GNU/Linux systems (and Unix systems in general) use
-the forward slash character ("/") to separate folders at different hierarchical
-level (unlike Windows, which use the backward slash character "\\").
+As you might have noticed, GNU/Linux systems (and Unix-like systems in general)
+use the forward slash character ("/") to separate folders at different
+hierarchical level (unlike Windows, which uses the backward slash character "\\").
 
 There are three symbols, usually appear in paths, that are reserved for special
 purposes:
-1. The dot symbol ("."): The dot symbol refers to the current working directory.
-2. The double dots symbol (".."): The double dots symbol refers to the parent
-directory (i.e. the directory that is one level above in terms of hierarchy).
-For example, in the system illustrated above, the relative path of the `README`
-file to the `/usr/include` folder has to contain the double dots symbol:
-`../../var/log/README`.
-3. The tilde symbol ("~"): The tilde symbol refers to the home directory of the
-current logged-in user. If you have logged in as a normal user, your home
+1. **The dot symbol** ("`.`"): The dot symbol refers to the current working
+directory.
+2. **The double dots symbol** ("`..`"): The double dots symbol refers to the
+parent directory (i.e. the directory that is one level above in terms of
+hierarchy). For example, in the system illustrated above, the relative path of
+the `README` file to the `/usr/include` folder has to contain the double dots
+symbol: `../../var/log/README`.
+3. **The tilde symbol** ("`~`"): The tilde symbol refers to the home directory
+of the current logged-in user. If you have logged in as a normal user, your home
 directory should be `/home/USERNAME`, replacing "USERNAME" with your username
 (e.g. if your username is "john", your home directory should be `/home/john/`).
 If you have logged in as root (equivalence of admin in Windows), the home
@@ -68,7 +80,9 @@ user's name).
 ### Moving between directories using `cd`
 ###### Tags: `#new-command`, `#directory`, `#navigating`
 
-`cd` (<b>c</b>hange <b>d</b>irectory) moves you to another folder on the system.
+`cd` (<b>c</b>hange <b>d</b>irectory) moves you to another directory on the
+system. It is commonly invoked with just one argument: the directory the user
+wants to go to.
 
 |Example input|Description|
 |:--:|---|
@@ -77,7 +91,7 @@ user's name).
 |`cd ~`|Move to the home directory. The `~` symbol refers to the home directory.|
 |`cd -`|Move to the previous directory that you were in. For example, if you were in `/home/john`,<br>and then you moved to `/home/john/Pictures/Family`, doing `cd -` will move you back<br>to `/home/john`.|
 |`cd ..`|Move to the parent directory.|
-|`cd .`|Move to the current directory. This is useless, but is still shown up as an example to get<br>you to remember what the dot symbol `.` is for.|
+|`cd`|`cd` with no option and argument, which is the same as `cd ~`, because by default, `cd` moves you to your home directory.|
 
 ### Moving between directories, advanced: `pushd`, `popd`, and `dirs`
 ###### Tags: `#new-command`, `#new-concept`, `#directory`, `#navigating`
@@ -101,15 +115,14 @@ the least recently added item (number 1) to the most recently added item (number
 |:strawberry:|:banana:|:watermelon:|:pear:|:pineapple:|
 
 If we perform a push operation to our fruit stack to add a, say, melon :melon:
-to our collection, the stack will become something like this:
+to our collection, the stack will look like this:
 
 |     1      |   2    |     3      |  4   |     5     |   6   |
 |   :---:    | :---:  |   :---:    |:---: |   :---:   | :---: |
 |:strawberry:|:banana:|:watermelon:|:pear:|:pineapple:|:melon:|
 
 If we perform a single pop operation to the new stack (the one with 6 items
-above, not the original one with 5 items), the stack will become something like
-this:
+above, not the original one with 5 items), the stack will look like this:
 
 |     1      |   2    |     3      |  4   |     5     |
 |   :---:    | :---:  |   :---:    |:---: |   :---:   |
@@ -134,7 +147,7 @@ Just like `cd`, `pushd` (**push** <b>d</b>irectory) moves you to a new
 directory. However, `pushd` does one more thing: adding the new directory to the
 directory stack.
 
-Side notes: `cd .` is useless, but `pushd .` can be useful.
+> **Note**: `cd .` is useless, but `pushd .` can be useful.
 
 #### `dirs`
 ###### Tags: `#new-command`, `#directory`
@@ -239,7 +252,15 @@ It has several helpful options:
 
 Note that you must put the options before the directory you wish to look inside
 (e.g. `ls -l -A /proc` will list all the files and folders (including hidden
-ones) in the `/proc` directory with long listing format).
+ones) in the `/proc` directory with long listing format). The overall usage of
+the `ls` command is:
+
+```
+ls [options] [directories]
+```
+
+...replacing `[options]` with actual options there (each option should be
+separated by a space character), and `[directories]` with path(s) of folder(s).
 
 If you use the long listing format, you will see something like this:
 
@@ -256,7 +277,7 @@ drwx------.  3 john john 4096 Jul 12 22:57 tor-browser
 ...which is to say, there are 7 columns. The meaning of each column is as
 follows:
 
-1. File permission
+1. File/Folder permission
 2. Number of links
 3. File/Folder's owner
 4. File/Folder's owner group
@@ -264,6 +285,22 @@ follows:
 6. When was the file/folder last modified? (this one actually spans to multiple
 columns)
 7. The file/folder's name
+
+Those may be hard for you to understand, especially if you're relatively new to
+computers. We will see what most of them are in later sections, so you can
+safely ignore the above list for now, and come back later.
+
+`ls` also takes multiple directories' paths. Below is an example of using `ls`
+to list files and folders in two directories, `Documents` and `F-IT1`:
+
+```
+> ls Documents/ F-IT1/
+Documents/:
+firefox-bookmarks.html  fp_addrs.txt  mail-addrs.txt
+
+F-IT1/:
+Word
+```
 
 #### `tree`
 ###### Tags: `#new-command`, `#view`, `#directory`, `#hierarchy`
@@ -345,3 +382,85 @@ The `rm` command (<b>r</b>e<b>m</b>ove) can also be used to delete files, which
 we will discuss later. The `-r` option must be specified so that `rm` can remove
 the directory <b>r</b>ecursively (meaning all files and folders inside that
 directory will also be deleted).
+
+Chapter Summary
+---------------
+
+Congratulations! You've finished chapter 1. :tada: :tada: :tada:
+
+Let's recover what we've covered in this chapter.
+
+1. The Linux file system is hierarchical. The folder at the top of this
+hierarchical model is called "root" in Linux, denoted "/".
+2. Every file and every folder has its own address, commonly called "path".
+There are two types of paths:
+    - **Absolute path** which starts from the root folder and traces down the
+    hierarchical system to the destination file/folder.
+    - **Relative path** which shows the relative position of a file/folder with
+    another file/folder on the system.
+3. Files and folders at different hierarchical levels are separated using the
+forward slash symbol ("/").
+4. There are 3 symbols reserved for specific purposes in a path:
+
+|Symbol|                                   Description                                   |
+|:---: |                                       ---                                       |
+| `.`  |Current working directory                                                        |
+| `..` |Parent directory (i.e. directory that is one level above in the hierarchy model) |
+| `~`  |User's home directory                                                            |
+
+5. The current working directory is the address (i.e. path) of where you are in
+the file system. The `pwd` command is used to see the current working directory
+while you are in the command line environment.
+6. `cd` can be used to go to another location (i.e. path) in the file system.
+7. A stack is a collection of items that can be manipulated with 2 common
+operations:
+    - **Push** which adds a new item to the end of the collection, and
+    - **Pop** which removes the most recently added item (i.e. the item at the
+    end of the collection)
+8. A directory stack is a stack of directory paths. It can be viewed using the
+`dirs` command.
+9. `pushd` moves you to another directory and pushes that directory's path to
+the directory stack.
+10. `popd` pops the directory stack once and moves you back to the last pushed
+directory.
+11. `ls` is usually used to list files and folders in a directory. `tree` is
+greater at doing this recursively.
+12. `mkdir` is used to create new directories, while `rm` with the `-r` option
+is used to remove directories.
+
+Chapter Quiz
+------------
+
+1. What symbol does Linux systems use as a separator between directories at
+different hierarchical level in paths?
+2. Fire up a terminal and use `pwd` to see the current working directory. What
+directory is it? What type of directory is it?
+3. Use `pwd` to see the current working directory, and then run `cd .`, and then
+`pwd` again. Does the current working directory change after running the `cd`
+command? What does this remind you of the dot ("`.`") symbol in paths?
+4. What is the relative path of the `Pictures` folder in your home directory,
+relative to your home directory?
+5. What is a stack? What is a directory stack?
+6. How does `pushd` differ from `cd`?
+
+Chapter Quiz's Answers
+----------------------
+
+<details>
+    <summary>What symbol does Linux systems use as a separator between
+    directories at different hierarchical level in paths?</summary>
+
+Linux systems use the forward slash symbol ("/") to separate directories at
+different hierarchical level in paths. Considering the following path:
+
+```
+/home/john/Templates/
+```
+
+We can interpret that, the directory `Templates` is one level under the
+`john` directory, and the `john` directory is one level under the `home`
+directory. For greater precision, we can add the forward slash symbol after
+the names of the directories. So, the directories we just mentioned can be
+re-written as `Templates/`, `john/`, and `home/`. Thus that leaves us with
+one unmentioned directory: `/` - the root directory.
+</details>
