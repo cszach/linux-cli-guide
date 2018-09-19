@@ -428,27 +428,147 @@ greater at doing this recursively.
 12. `mkdir` is used to create new directories, while `rm` with the `-r` option
 is used to remove directories.
 
+Chapter Summary: Commands
+-------------------------
+
+Starting from chapter 1, we have a separated summary for commands. Summaries of
+commands & their useful options shown here are close to the ones shown in our
+(42tm's) [Bash Reference](http://github.com/42tm/bash-ref). Note that we may
+revisit these commands and learn more useful options in later sections of the
+tutorial, so the summaries displayed here is not as details as the ones in the
+Reference.
+
+### `pwd`
+
+`pwd` (<b>p</b>rint <b>w</b>orking <b>d</b>irectory) prints the current working
+directory.
+
+`pwd` has only 2 options, one of which is used by default. Usually `pwd` is used
+with no option.
+
+### `cd`
+
+`cd` (<b>c</b>hange <b>d</b>irectory) is used to change the current working
+directory (i.e. move to another directory).
+
+```
+cd [dir]
+```
+
+`[dir]` is optional here. If `cd` is ran with no argument and option, you will
+be moved to your home directory.
+
+`cd` is usually used with no option and one only argument. That only argument is
+the path of the directory that the user wants to go to.
+
+### `pushd`
+
+`pushd` (<b>push</b> <b>d</b>irectory) is basically the same as `cd`, but also
+adds the given path to the directory stack.
+
+```
+pushd [dir]
+```
+
+> **Note**: The behavior of `pushd` when it isn't given any argument & option is
+different from `cd`. What `pushd` does when it doesn't have any argument is
+swapping the position of the last element and the second last element in the
+directory stack. Try it out yourself. This is a rare use case, so it doesn't
+appear in any of the main sections.
+
+### `dirs`
+
+`dirs` (<b>dir</b>ectory <b>s</b>tack) displays the directory stack.
+
+```
+dirs [options]
+```
+
+`[options]` part is optional, but it can have the following options:
+
+| Option |    Hint    |                                    Description                                    |
+| :---:  |    ---     |                                        ---                                        |
+|  `-l`  |  **l**ong  |Instead of writing the `~` symbol, write the actual path that the symbol refers to.|
+|  `-p`  |**p**er line|Print each element on its own line.                                                |
+|  `-c`  | **c**lear  |Clear the stack: Remove all the items in the directory stack.                      |
+
+### `popd`
+
+`popd` (<b>pop</b> <b>d</b>irectory) removes the last path in the directory
+stack and moves the user to the last path in the new directory (i.e. after
+the removal).
+
+### `ls`
+
+`ls` (<b>l</b>i<b>s</b>t) lists all files and folders (non-recursively) in the
+current working directory (if no argument is given) or in a given directory.
+
+```
+ls [options] [directories]
+```
+
+`[options]` may include:
+
+| Option |  Hint   |                                       Description                                       |
+| :---:  |   ---   |                                           ---                                           |
+|  `-A`  | **a**ll |List all files and folders, including the hidden ones.                                   |
+|  `-l`  |**l**ong |Display list in long format (see below for more information).                            |
+|  `-s`  |**s**ize |Display size of each file, should be used with the -h option.                            |
+|  `-h`  |**h**uman|Display size in a human readable form (e.g. "5.5M" for 5.5 megabytes instead of "5500"). |
+
+`[directories]` include one or more target directories.
+
+Both `[options]` and [`directories`] are option parts: `ls` can be used without
+them.
+
+### `tree`
+
+`tree` is different from `ls` in the way that:
+1. `tree` lists files and folders **recursively**
+2. `tree` displays tree view for better visualization
+
+> **Note**: You can make `ls` lists recursively by using it with the option
+`-R`. Most of the time, however, and especially when there are lots of
+sub-directories, you should use `tree`.
+
+### `mkdir`
+
+`mkdir` (<b>m</b>a<b>k</b>e <b>dir</b>ectory) is used to create new directories.
+
+```
+mkdir [options] directories
+```
+
+`directories` is where you specify the directories (one or more of them) you
+want to create. If the parent directory of any of them does not exist, you must
+use the `-p` option to create the parent directory as necessary.
+
+### `rm`
+
+`rm` (<b>r</b>e<b>m</b>ove) can be used to remove a directory.
+
+```
+rm -r [directories]
+```
+
+...where, `[directories]` is where you specify one or more directories that you
+want to remove.
+
+> **Note**: The `-r` option (<b>r</b>ecursively) is necessary to remove
+directories. `rm` can also be used to delete files (which we'll go over in the
+next chapter). When deleting files only, the `-r` option can be omitted.
+
 Chapter Quiz
 ------------
 
-1. What symbol does Linux systems use as a separator between directories at
-different hierarchical level in paths?
-2. Fire up a terminal and use `pwd` to see the current working directory. What
-directory is it? What type of directory is it?
-3. Use `pwd` to see the current working directory, and then run `cd .`, and then
-`pwd` again. Does the current working directory change after running the `cd`
-command? What does this remind you of the dot ("`.`") symbol in paths?
-4. What is the relative path of the `Pictures` folder in your home directory,
-relative to your home directory?
-5. What is a stack? What is a directory stack?
-6. How does `pushd` differ from `cd`?
-
-Chapter Quiz's Answers
-----------------------
+Here's the usual chapter quiz for chapter 1. Click on a question or quiz task to
+see the answer.
 
 <details>
-    <summary>What symbol does Linux systems use as a separator between
-    directories at different hierarchical level in paths?</summary>
+    <summary>
+        <b>What symbol does Linux systems use as a separator between directories
+        at different hierarchical level in paths?</b>
+    </summary>
 
 Linux systems use the forward slash symbol ("/") to separate directories at
 different hierarchical level in paths. Considering the following path:
@@ -463,4 +583,84 @@ directory. For greater precision, we can add the forward slash symbol after
 the names of the directories. So, the directories we just mentioned can be
 re-written as `Templates/`, `john/`, and `home/`. Thus that leaves us with
 one unmentioned directory: `/` - the root directory.
+</details>
+
+<details>
+    <summary>
+        <b>Fire up a terminal and use <code>pwd</code> to see the path of
+        the current working directory. What's the path of the current working
+        directory? What type of path is it?</b>
+    </summary>
+
+> What's the path of the current working directory?
+
+Assuming you haven't done any `cd`, the current working directory is your home
+directory. When you open a terminal, you are usually (if not always) placed in
+your home directory. The path should be something like `/home/student` if logged
+in as normal user and should be `/root` if logged in as root.
+
+> What type of path is it?
+
+It's an absolute path. Absolute paths start from the root directory. Absolute
+paths are different from relative paths in the way that, relative path shows the
+relation between two directories in terms of location within the file system.
+Actually, you can imagine absolute paths as relative paths that shows the
+relation between a directory and the root directory. `pwd` always shows absolute
+paths, and there's no way to give it a directory to show a relative path.
+</details>
+
+<details>
+    <summary>
+        <b>Use <code>pwd</code> to see the current working directory, and
+        then run <code>cd .</code>, and then <code>pwd</code> again. Does the
+        current working directory change after running the <code>cd</code>
+        command? What does this remind you of the dot ("<code>.</code>") symbol
+        in paths?</b>
+    </summary>
+
+The current working directory does not change after running `cd .`, because the
+dot symbol is one of the special symbols that are reserved for special meanings
+in directory paths. The dot symbol refers to the current working directory. Note
+that the dot symbol in directory names or file names are not the special dot.
+For example, you may have a directory named "`user.files`" in your home
+directory. You can `cd user.files` to go into that directory, and in this case,
+the dot symbol is part of the folder's name and does not hold any special
+meaning. This is also true for the double dots symbol and the tilde symbol that
+are also special symbols in paths.
+</details>
+
+<details>
+    <summary>
+        <b>What is the relative path of the <code>Pictures</code> folder in
+        your home directory, relative to your home directory?</b>
+    </summary>
+
+The path is "`Pictures`". It can also be written as `./Pictures`. The dot symbol
+refers to the current directory, so it is useless most of the time. The path
+`/home/student/Pictures` is basically the same as
+`/home/././student/./././Pictures/.`.
+
+</details>
+
+<details>
+    <summary>
+        <b>What is a stack? What is a directory stack?</b>
+    </summary>
+
+A stack is an ordered list of items. There are two common operations to do with
+stacks:
+    - **push**, which adds an element to the end of the stack, and
+    - **pop**, which removes the element at the end of the stack
+
+A directory stack in Unix systems is a stack of directory paths. It is involved
+in the commands `dirs`, `pushd` and `popd`.
+</details>
+
+<details>
+    <summary>
+        <b>How does <code>pushd</code> differ from <code>cd</code>?</b>
+    </summary>
+
+`pushd` is like `cd`, but `pushd` also adds the given path to the directory
+stack.
 </details>
