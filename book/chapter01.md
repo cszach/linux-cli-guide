@@ -1,6 +1,24 @@
 <h3 align="center">Chapter 1</h3>
 <h1 align="center">Basic operations with directories</h1>
 
+<center>
+    <big><big>
+        <b><a style="text-decoration: none"
+              href="#chapter-summary">Chapter Summary</a></b>
+    </big></big> &mdash;
+    <big><big>
+        <b><a style="text-decoration: none"
+              href="#chapter-summary-commands">Commands Summary</a></b>
+    </big></big> &mdash;
+    <big><big>
+        <b><a style="text-decoration: none"
+              href="#chapter-quiz">Chapter Quiz</a></b>
+    </big></big>
+</center>
+
+<p>
+</p>
+
 **New commands**: [`pwd`](#pwd), [`cd`](#moving-between-directories-using-cd),
 [`pushd`](#pushd), [`dirs`](#dirs), [`popd`](#popd), [`ls`](#ls),
 [`tree`](#tree), [`mkdir`](#creating-a-new-directory),
@@ -11,6 +29,8 @@
 
 [al1]: #brief-description-of-the-Linux-file-system-hierarchy
 [al2]: #the-notion-of-stack-and-directory-stack
+
+- - -
 
 This section introduces the basic commands that get you moving between different
 locations in the file system and viewing the items in a folder or many folders.
@@ -29,6 +49,12 @@ is called the root folder, denoted "/". The below graph illustrates a small part
 of a file system on a typical GNU/Linux machine, according to the hierarchy.
 
 ![File system hierarchy illustration](../img/fsh.png)
+<small>
+    Image author: Nguyen Hoang Duong ([@NOVAglow](http://github.com/NOVAglow)).
+    [PNG file](../img/fsh.png) &mdash;
+    [SVG source](../svg/fsh_ex.svg) &mdash;
+    [License (CC0)](../LICENSE)
+</small>
 
 In a hierarchical file system like this, each file and folder has its own
 address (commonly called **paths**). There are 2 types of paths:
@@ -147,6 +173,14 @@ Just like `cd`, `pushd` (**push** <b>d</b>irectory) moves you to a new
 directory. However, `pushd` does one more thing: adding the new directory to the
 directory stack.
 
+![Visualization of pushd command](../img/pushd-vis.png)
+<small>
+    Image author: Nguyen Hoang Duong ([@NOVAglow](http://github.com/NOVAglow)).
+    [PNG file](../img/pushd-vis.png) &mdash;
+    [SVG source](../svg/pushd-vis.svg) &mdash;
+    [License (CC0)](../LICENSE)
+</small>
+
 > **Note**: `cd .` is useless, but `pushd .` can be useful.
 
 #### `dirs`
@@ -226,6 +260,14 @@ you will be moved to `~/Videos`, and `~/Templates` will be gone from the stack:
 ~/Pictures/Miscellaneous
 ~
 ```
+
+![Visualization of popd command](../img/popd-vis.png)
+<small>
+    Image author: Nguyen Hoang Duong ([@NOVAglow](http://github.com/NOVAglow)).
+    [PNG file](../img/popd-vis.png) &mdash;
+    [SVG source](../svg/popd-vis.svg) &mdash;
+    [License (CC0)](../LICENSE)
+</small>
 
 `popd` won't do anything (but warns you) if the directory stack is empty.
 
