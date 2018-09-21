@@ -23,7 +23,7 @@
 [Absolute path][al1], [Relative path][al1], [Current working directory](#pwd),
 [Stack][al2], [Directory stack][al2]
 
-[al1]: #brief-description-of-the-Linux-file-system-hierarchy
+[al1]: #brief-description-of-the-linux-file-system-hierarchy
 [al2]: #the-notion-of-stack-and-directory-stack
 
 - - -
