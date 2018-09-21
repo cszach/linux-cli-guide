@@ -19,8 +19,8 @@
 [`pushd`](#pushd), [`dirs`](#dirs), [`popd`](#popd), [`ls`](#ls),
 [`tree`](#tree), [`mkdir`](#creating-a-new-directory),
 [`rm`](#removing-a-directory)  
-**New concepts**: [Linux file system hierarchy][al1], [Root folder (`/`)][al1],
-[Absolute path](#abs-path), [Relative path][al1], [Current working directory](#pwd),
+**New concepts**: [Linux file system hierarchy][al1], [Root folder (`/`)](#root-dir),
+[Absolute path](#abs-path), [Relative path](#rev-path), [Current working directory](#pwd),
 [Stack][al2], [Directory stack][al2]
 
 [al1]: #brief-description-of-the-linux-file-system-hierarchy
@@ -39,10 +39,11 @@ commands.
 
 The files & folders system in GNU/Linux (so-called "Linux") is hierarchical,
 like Windows. This means that a folder can contain files, as well as other
-folders, and those folders can contain more files and folders. All accessible
-files and folders in a GNU/Linux system is stored in a folder, and this folder
-is called the root folder, denoted "/". The below graph illustrates a small part
-of a file system on a typical GNU/Linux machine, according to the hierarchy.
+folders, and those folders can contain more files and folders. <a name="root-dir">
+All accessible files and folders in a GNU/Linux system is stored in a folder, and
+this folder is called the root folder, denoted "/".</a> The below graph illustrates
+a small part of a file system on a typical GNU/Linux machine, according to the
+hierarchy.
 
 ![File system hierarchy illustration](../img/fsh.png)
 <sup>
@@ -55,13 +56,14 @@ of a file system on a typical GNU/Linux machine, according to the hierarchy.
 In a hierarchical file system like this, each file and folder has its own
 address (commonly called **paths**). There are 2 types of paths:
 
-1. <a name="abs-path">**Absolute path**</a>: An absolute path goes from the root folder (`/`) and
-traces down to the destination folder/file. For example, in the system in the
-above illustration, the absolute path of the file `bashrc` is `/etc/bashrc`.
-2. **Relative path**: The relative path of a file or folder is the path relative
-to a folder. For example, in the system illustrated above, the relative path of
-the `boot.log` file relative to the `var` directory is `log/boot.log`. Unlike
-absolute paths, relative paths don't begin with `/`.
+1. <a name="abs-path">**Absolute path**</a>: An absolute path goes from the root
+folder (`/`) and traces down to the destination folder/file. For example, in the
+system in the above illustration, the absolute path of the file `bashrc` is
+`/etc/bashrc`.
+2. <a name="rev-path">**Relative path**</a>: The relative path of a file or folder
+is the path relative to a folder. For example, in the system illustrated above, the
+relative path of the `boot.log` file relative to the `var` directory is
+`log/boot.log`. Unlike absolute paths, relative paths don't begin with `/`.
 
 As you might have noticed, GNU/Linux systems (and Unix-like systems in general)
 use the forward slash character ("/") to separate folders at different
@@ -157,10 +159,10 @@ now removed from the stack. Pop one more time:
 |   :---:    | :---:  |   :---:    |:---: |
 |:strawberry:|:banana:|:watermelon:|:pear:|
 
-Now that you know what a stack is, you might have guessed what a directory
-stack is. A directory stack is a stack containing absolute paths that we've
-pushed into it. You will see it in action by learning the `pushd`, `popd`, and
-`dirs` command below.
+<a name="dir-stack">Now that you know what a stack is, you might have guessed
+what a directory stack is. A directory stack is a stack containing absolute
+paths that we've pushed into it. You will see it in action by learning the
+`pushd`, `popd`, and `dirs` commands below.</a>
 
 #### `pushd`
 ###### Tags: `#new-command`, `#directory`, `#navigating`
