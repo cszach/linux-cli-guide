@@ -20,7 +20,7 @@
 [`tree`](#tree), [`mkdir`](#creating-a-new-directory),
 [`rm`](#removing-a-directory)  
 **New concepts**: [Linux file system hierarchy][al1], [Root folder (`/`)][al1],
-[Absolute path][al1], [Relative path][al1], [Current working directory](#pwd),
+[Absolute path](#abs-path), [Relative path][al1], [Current working directory](#pwd),
 [Stack][al2], [Directory stack][al2]
 
 [al1]: #brief-description-of-the-linux-file-system-hierarchy
@@ -55,7 +55,7 @@ of a file system on a typical GNU/Linux machine, according to the hierarchy.
 In a hierarchical file system like this, each file and folder has its own
 address (commonly called **paths**). There are 2 types of paths:
 
-1. **Absolute path**: An absolute path goes from the root folder (`/`) and
+1. <a name="abs-path">**Absolute path**</a>: An absolute path goes from the root folder (`/`) and
 traces down to the destination folder/file. For example, in the system in the
 above illustration, the absolute path of the file `bashrc` is `/etc/bashrc`.
 2. **Relative path**: The relative path of a file or folder is the path relative
