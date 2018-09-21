@@ -21,7 +21,7 @@
 [`rm`](#removing-a-directory)  
 **New concepts**: [Linux file system hierarchy][al1], [Root folder (`/`)](#root-dir),
 [Absolute path](#abs-path), [Relative path](#rev-path), [Current working directory](#pwd),
-[Stack][al2], [Directory stack][al2]
+[Stack][al2], [Directory stack](#dir-stack)
 
 [al1]: #brief-description-of-the-linux-file-system-hierarchy
 [al2]: #the-notion-of-stack-and-directory-stack
