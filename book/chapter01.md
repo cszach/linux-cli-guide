@@ -1,7 +1,7 @@
 <h3 align="center">Chapter 1</h3>
 <h1 align="center">Basic operations with directories</h1>
 
-<center>
+<p align="center">
     <big><big>
         <b><a style="text-decoration: none"
               href="#chapter-summary">Chapter Summary</a></b>
@@ -14,7 +14,7 @@
         <b><a style="text-decoration: none"
               href="#chapter-quiz">Chapter Quiz</a></b>
     </big></big>
-</center>
+</p>
 
 <p>
 </p>
@@ -49,12 +49,12 @@ is called the root folder, denoted "/". The below graph illustrates a small part
 of a file system on a typical GNU/Linux machine, according to the hierarchy.
 
 ![File system hierarchy illustration](../img/fsh.png)
-<small>
+<sup>
     Image author: Nguyen Hoang Duong ([@NOVAglow](http://github.com/NOVAglow)).
     [PNG file](../img/fsh.png) &mdash;
     [SVG source](../svg/fsh_ex.svg) &mdash;
     [License (CC0)](../LICENSE)
-</small>
+</sup>
 
 In a hierarchical file system like this, each file and folder has its own
 address (commonly called **paths**). There are 2 types of paths:
@@ -174,12 +174,12 @@ directory. However, `pushd` does one more thing: adding the new directory to the
 directory stack.
 
 ![Visualization of pushd command](../img/pushd-vis.png)
-<small>
+<sup>
     Image author: Nguyen Hoang Duong ([@NOVAglow](http://github.com/NOVAglow)).
     [PNG file](../img/pushd-vis.png) &mdash;
     [SVG source](../svg/pushd-vis.svg) &mdash;
     [License (CC0)](../LICENSE)
-</small>
+</sup>
 
 > **Note**: `cd .` is useless, but `pushd .` can be useful.
 
@@ -262,12 +262,12 @@ you will be moved to `~/Videos`, and `~/Templates` will be gone from the stack:
 ```
 
 ![Visualization of popd command](../img/popd-vis.png)
-<small>
+<sup>
     Image author: Nguyen Hoang Duong ([@NOVAglow](http://github.com/NOVAglow)).
     [PNG file](../img/popd-vis.png) &mdash;
     [SVG source](../svg/popd-vis.svg) &mdash;
     [License (CC0)](../LICENSE)
-</small>
+</sup>
 
 `popd` won't do anything (but warns you) if the directory stack is empty.
 
