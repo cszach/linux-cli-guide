@@ -2,18 +2,14 @@
 <h1 align="center">Basic operations with directories</h1>
 
 <p align="center">
-    <big><big>
-        <b><a style="text-decoration: none"
-              href="#chapter-summary">Chapter Summary</a></b>
-    </big></big> &mdash;
-    <big><big>
-        <b><a style="text-decoration: none"
-              href="#chapter-summary-commands">Commands Summary</a></b>
-    </big></big> &mdash;
-    <big><big>
-        <b><a style="text-decoration: none"
-              href="#chapter-quiz">Chapter Quiz</a></b>
-    </big></big>
+    <b><a style="text-decoration: none"
+          href="#chapter-summary">Chapter Summary</a></b>
+    &mdash;    
+    <b><a style="text-decoration: none"
+          href="#chapter-summary-commands">Commands Summary</a></b>
+    &mdash;
+    <b><a style="text-decoration: none"
+          href="#chapter-quiz">Chapter Quiz</a></b>
 </p>
 
 <p>
