@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000px"
+   height="1000px"
+   viewBox="0 0 1000 1000"
+   version="1.1"
+   id="SVGRoot"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   sodipodi:docname="folder.svg">
+  <title
+     id="title1083">Materialized(TM) Blue Folder</title>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="480.30281"
+     inkscape:cy="491.34821"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1" />
+  <defs
+     id="defs26" />
+  <metadata
+     id="metadata29">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Materialized(TM) Blue Folder</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:date>26 September 2018</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Nguyen Hoang Duong</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:description>This is an SVG asset for 42tm's Bash Tutorial (http://github.com/42tm/bash-tutorial).</dc:description>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       transform="matrix(3.1161153,0,0,3.1161165,-2284.9227,-613.76392)"
+       id="g913"
+       style="stroke-width:1.40567076">
+      <rect
+         style="opacity:1;vector-effect:none;fill:#1da7aa;fill-opacity:1;fill-rule:evenodd;stroke:#5f998c;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         id="rect909"
+         width="196.92"
+         height="153.54318"
+         x="826.30475"
+         y="249.46176" />
+      <rect
+         y="354.48679"
+         x="578.56519"
+         height="118.57547"
+         width="196.92"
+         id="rect911"
+         style="opacity:1;vector-effect:none;fill:#50dee2;fill-opacity:1;fill-rule:evenodd;stroke:#5f998c;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         transform="matrix(1,0,0.52369343,0.8519068,0,0)" />
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot947"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(4.3802319,0,0,4.3802336,-2987.93,-1923.5097)"><flowRegion
+         id="flowRegion949"
+         style="text-align:center;text-anchor:middle"><rect
+           id="rect951"
+           width="154.20523"
+           height="67.512703"
+           x="741.71375"
+           y="592.91364"
+           style="text-align:center;text-anchor:middle"
+           ry="0" /></flowRegion><flowPara
+         id="flowPara953"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle">folder</flowPara></flowRoot>  </g>
+</svg>
