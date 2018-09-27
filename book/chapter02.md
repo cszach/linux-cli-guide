@@ -455,14 +455,14 @@ content to a text file: `echo` and `cat`, plus the use of I/O redirection.
 need to refresh your memory on this topic.
 
 In addition to the greater than sign (">") and the less than sign ("<") that
-we've learned in the section about I/O redirection, there are also the double
-greater than sign (">>"). The greater than sign is used to append standard
-output. For instance, if you have a non-empty file `demo.txt`, doing `echo "This
-is some text" > demo.txt` will overwrite `demo.txt`'s existing content, meaning
-`demo.txt` will only have the line "This is some text". But if you use the
-double greater than sign operator ("`echo "This is some text" >> demo.txt`"),
-the line "This is some text" will be added at the end of the file, and the
-file's existing content will still be there.
+we've learned in the section about I/O redirection, there is also the double
+greater than sign (">>"). The double greater than sign is used to append
+standard output. For instance, if you have a non-empty file `demo.txt`, doing
+`echo "This is some text" > demo.txt` will overwrite `demo.txt`'s existing
+content, meaning `demo.txt` will only have the line "This is some text". But if
+you use the double greater than sign operator ("`echo "This is some text" >>
+demo.txt`"), the line "This is some text" will be added at the end of the file,
+and the file's existing content will still be there.
 
 As for `cat`, this command will write whatever you've entered in to stdout if
 you give it no argument. You can try that out, just type `cat`, that's it, and
@@ -642,7 +642,7 @@ which we'll go over next).
 Do the following:
 1. Create a text file called "`myfile.txt`" in your home directory.
 2. Add some text content to `myfile.txt`.
-3. Run `ln -s myfile.txt myfile-link.txt`. This will create a link of
+3. Run `ln -s myfile.txt myfile-link.txt`. This will create a symbolic link of
 `myfile.txt` called `myfile-link.txt`.
 4. Run `cat myfile-link.txt`. `myfile.txt`'s content should be displayed.
 5. Change `myfile.txt`'s content.
@@ -705,3 +705,55 @@ that `myfile-link.txt` has is not updated, thus the link is now referring to a
 non-existent file.
 
 ![](../img/broken_symlink-vis.png)
+
+9. Now that you've completed this task, delete `myfile-link.txt` and
+`myfile.txt`.
+
+### Hard link
+
+A hard link is a file that has the same inode number as another file. Files that
+have the same inode number have the same content. When the content of one of
+those files is changed, the contents of other files are changed, too.
+
+To create a hard link, use `ln` without the `-s` option:
+
+```
+ln any-file-path link-name
+```
+
+The below Shell session demonstrates hard links.
+
+```
+$ cat > myfile.txt         # Create a new text file & add some content to it
+A demonstration of links.
+$ ln myfile.txt hlink.txt  # Create a hard link named "hlink.txt"
+$ cat hlink.txt            # hlink.txt shares the same content with myfile.txt
+A demonstration of links.
+$ echo "A demonstration of hard links." > myfile.txt
+$ cat hlink.txt
+A demonstration of hard links.
+$ echo "Second line to file." >> hlink.txt
+$ cat myfile.txt
+A demonstration of hard links.
+Second line to file.
+$ cat hlink.txt
+A demonstration of hard links.
+Second line to file.
+$ mv hlink.txt Templates/  # Moving hlink.txt to somewhere else
+$ cat myfile.txt
+A demonstration of hard links.
+Second line to file.
+$ cat Templates/hlink.txt  # Location doesn't matter
+A demonstration of hard links.
+Second line to file.
+```
+
+To see the inode number of a file, use `ls -i`:
+
+```
+$ ls -i myfile.txt Templates/hlink.txt
+16517901 myfile.txt  16517901 Templates/hlink.txt
+```
+
+In the example output above, both `myfile.txt` and `Templates/hlink.txt` have
+16517901 as the inode number.
