@@ -608,7 +608,7 @@ This table summarizes `rm`'s useful options:
 
 Symbolic links and hard links
 -----------------------------
-###### Tags: `#new-concept`, `#new-command`
+###### Tags: `#new-concept`, `#new-command`, `#extend`
 
 Suppose you want to have 2 files that have the same exact content. What would
 you do? Copy and paste? Ummm...no. There are two downsides to copying:
@@ -621,6 +621,7 @@ This is where links come into play. Symbolic links and hard links are some of
 the most useful things in GNU/Linux.
 
 ### Symbolic link
+###### Tags: `#new-concept`, `#new-command`
 
 A symbolic link (also called "symlink") is a pointer to another file. It refers
 to the target file by a relative path between it and the target file. Whenever
@@ -710,6 +711,7 @@ non-existent file.
 `myfile.txt`.
 
 ### Hard link
+###### Tags: `#new-concept`, `#new-command`, `#extend`
 
 A hard link is a file that has the same inode number as another file. Files that
 have the same inode number have the same content. When the content of one of
