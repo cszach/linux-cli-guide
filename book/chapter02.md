@@ -39,7 +39,7 @@ directory to the terminal screen
 You can also print multiple files out. Example:
 
 ```
-> cat file1 file2 file3
+$ cat file1 file2 file3
 This is content inside file1.
 This is content inside file2.
 This is content inside file3.
@@ -210,9 +210,9 @@ The `ls` lists files in a directory by specifying the path of the directory to
 it, but you can also specify file names to it. For example:
 
 ```
-> ls myfile1.txt
+$ ls myfile1.txt
 myfile1.txt
-> ls myfile1.txt myfile2.txt myfile3.txt
+$ ls myfile1.txt myfile2.txt myfile3.txt
 myfile1.txt myfile2.txt myfile3.txt
 ```
 
@@ -233,7 +233,7 @@ additional option, you can get `ls` to print out the atime or ctime instead of
 the mtime. The options for those are `-u` and `-c`, respectively.
 
 ```
-> ls -l -u README.md
+$ ls -l -u README.md
 -rwxrwxr-x. 1 jane jane 7170 Jul 25 14:30 README.md
 ```
 
@@ -241,7 +241,7 @@ The above example output shows that the last time the file `README.md` was read
 (the atime) is 25 of July, at 14:30.
 
 ```
-> ls -l -c punchcard
+$ ls -l -c punchcard
 -rwxrwxr-x. 1 you_create you_create 7170 May 20 13:45 punchcard
 ```
 
@@ -259,7 +259,7 @@ information of a file. Simply give it a file's path or directory's path. Below
 is an example.
 
 ```
-> stat git-punchcard
+$ stat git-punchcard
 File: git-punchcard
 Size: 7170      	Blocks: 24         IO Block: 4096   regular file
 Device: fd02h/64770d	Inode: 7215076     Links: 1
@@ -307,7 +307,7 @@ After knowing the file's actual type, `file` might also display more information
 that is specific to that file's type. Let's look at some examples.
 
 ```
-> file git-punchcard
+$ file git-punchcard
 git-punchcard: Python script, ASCII text executable
 ```
 
@@ -316,7 +316,7 @@ file. Furthermore, it's a Python script (code and script are text, basically).
 `file` also tells us that `git-punchcard` is executable.
 
 ```
-> file image.png
+$ file image.png
 image.png: PNG image data, 1100 x 400, 8-bit/color RGB, non-interlaced
 ```
 
@@ -325,7 +325,7 @@ In the above example, the file `image.png` appears to be a PNG image that is
 profile.
 
 ```
-> file venture.mp3
+$ file venture.mp3
 venture.mp3: Audio file with ID3 version 2.3.0, contains:MPEG ADTS, layer III, v1, 320 kbps, 44.1 kHz, JntStereo
 ```
 
@@ -344,14 +344,14 @@ Using `touch`
 Simply throw a name as an argument to `touch`:
 
 ```
-> touch newfile
+$ touch newfile
 ```
 
 That's it. In the example above, an empty file called `newfile` will be created.
 You can also create multiple new empty files.
 
 ```
-> touch newfile1 newfile2 newfile3
+$ touch newfile1 newfile2 newfile3
 ```
 
 ### Changing a file's timestamps
@@ -363,7 +363,7 @@ time (meaning the time when you ran the `touch` command). Let's have an example.
 Here we have a file called `image.png`:
 
 ```
-> stat image.png
+$ stat image.png
   File: image.png
   Size: 21292     	Blocks: 48         IO Block: 4096   regular file
 Device: fd02h/64770d	Inode: 7215568     Links: 1
@@ -378,8 +378,8 @@ Change: 2018-07-28 11:19:05.686188118 +0700
 As you can see, the file's timestamps vary. Now if we do `touch image.png`...
 
 ```
-> touch image.png
-> stat image.png
+$ touch image.png
+$ stat image.png
   File: image.png
   Size: 21292     	Blocks: 48         IO Block: 4096   regular file
 Device: fd02h/64770d	Inode: 7215568     Links: 1
@@ -420,7 +420,7 @@ running the command below will match `crash-report.txt`'s atime and mtime to
 `reffile`'s atime and mtime, respectively.
 
 ```
-> touch -r var/reffile crash-report.txt
+$ touch -r var/reffile crash-report.txt
 ```
 
 For `-t` option, you must specify a particular time as an argument. This time is
@@ -469,7 +469,7 @@ you give it no argument. You can try that out, just type `cat`, that's it, and
 hit Enter.
 
 ```
-> cat
+$ cat
 Line 1
 Line 1
 Line 2
@@ -484,11 +484,11 @@ file with text. The file does not necessary have to be presented before you do
 this.
 
 ```
-> cat > somefile
+$ cat > somefile
 Line 1  
 Line 2
 Line 3
-> cat somefile
+$ cat somefile
 Line 1
 Line 2
 Line 3
@@ -508,12 +508,12 @@ or Kate. Graphical editors should be easy for you to use, if you've had some
 experience with computers before.
 
 > **Note**: A desktop environment is a little bit out of scope to explain in
-> details in this tutorial, but basically it provides your computer a graphical
-> interface, usually along with graphical programs that share the same look.
+details in this tutorial, but basically it provides your computer a graphical
+interface, usually along with graphical programs that share the same look.
 
 > **Note**: You can invoke a graphical text editor from your terminal emulator
-> window. For example, to start GEdit - the default text editor in GNOME, type
-> "`gedit`". Of course, this assumes that you are in a graphical environment.
+window. For example, to start GEdit - the default text editor in GNOME, type
+"`gedit`". Of course, this assumes that you are in a graphical environment.
 
 - **Graphical text editors**: GEdit, KEdit, Atom, Geany, GVim, ...
 - **CLI text editors**: Nano, Vim, Emacs, ...
@@ -548,7 +548,7 @@ rm -r file1 file2 dir1 dir2
 `rm` will prompt you before every removal. Enter "y" to remove, "n" to keep.
 
 ```
-> rm -r -i file1 file2 file3 dir1 dir2
+$ rm -r -i file1 file2 file3 dir1 dir2
 rm: remove regular empty file 'file1'? y
 rm: remove regular empty file 'file2'? y
 rm: remove regular empty file 'file3'? n
@@ -588,7 +588,7 @@ files, or removing recursively (with the `-r` option). `rm` with `-I` prompts
 _only once_.
 
 ```
-> rm -I report.txt git-c.txt log-0245.txt log-0362.txt
+$ rm -I report.txt git-c.txt log-0245.txt log-0362.txt
 rm: remove 4 arguments? y
 ```
 
@@ -608,3 +608,100 @@ This table summarizes `rm`'s useful options:
 
 Symbolic links and hard links
 -----------------------------
+###### Tags: `#new-concept`, `#new-command`
+
+Suppose you want to have 2 files that have the same exact content. What would
+you do? Copy and paste? Ummm...no. There are two downsides to copying:
+1. Your hard disk drive is consumed more. This is especially true for large
+files. If a file is 50MB in size, its copy will also be 50MB, and now both the
+original file and the copy take up 100MB.
+2. If the original file's content is changed, you have to update the copy.
+
+This is where links come into play. Symbolic links and hard links are some of
+the most useful things in GNU/Linux.
+
+### Symbolic link
+
+A symbolic link (also called "symlink") is a pointer to another file. It refers
+to the target file by a relative path between it and the target file. Whenever
+you access a symbolic link, you are actually accessing the file that the link
+refers to.
+
+It's best to see what this means by doing an example. To create a symbolic link,
+we use the `ln` command:
+
+```
+ln -s target-file-path link-name
+```
+
+...replacing "`target-file-path`" with path to the file that you want to create
+a link of, and "`link-name`" with name of the link. The `ln` command, here,
+should be used with the `-s` option (otherwise it will create a hard link,
+which we'll go over next).
+
+Do the following:
+1. Create a text file called "`myfile.txt`" in your home directory.
+2. Add some text content to `myfile.txt`.
+3. Run `ln -s myfile.txt myfile-link.txt`. This will create a link of
+`myfile.txt` called `myfile-link.txt`.
+4. Run `cat myfile-link.txt`. `myfile.txt`'s content should be displayed.
+5. Change `myfile.txt`'s content.
+6. Run `cat myfile-link.txt` again. Is `myfile.txt`'s updated content displayed?
+
+```
+$ touch myfile.txt                     # Step 1
+$ cat > myfile.txt                     # Step 2
+Hello, World!
+$ ln -s myfile.txt myfile-link.txt     # Step 3
+$ cat myfile-link.txt                  # Step 4
+Hello, World!
+$ echo "Hello, student!" > myfile.txt  # Step 5: Changing myfile.txt's content
+$ cat myfile-link.txt                  # Step 6
+Hello, student!
+```
+
+![](../img/symlink-vis.png)
+
+7. Run `stat myfile.txt` and `stat myfile-link.txt` and see the sizes (labeled
+"`Size`"). Are the sizes different?
+
+```
+$ stat myfile.txt
+  File: myfile.txt
+  Size: 16        	Blocks: 8          IO Block: 4096   regular file
+  ...
+$ stat myfile-link.txt
+  File: myfile-link.txt -> myfile.txt
+  Size: 10        	Blocks: 0          IO Block: 4096   symbolic link
+  ...
+```
+
+As you can see above, `myfile.txt`'s size is 16KB, while the link's size is
+10KB. Even if `myfile.txt`'s content was larger, the link's size would still be
+10KB. This is what makes symbolic links useful.
+
+> **Note**: A large part of each of the `stat` command's output was replaced
+with "...".
+
+> **Note**: Remember that the link contains the _relative_ path between the link
+and the file that the link refers to. In this case, the link (`myfile-link.txt`)
+contains the path "myfile.txt". Each character is 1KB in size, the string
+"myfile.txt" has 10 characters, thus the link is 10KB in size. If the relative
+path was something different (i.e. longer or shorter), the link's size would be
+different. Thus, not all symbolic links are 10KB in size.
+
+8. Move `myfile.txt` to somewhere else (e.g. to `~/Templates`). Run
+`cat myfile-link.txt`. What happens?
+
+```
+$ mv myfile.txt Templates/  # Moving myfile.txt from its original location
+$ cat myfile-link.txt
+cat: myfile-link.txt: No such file or directory
+```
+
+A symbolic link refers to a file via a relative path between the link and the
+actual file. When you move `myfile.txt` to another location, the relative path
+that `myfile-link.txt` has is not updated, thus the link is now referring to a
+non-existent file.
+
+![](../img/broken_symlink-vis.png)
