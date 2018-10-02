@@ -42,7 +42,7 @@ in this guide, see [toc.md](toc.md)
 Preamble
 --------
 
-This is a GNU/Linux bash guide. The guide will go from the most simple commands
+This is a guide to using Bash on GNU/Linux operating systems. The guide will go from the most simple commands
 to more advanced ones, hence this guide can be used for learning (i.e. education
 purposes). New GNU/Linux users who wish to learn Bash commands can take this
 guide. For each command, we will also introduce the helpful options.
@@ -129,9 +129,9 @@ user's name).
 
 |Example input|Description|
 |:--:|---|
-|`cd /home/john/Pictures`|Move to directory `/home/john/Pictures` (absolute path).|
-|`cd ../Code/Project1`|Move to directory `../Code/Project1` (relative path). Remember that the `..` symbol is<br>used to refer to the parent directory, as discussed in the introduction above.|
-|`cd ~`|Move to the home directory. The `~` symbol refers to the home directory.|
+|`cd /home/john/Pictures`|Change current directory to `/home/john/Pictures` (absolute path).|
+|`cd ../Code/Project1`|Change current directory to `../Code/Project1` (relative path). Remember that the `..` symbol is<br>used to refer to the parent directory, as discussed in the introduction above.|
+|`cd ~`|Move to the home directory. The `~` symbol refers to the home directory, which is also available in the `$HOME` environment variable.|
 |`cd -`|Move to the previous directory that you were in. For example, if you were in `/home/john`,<br>and then you moved to `/home/john/Pictures/Family`, doing `cd -` will move you back<br>to `/home/john`.|
 |`cd ..`|Move to the parent directory.|
 |`cd .`|Move to the current directory. This is useless, but is still shown up as an example to get<br>you to remember what the dot symbol `.` is for.|
