@@ -629,7 +629,7 @@ you access a symbolic link, you are actually accessing the file that the link
 refers to.
 
 It's best to see what this means by doing an example. To create a symbolic link,
-we use the `ln` command:
+we use the `ln` (<b>l</b>i<b>n</b>k) command:
 
 ```
 ln -s target-file-path link-name
@@ -715,7 +715,8 @@ non-existent file.
 
 A hard link is a file that has the same inode number as another file. Files that
 have the same inode number have the same content. When the content of one of
-those files is changed, the contents of other files are changed, too.
+those files is changed, the contents of other files are changed, too. Deleting a
+file doesn't affect the other files.
 
 To create a hard link, use `ln` without the `-s` option:
 
@@ -759,3 +760,17 @@ $ ls -i myfile.txt Templates/hlink.txt
 
 In the example output above, both `myfile.txt` and `Templates/hlink.txt` have
 16517901 as the inode number.
+
+### Symbolic link vs. Hard link
+
+So which one to choose? Symbolic link or hard link? It actually depends, because
+each has its own advantages and disadvantages. Hard links are great, because
+they use inode referencing: You can say that the inode is the thing that
+actually holds the content, and any file linked to it has that content. Thus
+each file in a group of files with the same inode number is independent: Moving
+or deleting a file does not have any effect on the other files. But hard links
+don't work across filesystems, because each filesystem has its own way of
+handling inode numbering. Some filesystems don't even have inode numbering at
+all, like FAT32. Symbolic links, on the other hand, may work across filesystems,
+but symbolic links are inconsistent: If the target file is moved, symbolic links
+pointing to it will all be broken.
