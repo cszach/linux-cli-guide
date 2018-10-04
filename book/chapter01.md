@@ -46,12 +46,8 @@ a small part of a file system on a typical GNU/Linux machine, according to the
 hierarchy.
 
 ![File system hierarchy illustration](../img/fsh.png)
-<sup>
-    Image author: Nguyen Hoang Duong ([@NOVAglow](http://github.com/NOVAglow)).
-    [PNG file](../img/fsh.png) &mdash;
-    [SVG source](../svg/fsh_ex.svg) &mdash;
-    [License (CC0)](../LICENSE)
-</sup>
+**Figure 1.1** Each folder can contain other folders and files. Thus this system
+is hierarchical.
 
 In a hierarchical file system like this, each file and folder has its own
 address (commonly called **paths**). There are 2 types of paths:
@@ -172,12 +168,7 @@ directory. However, `pushd` does one more thing: adding the new directory to the
 directory stack.
 
 ![Visualization of pushd command](../img/pushd-vis.png)
-<sup>
-    Image author: Nguyen Hoang Duong ([@NOVAglow](http://github.com/NOVAglow)).
-    [PNG file](../img/pushd-vis.png) &mdash;
-    [SVG source](../svg/pushd-vis.svg) &mdash;
-    [License (CC0)](../LICENSE)
-</sup>
+**Figure 1.2** This image illustrates the `pushd` command in action.
 
 > **Note**: `cd .` is useless, but `pushd .` can be useful.
 
@@ -260,12 +251,8 @@ you will be moved to `~/Videos`, and `~/Templates` will be gone from the stack:
 ```
 
 ![Visualization of popd command](../img/popd-vis.png)
-<sup>
-    Image author: Nguyen Hoang Duong ([@NOVAglow](http://github.com/NOVAglow)).
-    [PNG file](../img/popd-vis.png) &mdash;
-    [SVG source](../svg/popd-vis.svg) &mdash;
-    [License (CC0)](../LICENSE)
-</sup>
+**Figure 1.3** This image illustrates the `popd` command in action. After
+popping `~/Templates`, `~/Videos` becomes the end of the stack.
 
 `popd` won't do anything (but warns you) if the directory stack is empty.
 
