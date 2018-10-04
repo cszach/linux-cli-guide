@@ -5,8 +5,11 @@
 [`head`](#head-and-tail), [`tail`](#head-and-tail), [`stat`](#stat),
 [`file`](#file), [`touch`](#using-touch)  
 **Commands extended**: [`ls`](#viewing-a-files-timestamp-using-ls)  
-**New concepts**: [File handles](#file-handles),
-[File timestamps](#notion-of-file-timestamp--types-of-file-timestamps-in-gnulinux)
+**New concepts**: [File handles](#file-handles), [File timestamps][la1],
+[Symbolic link](#symbolic-link), [Hard link](#hard-link),
+[Inode number](#inode-def)
+
+[la1]: #notion-of-file-timestamp--types-of-file-timestamps-in-gnulinux
 
 Table of Content
 ----------------
@@ -662,6 +665,7 @@ Hello, student!
 ```
 
 ![](../img/symlink-vis.png)
+**Figure 2.1** `myfile-link.txt` is a symbolic link that points to `myfile.txt`.
 
 7. Run `stat myfile.txt` and `stat myfile-link.txt` and see the sizes (labeled
 "`Size`"). Are the sizes different?
@@ -706,6 +710,9 @@ that `myfile-link.txt` has is not updated, thus the link is now referring to a
 non-existent file.
 
 ![](../img/broken_symlink-vis.png)
+**Figure 2.2** `myfile.txt` is moved into `~/Templates` but `myfile-link.txt` is
+still pointing to `./myfile.txt` which is now non-existent. Such links that
+point to non-existent destination are considered to be broken.
 
 9. Now that you've completed this task, delete `myfile-link.txt` and
 `myfile.txt`.
@@ -713,10 +720,10 @@ non-existent file.
 ### Hard link
 ###### Tags: `#new-concept`, `#new-command`, `#extend`
 
-A hard link is a file that has the same inode number as another file. Files that
-have the same inode number have the same content. When the content of one of
-those files is changed, the contents of other files are changed, too. Deleting a
-file doesn't affect the other files.
+A hard link is a file that has the same inode number as another file.
+<a name="inode-def">Files that have the same inode number have the same content.
+</a>When the content of one of those files is changed, the contents of other
+files are changed, too. Deleting a file doesn't affect the other files.
 
 To create a hard link, use `ln` without the `-s` option:
 
@@ -772,6 +779,9 @@ has that content, thus moving or deleting a file does not have any effect on the
 other files.
 
 ![Visualization of hard links](../img/hard_link-vis.png)
+**Figure 2.3** Files that share the same inode number have the same content. To
+create a hard link is to create a file with the same inode number as another
+file.
 
 But hard links don't work across filesystems, because each filesystem has its
 own way of handling inode numbering. Some filesystems don't even have inode
