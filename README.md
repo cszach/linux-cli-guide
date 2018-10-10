@@ -21,25 +21,26 @@ Repository structure
 - `tags_glossary.md`: Glossary for the tags used in the guide
 - `toc.md`: Full table of content which lists all the headers in the guide
 - `img/`: Images used in the guide
+- `img/thumb/`: Thumbnails of images
 - `svg/`: Original SVG images of some of the exported PNG images that appear in
 the guide
-- `svg/assets/`: Shared SVG assets across many of the SVGs
+- `script/`: Some helpful scripts for repository development
 - `repo-icon.png`: The icon for the repository, seen above
 - `LICENSE`: This repository's license text
 
-Related Bash guides/references on GitHub
-----------------------------------------
+Other Bash guides/references on GitHub
+--------------------------------------
 
-- [The Art of Command Line][rr1] by [jlevy][rra1]: A guide that covers both
-Bash commands and Bash programming. However it assumes that you already knew
-the basic stuff.
-- [Pure Bash Bible][rr2] by [dylanaraps][rra2]: A document focused on Bash
-programming "using only built-in `bash` features".
-- [42tm's Bash Reference][rr3] by [42tm][rra3]: A reference for Bash from 42tm
-that gets upstreamed with 42tm's Bash Guide.
-- [`bash-guide`][rr4] by [Idnan][rra4]: A supposedly guide for Bash, however it
-is more of a reference because the explanations are short and some (if not all)
-technical terms are not explained.
+- [**The Art of Command Line**][rr1] by [**jlevy**][rra1]: A guide that covers
+both Bash commands and Bash programming. However it assumes that you already
+knew the basic stuff.
+- [**Pure Bash Bible**][rr2] by [**dylanaraps**][rra2]: A document focused on
+Bash programming "using only built-in `bash` features".
+- [**42tm's Bash Reference**][rr3] by [**42tm**][rra3]: A reference for Bash
+from 42tm that gets upstreamed with 42tm's Bash Guide.
+- [**`bash-guide`**][rr4] by [**Idnan**][rra4]: A supposedly guide for Bash,
+however it is more of a reference because the explanations are short and some
+(if not all) technical terms are not explained.
 
 [rr1]: http://github.com/jlevy/the-art-of-command-line
 [rra1]: http://github.com/jlevy
@@ -58,3 +59,6 @@ License
 By licensing this work under the [Creative Commons Zero](LICENSE) (CC0) license,
 we dedicate it to the Public Domain. We do this for the benefit of the public at
 large.
+
+All text & image contents, as well as scripts found in `script/`, are all in the
+Public Domain.
