@@ -28,9 +28,9 @@ images = [
      author_01, cc0],
     ["symlink-vis.png", "Symbolic link - Visualization", "Chapter 2",
      author_01, cc0],
-    ["broken_symlink-vis.png", "Broken Symbolic link - Visualization)",
+    ["broken_symlink-vis.png", "Broken Symbolic link - Visualization",
     "Chapter 2",  author_01, cc0],
-    ["hard_link-vis.png", "Hard link - Visualization)", "Chapter 2",
+    ["hard_link-vis.png", "Hard link - Visualization", "Chapter 2",
      author_01, cc0]
 ]
 
