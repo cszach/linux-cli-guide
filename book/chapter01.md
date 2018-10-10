@@ -15,16 +15,21 @@
 <p>
 </p>
 
-**New commands**: [`pwd`](#pwd), [`cd`](#moving-between-directories-using-cd),
-[`pushd`](#pushd), [`dirs`](#dirs), [`popd`](#popd), [`ls`](#ls),
-[`tree`](#tree), [`mkdir`](#creating-a-new-directory),
-[`rm`](#removing-a-directory)  
-**New concepts**: [Linux file system hierarchy][al1], [Root folder (`/`)](#root-dir),
-[Absolute path](#abs-path), [Relative path](#rev-path), [Current working directory](#pwd),
-[Stack][al2], [Directory stack](#dir-stack)
+**New commands**: [`pwd`](#pwd), [`cd`][al2], [`pushd`](#pushd),
+[`dirs`](#dirs), [`popd`](#popd), [`ls`](#ls), [`tree`](#tree), [`mkdir`][al6],
+[`rm`][al7]  
+**New concepts**: [Linux file system hierarchy][al1],
+[Root folder (`/`)](#root-dir), [Absolute path](#abs-path),
+[Relative path](#rev-path), [Current working directory](#pwd), [Stack][al4],
+[Directory stack](#dir-stack)
 
 [al1]: #brief-description-of-the-linux-file-system-hierarchy
-[al2]: #the-notion-of-stack-and-directory-stack
+[al2]: #moving-between-directories-using-cd
+[al3]: #moving-between-directories--advanced--pushd--popd--and-dirs
+[al4]: #the-notion-of-stack-and-directory-stack
+[al5]: #viewing-items-in-a-directory--ls-and-tree
+[al6]: #creating-a-new-directory
+[al7]: #removing-a-directory
 
 - - -
 
@@ -34,7 +39,28 @@ If you are relatively new to the GNU/Linux system, you might want to read the
 brief description of the Linux file system first, before diving into the
 commands.
 
-### Brief description of the Linux file system hierarchy
+Table of Content
+----------------
+
+1. [Brief description of the Linux file system hierarchy][al1]
+2. [`pwd`](#pwd)
+3. [Moving between directories using `cd`][al2]
+4. [Moving between directories, advanced: `pushd`, `popd`, and `dirs`][al3]
+    1. [The notion of stack and directory stack][al4]
+    2. [`pushd`](#pushd)
+    3. [`dirs`](#dirs)
+    4. [`popd`](#popd)
+5. [Viewing items in a directory: `ls` and `tree`][al5]
+    1. [`ls`](#ls)
+    2. [`tree`](#tree)
+6. [Creating a new directory][al6]
+7. [Removing a directory][al7]
+8. [Chapter Summary](#chapter-summary)
+9. [Chapter Summary: Commands](#chapter-summary-commands)
+10. [Chapter Quiz](#chapter-quiz)
+
+Brief description of the Linux file system hierarchy
+----------------------------------------------------
 ###### Tags: `#new-concept`, `#directory`, `#folder`, `#file`, `#hierarchy`, `#path`
 
 The files & folders system in GNU/Linux (so-called "Linux") is hierarchical,
@@ -87,7 +113,8 @@ interface, while the term "directory" is used more when talking about the
 command line interface. Hence, in this document, you will see the term
 "directory" appears more.
 
-### `pwd`
+`pwd`
+-----
 ###### Tags: `#new-command`, `#new-concept`, `#directory`
 
 At any time in the command line, you are in a directory, and it's called the
@@ -97,7 +124,8 @@ jumped into the command line, the working directory is the home directory
 (either `/root` or `/home/USERNAME`, replacing "USERNAME" with the logged in
 user's name).
 
-### Moving between directories using `cd`
+Moving between directories using `cd`
+-------------------------------------
 ###### Tags: `#new-command`, `#directory`, `#navigating`
 
 `cd` (<b>c</b>hange <b>d</b>irectory) moves you to another directory on the
@@ -113,11 +141,12 @@ wants to go to.
 |`cd ..`|Move to the parent directory.|
 |`cd`|`cd` with no option and argument, which is the same as `cd ~`, because by default, `cd` moves you to your home directory.|
 
-### Moving between directories, advanced: `pushd`, `popd`, and `dirs`
+Moving between directories, advanced: `pushd`, `popd`, and `dirs`
+-----------------------------------------------------------------
 ###### Tags: `#new-command`, `#new-concept`, `#directory`, `#navigating`
 
 
-#### The notion of stack and directory stack
+### The notion of stack and directory stack
 ###### Tags: `#new-concept`, `#directory`
 
 Stacks to computer science is like telescopes to astronomy. In computing, you
@@ -160,7 +189,7 @@ what a directory stack is. A directory stack is a stack containing absolute
 paths that we've pushed into it. You will see it in action by learning the
 `pushd`, `popd`, and `dirs` commands below.</a>
 
-#### `pushd`
+### `pushd`
 ###### Tags: `#new-command`, `#directory`, `#navigating`
 
 Just like `cd`, `pushd` (**push** <b>d</b>irectory) moves you to a new
@@ -172,7 +201,7 @@ directory stack.
 
 > **Note**: `cd .` is useless, but `pushd .` can be useful.
 
-#### `dirs`
+### `dirs`
 ###### Tags: `#new-command`, `#directory`
 
 `dirs` (<b>dir</b>ectory <b>s</b>tack) displays the directory stack.
@@ -224,7 +253,7 @@ Useful options for `dirs`, summarized in a table:
 |  `-p`  |**p**er line|Print each element on its own line.                                                |
 |  `-c`  | **c**lear  |Clear the stack: Remove all the items in the directory stack.                      |
 
-#### `popd`
+### `popd`
 ###### Tags: `#new-command`, `#directory`
 
 `popd` (**pop** <b>d</b>irectory) pops the most recently `pushd`ed path, and
@@ -256,10 +285,11 @@ popping `~/Templates`, `~/Videos` becomes the end of the stack.
 
 `popd` won't do anything (but warns you) if the directory stack is empty.
 
-### Viewing items in a directory: `ls` and `tree`
+Viewing items in a directory: `ls` and `tree`
+---------------------------------------------
 ###### Tags: `#new-command`, `#view`, `#directory`
 
-#### `ls`
+### `ls`
 ###### Tags: `#new-command`, `#view`, `#directory`
 
 `ls` (<b>l</b>i<b>s</b>t) is used to list files. If you only enter `ls` (with
@@ -329,7 +359,7 @@ F-IT1/:
 Word
 ```
 
-#### `tree`
+### `tree`
 ###### Tags: `#new-command`, `#view`, `#directory`, `#hierarchy`
 
 `ls dir` lists the files and folders inside the `dir` directory, but if `dir`
@@ -373,7 +403,8 @@ to throw the `-a` option in. Here are some useful `tree` options:
 |  `-d`  |**d**irectory|List folders only, don't list files.                                  |
 |  `-f`  |  **f**ull   |Print the absolute path, not just the name of the files/folders found.|
 
-### Creating a new directory
+Creating a new directory
+------------------------
 ###### Tags: `#new-command`, `#new`, `#directory`
 
 To create a new directory, use the `mkdir` (<b>m</b>a<b>k</b>e <b>dir</b>ectory)
@@ -401,7 +432,8 @@ parent directories for you (in case they don't exist), simply feed it with the
 mkdir -p /home/john/Programs/newdir
 ```
 
-### Removing a directory
+Removing a directory
+--------------------
 ###### Tags: `#new-command`, `#remove`, `#directory`
 
 `rm -r dir`, replacing "dir" with the name of the directory you want to remove.
