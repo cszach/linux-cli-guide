@@ -13,10 +13,11 @@ folder, program) is the only prerequisite for taking this guide, although
 besides that, you should also have a GNU/Linux distribution installed (either
 on your computer's disk or in a virtual machine) so that you can learn by doing.
 
-Repository structure goes as follows:
+Repository structure
+--------------------
 
 - `README.md`: This document
-- `book/`: Chapters of the guide
+- `book/`: Contains the guide's chapters written in Markdown
 - `tags_glossary.md`: Glossary for the tags used in the guide
 - `toc.md`: Full table of content which lists all the headers in the guide
 - `img/`: Images used in the guide
@@ -57,6 +58,3 @@ License
 By licensing this work under the [Creative Commons Zero](LICENSE) (CC0) license,
 we dedicate it to the Public Domain. We do this for the benefit of the public at
 large.
-
-In the tutorial, credits of images are written under each image. All images as
-well as text content are in the Public Domain.
