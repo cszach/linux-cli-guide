@@ -19,7 +19,6 @@ cc0 = {
 # Collection of images
 #
 # images = [ [file_name, title, where, author, license], ... ]
-
 images = [
     ["fsh.png", "Filesystem of Linux operating systems (Visualization)",
      "Chapter 1", author_01, cc0],
@@ -27,10 +26,12 @@ images = [
      author_01, cc0],
     ["popd-vis.png", "GNU/Linux's popd command (Visualization)", "Chapter 1",
      author_01, cc0],
-    ["symlink-vis.png", "Symbolic link - Visualization", "Chapter 2", author_01, cc0],
+    ["symlink-vis.png", "Symbolic link - Visualization", "Chapter 2",
+     author_01, cc0],
     ["broken_symlink-vis.png", "Broken Symbolic link - Visualization)",
     "Chapter 2",  author_01, cc0],
-    ["hard_link-vis.png", "Hard link - Visualization)", "Chapter 2", author_01, cc0]
+    ["hard_link-vis.png", "Hard link - Visualization)", "Chapter 2",
+     author_01, cc0]
 ]
 
 # **************************
@@ -53,10 +54,12 @@ for img in images:
     # Get SVG source within the repository of image (i.e. stored in svg/)
     # Should be checked later if the source exists because some images might not
     # be SVG in the first place.
+    # (img[0] -> Image title)
     svgsrc = "svg/" + img[0][0:len(img[0]) - img[0][::-1].index(".")] + "svg"
 
     # Get the link to the license which the image is licensed under,
     # and add that link to templic if it hasn't been added already.
+    # (img[4] -> License (dictionary type))
     if img[4]["link"] in templic:
         md_imglic = "lic%d" % templic.index(img[4]["link"])
     else:
@@ -64,6 +67,7 @@ for img in images:
         md_imglic = "lic%d" % (len(templic) - 1)
 
     # Process author's field
+    # img[3] -> Image's author (dictionary type)
     md_author = img[3]["name"]
 
     if img[3]["profile"][:18] == "http://github.com/":
@@ -78,11 +82,7 @@ for img in images:
                       "img/thumb/" + img[0],
                       ("[SVG](%s) &mdash; " % svgsrc) if isfile("../" + svgsrc) else "",
                       "img/" + img[0],
-                      img[1],
-                      img[2],
-                      md_author,
-                      img[4]["name"],
-                      md_imglic
+                      img[1], img[2], md_author, img[4]["name"], md_imglic
                      )
             )
 
