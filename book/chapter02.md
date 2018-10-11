@@ -1,15 +1,31 @@
 <h3 align="center">Chapter 2</h3>
 <h1 align="center">Basic operations with files</h1>
 
+<p align="center">
+    <b><a style="text-decoration: none"
+          href="#chapter-summary">Chapter Summary</a></b>
+    &mdash;    
+    <b><a style="text-decoration: none"
+          href="#chapter-summary-commands">Commands Summary</a></b>
+    &mdash;
+    <b><a style="text-decoration: none"
+          href="#chapter-quiz">Chapter Quiz</a></b>
+</p>
+
 **New commands**: [`cat`](#cat-and-tac), [`tac`](#cat-and-tac), [`less`](#less),
 [`head`](#head-and-tail), [`tail`](#head-and-tail), [`stat`](#stat),
 [`file`](#file), [`touch`](#using-touch)  
 **Commands extended**: [`ls`](#viewing-a-files-timestamp-using-ls)  
-**New concepts**: [File handles](#file-handles), [File timestamps][la1],
-[Symbolic link](#symbolic-link), [Hard link](#hard-link),
-[Inode number](#inode-def)
+**New concepts**: [File handles](#file-handles), [File timestamps][la1]
 
 [la1]: #notion-of-file-timestamp--types-of-file-timestamps-in-gnulinux
+
+- - -
+
+Dealing with files is one of the most important tasks to do on a computer. In
+this chapter, you will be greeted with some commands that are used to perform
+very basic file operations, such as creating, editing, and deleting files. In
+the next chapter, more advanced commands will be introduced.
 
 Table of Content
 ----------------
@@ -607,3 +623,38 @@ This table summarizes `rm`'s useful options:
 |`-i`||Prompt before _every_ removal.|
 |`-I`||Prompt once before removing recursively or removing more than 3 files.|
 |`-f` (or `--force`)|<b>f</b>orce|If a specified file or directory does not exist, ignore and move on. Also, never prompt the user to confirm.|
+
+Chapter Summary
+---------------
+
+Well done! You've finished chapter 2! :tada: :tada: :tada:
+
+Let's review what we've learned in this chapter.
+
+1. `cat`, `tac`, and `less` can be used to view a file's content. `head` and
+`tail` are used to view first or last few lines only.
+2. Each file has 3 file handles open for use:
+    - stdin: Where the program reads input
+    - stdout: Where the program writes output
+    - stderr: Where the program reports errors occurred while running
+3. I/O redirection: "`>`" redirects stdout, "`<`" redirects stdin, "`2>`"
+redirects stderr, "`>&`" redirects both stdout and stderr, and "`>>`" appends
+stdout.
+4. A file's timestamp is the time when an event happened to a file (e.g. read
+from, written to, permission changed, ...). In GNU/Linux, every file has 3 file
+timestamps:
+    - atime (<b>a</b>ccess **time**): When the file was last read
+    - mtime (<b>m</b>odification **time**): When the file's content was last modified
+    - ctime (<b>c</b>hange **time**): When anything of the file was last changed, which includes atime,
+    mtime, permissions, owner, mode, ...
+5. `ls -l` shows a file's mtime. `ls -lc` shows a file's ctime, `ls -lu` shows
+a file's atime
+6. The `stat` utility shows information for a file in great details, while the
+`file` utility shows information specific to a file's type.
+7. `touch` has two functions: Creating a new file and changing a file's
+timestamp(s).
+8. Text file editing is usually done using a text editor, like Vim (for command
+line environment) or Atom (for graphical user interface).
+9. `rm` can be used to delete files. `rm` can delete both files and directories.
+
+Take a break, because there's more to operations with files. :cake:
