@@ -8,9 +8,17 @@
 Text Credits
 ------------
 
+The following table shows authors and contributors who have made changes to the
+text content of the guide, by parts of the guide.
+
+> **Note**: "Author" is the person who created the document and wrote some text
+to it. "Contributors" are people who edited the text (excluding the author).
+
 ||Author|Contributors|
 |:---:|:---:|---|
-|Preamble|Nguyen Hoang Duong ([@NOVAglow])||
+|**Preamble**|Nguyen Hoang Duong ([@NOVAglow][aut0])||
+|**Chapter 1**|Nguyen Hoang Duong ([@NOVAglow][aut0])||
+|**Chapter 2**|Nguyen Hoang Duong ([@NOVAglow][aut0])||
 
 Image Credits
 -------------
