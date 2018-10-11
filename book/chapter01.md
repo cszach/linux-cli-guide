@@ -12,9 +12,6 @@
           href="#chapter-quiz">Chapter Quiz</a></b>
 </p>
 
-<p>
-</p>
-
 **New commands**: [`pwd`](#pwd), [`cd`][al2], [`pushd`](#pushd),
 [`dirs`](#dirs), [`popd`](#popd), [`ls`](#ls), [`tree`](#tree), [`mkdir`][al6],
 [`rm`][al7]  
