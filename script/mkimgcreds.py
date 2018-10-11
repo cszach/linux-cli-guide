@@ -50,6 +50,9 @@ template = "|![](%s) <br> %s [PNG](%s)|**Title**: %s <br> **Shown in**: %s " \
 # This is used to create link shortcuts to the licenses.
 templic = []
 
+# Just like templic but for authors' profiles
+tempau = []
+
 for img in images:
     # Get SVG source within the repository of image (i.e. stored in svg/)
     # Should be checked later if the source exists because some images might not
@@ -66,16 +69,23 @@ for img in images:
         templic.append(img[4]["link"])
         md_imglic = "lic%d" % (len(templic) - 1)
 
+    # Like above operation but for the author's profile link
+    if img[3]["profile"] in tempau:
+        auth_link_var = "aut%d" % tempau.index(img[3]["profile"])
+    elif img[3]["profile"] != "":
+        tempau.append(img[3]["profile"])
+        auth_link_var = "aut%d" % (len(tempau) - 1)
+
     # Process author's field
     # img[3] -> Image's author (dictionary type)
     md_author = img[3]["name"]
 
     if img[3]["profile"][:18] == "http://github.com/":
         # Add link to GitHub profile. The format is: "NAME (@GITHUB_USERNAME)"
-        md_author += (" ([@%s](%s))" % (img[3]["profile"][18:], img[3]["profile"]))
+        md_author += (" ([@%s][%s])" % (img[3]["profile"][18:], auth_link_var))
     elif img[3]["profile"] != "":
         # Add link to any online profile if one is provided
-        md_author = "[%s](%s)" % (md_author, img[3]["profile"])
+        md_author = "[%s](%s)" % (md_author, auth_link_var)
 
     # *** PRINT MARKDOWN OUTPUT FOR TABLE ROW ***
     print(template % (
@@ -90,3 +100,8 @@ for img in images:
 print()
 for lic_index in range(0, len(templic)):
     print("[lic%d]: %s" % (lic_index, templic[lic_index]))
+
+# Link shortcuts to authors' profiles
+print()
+for aut_index in range(0, len(tempau)):
+    print("[aut%d]: %s" % (aut_index, tempau[aut_index]))
