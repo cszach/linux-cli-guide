@@ -568,7 +568,7 @@ ls [options] [directories]
 | Option |  Hint   |                                       Description                                       |
 | :---:  |   ---   |                                           ---                                           |
 |  `-A`  | **a**ll |List all files and folders, including the hidden ones.                                   |
-|  `-l`  |**l**ong |Display list in long format (see below for more information).                            |
+|  `-l`  |**l**ong |Display list in long format.                                                             |
 |  `-s`  |**s**ize |Display size of each file, should be used with the -h option.                            |
 |  `-h`  |**h**uman|Display size in a human readable form (e.g. "5.5M" for 5.5 megabytes instead of "5500"). |
 
