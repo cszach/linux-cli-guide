@@ -63,8 +63,20 @@ This is content inside file2.
 This is content inside file3.
 ```
 
+`cat` can also number the lines if you want to with the `-n` option:
+
+```
+$ cat -n doc.txt
+     1	The cat command has only one option
+     2	that is both helpful and commonly used.
+     3	And that is the -n option.
+```
+
 The `tac` command is similar to `cat`, but it prints the file in the reversed
 order (last line in the file is printed first, then go up until the first line).
+
+> **Note**: `tac`'s options are different from those of `cat`, and those options
+aren't used much, so you can safely ignore `tac`'s options.
 
 ### `less`
 
@@ -80,6 +92,28 @@ text file with up and down arrow keys for scrolling. And that program is `less`.
 Doing `less large_file.txt` allows you to view the file `large_file.txt`, and
 you can use the up and down arrow keys for scrolling. To return to the command
 prompt, hit the Q key.
+
+Some useful `less`'s options are:
+
+|Option|         Hint          |                 Description                 |
+|:---: |         :---:         |                     ---                     |
+| `-I` |Case-<b>i</b>nsensitive|Search results are case-insensitive.         |
+| `-M` |                       |Show current position within the file.       |
+| `-N` |     <b>N</b>umber     |Number the lines (like `cat`'s `-n` option). |
+
+Once you've entered `less`'s interface, there are several commands you can use
+to perform operations, such as navigating and finding text.
+
+|   Command   |   Hint    |             Description             |
+|    :---:    |   :---:   |                 ---                 |
+|   (Space)   |           |Next page.                           |
+| (Up arrow)  | Go **up** |Go up 1 line.                        |
+|(Down arrow) |Go **down**|Go down 1 line.                      |
+|     `/`     |           |Search for text.                     |
+|     `?`     |           |Just like `/` but searches backward. |
+|     `n`     |<b>n</b>ext|Go to next search result.            |
+|     `N`     |           |Opposite of `n`.                     |
+|     `q`     |<b>q</b>uit|Exit `less`.                         |
 
 ### `head` and `tail`
 
@@ -424,12 +458,12 @@ If you don't want `touch` to update all of the file timestamps but a particular
 timestamp only, there are `touch`'s options for that. Below is a table of useful
 `touch` options. The option(s) must be specified before the file name(s).
 
-|Option|          Hint          |                                 Description                                 |
-|:---: |         :---:          |                                     ---                                     |
-| `-a` |   <b>a</b>ccess time   |Change the access time (atime) only.                                         |
-| `-m` |<b>m</b>odification time|Change the modification time (mtime) only.                                   |
-| `-r` |    <b>r</b>eference    |Make a file's atime and mtime the same as a reference file's atime and mtime.|
-| `-t` |      <b>t</b>ime       |Manually specify time instead of using the current time.                     |
+|  Option   |          Hint          |                                   Description                                   |
+|   :---:   |         :---:          |                                       ---                                       |
+|   `-a`    |   <b>a</b>ccess time   |Change the access time (atime) only.                                             |
+|   `-m`    |<b>m</b>odification time|Change the modification time (mtime) only.                                       |
+| `-r` FILE |    <b>r</b>eference    |Make a file's atime and mtime the same as _FILE_'s atime and mtime.              |
+| `-t` TIME |      <b>t</b>ime       |Update to _TIME_ instead of current time (_TIME_ format: [[CC]YY]MMDDhhmm[.ss]). |
 
 For `-r` option, you must also specify a reference file as an argument. This
 option updates the targeted file's atime and mtime to match the reference file's
@@ -619,7 +653,7 @@ This table summarizes `rm`'s useful options:
 
 |Option|Hint|Description|
 |:---:|:---:|---|
-|`-r` (or `--recursive`)|<b>r</b>ecursively|Remove directories recursively. Must be invoked when removing a non-empty directory.|
+|`-r` (or `--recursive`)|<b>r</b>ecursively|Remove directories recursively. This option must be invoked when removing a directory.|
 |`-i`||Prompt before _every_ removal.|
 |`-I`||Prompt once before removing recursively or removing more than 3 files.|
 |`-f` (or `--force`)|<b>f</b>orce|If a specified file or directory does not exist, ignore and move on. Also, never prompt the user to confirm.|
@@ -658,3 +692,284 @@ line environment) or Atom (for graphical user interface).
 9. `rm` can be used to delete files. `rm` can delete both files and directories.
 
 Take a break, because there's more to operations with files. :cake:
+
+Chapter Summary: Commands
+-------------------------
+
+### `cat`
+
+Display a file's content or multiple files' content concatenated together.
+
+```
+$ cat file1.txt
+Go not unto the Usenet for advice, for you will be told both yea and nay (and
+quite a few things that just have nothing at all to do with the question).
+	-- seen in a .sig somewhere
+$ cat file1.txt file2.txt
+Go not unto the Usenet for advice, for you will be told both yea and nay (and
+quite a few things that just have nothing at all to do with the question).
+	-- seen in a .sig somewhere
+Zero Defects, n.:
+	The result of shutting down a production line.
+```
+
+Usage:
+
+```
+cat [option(s)] [file(s)]
+```
+
+Probably the only commonly used helpful option is `-n` (n for "number"), which
+index the lines.
+
+```
+$ cat -n fav-fortune.txt
+     1	Topologists are just plane folks.
+     2		Pilots are just plane folks.
+     3			Carpenters are just plane folks.
+     4				Midwest farmers are just plain folks.
+     5			Musicians are just playin' folks.
+     6		Whodunit readers are just Spillane folks.
+     7	Some Londoners are just P. Lane folks.
+```
+
+### `tac`
+
+Just like `cat` but the order of lines is reversed.
+
+```
+$ cat justafile.txt
+This is line 1.
+This is line 2.
+This is line 3.
+$ tac justafile.txt
+This is line 3.
+This is line 2.
+This is line 1.
+```
+
+<a name="tacre">
+
+> **Note**: If given multiple files, `tac` prints each file in reverse direction
+of lines instead of concatenating all the files and reverse the concatenated
+content. Compare the output of `tac file1.txt file2.txt` below and
+`cat file1.txt file2.txt` (in `cat`'s summary above) and you'll see.
+
+</a>
+
+```
+$ tac file1.txt file2.txt
+	-- seen in a .sig somewhere
+quite a few things that just have nothing at all to do with the question).
+Go not unto the Usenet for advice, for you will be told both yea and nay (and
+	The result of shutting down a production line.
+Zero Defects, n.:
+```
+
+### `less`
+
+View a file with scrolling for navigation. Useful for viewing large text files.
+
+```
+less [option(s)] [file(s)]
+```
+
+`[option(s)]` may include:
+
+|Option|         Hint          |                 Description                 |
+|:---: |         :---:         |                     ---                     |
+| `-I` |Case-<b>i</b>nsensitive|Search results are case-insensitive.         |
+| `-M` |                       |Show current position within the file.       |
+| `-N` |     <b>N</b>umber     |Number the lines (like `cat`'s `-n` option). |
+
+`less` also has several commands that you can use while viewing the text file.
+
+|   Command   |   Hint    |             Description             |
+|    :---:    |   :---:   |                 ---                 |
+|   (Space)   |           |Next page.                           |
+| (Up arrow)  | Go **up** |Go up 1 line.                        |
+|(Down arrow) |Go **down**|Go down 1 line.                      |
+|     `/`     |           |Search for text.                     |
+|     `?`     |           |Just like `/` but searches backward. |
+|     `n`     |<b>n</b>ext|Go to next search result.            |
+|     `N`     |           |Opposite of `n`.                     |
+|     `q`     |<b>q</b>uit|Exit `less`.                         |
+
+### `head`
+
+`head` prints the first _N_ line(s) (10 by default) of one or more text files.
+
+```
+head [option(s)] [file(s)]
+```
+
+Some `head`'s useful options are:
+
+|Option|    Hint     |                           Description                           |
+|:---: |    :---:    |                               ---                               |
+|`-n` N|<b>n</b>umber|Print the first _N_ lines.                                       |
+| `-N` |             |Print the first _N_ lines (e.g. `-15` -> Print first 15 lines).  |
+| `-q` |<b>q</b>uiet |If given multiple files, don't print headers giving files' names.|
+
+Example:
+
+```
+$ head -5 -q mac1.txt mac2.txt
+E2:40:76:20:27:2D
+D2:3B:24:22:74:6E
+AA:34:83:DA:2B:10
+0A:69:73:AC:55:9E
+72:DA:68:C6:3F:97
+EE:05:70:87:24:F0
+2E:FE:90:BC:41:2D
+56:3C:A9:76:E6:3D
+66:9E:27:79:38:70
+6E:2C:D1:58:F8:C0
+```
+
+### `tail`
+
+Similar to `head` (see above), but instead of printing the first lines, print
+the last lines. Useful options listed for `head` also work the same way with
+`tail`.
+
+### `ls` (extended)
+
+`ls` (<b>l</b>i<b>s</b>t) lists all files and folders (non-recursively) in the
+current working directory (if no argument is given) or in a given directory.
+
+```
+ls [option(s)] [directories]
+```
+
+`[options]` may include:
+
+| Option |   Hint   |                                       Description                                       |
+| :---:  |   ---    |                                           ---                                           |
+|  `-A`  | **a**ll  |List all files and folders, including the hidden ones.                                   |
+|  `-l`  | **l**ong |Display list in long format (see below for more information).                            |
+|  `-s`  | **s**ize |Display size of each file, should be used with the -h option.                            |
+|  `-h`  |**h**uman |Display size in a human readable form (e.g. "5.5M" for 5.5 megabytes instead of "5500"). |
+|  `-u`  |          |Along with `-l`: Show access time (instead of modification time) in long format display. |
+|  `-c`  |**c**hange|Along with `-l`: Show change time (instead of modification time) in long format display. |
+
+`[directories]` include one or more target directories.
+
+Both `[option(s)]` and [`directories`] are option parts: `ls` can be used
+without them.
+
+### `stat`
+
+Display various general information of one or more files. Information includes
+file size (in bytes by default), inode number, file type, permissions, owner,
+and the 3 file timestamps.
+
+```
+$ stat EXITCODE.md
+  File: EXITCODE.md
+  Size: 1073      	Blocks: 8          IO Block: 4096   regular file
+Device: fd05h/64773d	Inode: 16646628    Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/john)   Gid: ( 1000/john)
+Context: unconfined_u:object_r:user_home_t:s0
+Access: 2018-10-15 18:41:18.141332645 +0700
+Modify: 2018-07-03 00:02:55.608352000 +0700
+Change: 2018-09-01 17:56:58.011309168 +0700
+ Birth: -
+```
+
+Usage:
+
+```
+stat [option(s)] [file(s)]
+```
+
+> **Note**: `stat` can also be used to display information of directories
+(e.g. /home) and other stuff (e.g. /dev/sda1).
+
+### `file`
+
+Display information of a file specific to that file's type.
+
+```
+file [option(s)] [file(s)]
+```
+
+Example:
+
+```
+$ file Documents/todo.txt Pictures/desktop_preview.png Music/russia_anthem.ogg
+Documents/todo.txt:           ASCII text
+Pictures/desktop_preview.png: PNG image data, 1366 x 768, 8-bit/color RGBA, non-interlaced
+Music/russia_anthem.ogg:      Ogg data, Vorbis audio, stereo, 44100 Hz, ~499821 bps, created by: Xiph.Org libVorbis I (1.2.0)
+```
+
+### `touch`
+
+`touch` can be used to create new files or update timestamps of existing files.
+
+```
+touch [option(s)] [file(s)]
+```
+
+Any existing file specified in `[file(s)]` will get its timestamps updated,
+otherwise it will be created.
+
+`[option(s)]` may include:
+
+|  Option   |          Hint          |                                   Description                                   |
+|   :---:   |         :---:          |                                       ---                                       |
+|   `-a`    |   <b>a</b>ccess time   |Change the access time (atime) only.                                             |
+|   `-m`    |<b>m</b>odification time|Change the modification time (mtime) only.                                       |
+| `-r` FILE |    <b>r</b>eference    |Make a file's atime and mtime the same as _FILE_'s atime and mtime.              |
+| `-t` TIME |      <b>t</b>ime       |Update to _TIME_ instead of current time (_TIME_ format: [[CC]YY]MMDDhhmm[.ss]). |
+
+### `rm` (extended)
+
+`rm` (<b>r</b>e<b>m</b>ove) removes directories and files.
+
+```
+rm [options] [directories|file(s)]
+```
+
+`[directories|file(s)]` is where you specify all the files and directories you
+wish to delete.
+
+`[options]` may include the following useful options:
+
+|Option|Hint|Description|
+|:---:|:---:|---|
+|`-r` (or `--recursive`)|<b>r</b>ecursively|Remove directories recursively. This option must be invoked when removing a directory.|
+|`-i`||Prompt before _every_ removal.|
+|`-I`||Prompt once before removing recursively or removing more than 3 files.|
+|`-f` (or `--force`)|<b>f</b>orce|If a specified file or directory does not exist, ignore and move on. Also, never prompt the user to confirm.|
+
+Chapter Quiz
+------------
+
+<details>
+    <summary>
+        <b>If given multiple files, <code>tac</code> prints each file in reverse
+        <a href="#tacre">as explained</a>. What if you want to concatenate the
+        files first then reverse the whole thing?</b>
+    </summary>
+Using what we've learned so far:
+
+```
+$ cat lorem1.txt lorem2.txt lorem3.txt > result.txt
+$ tac result.txt
+```
+
+:warning: **Fowarding alert!** There's actually a better way to do this, which
+is using a pipe ("|"):
+
+```
+$ cat lorem1.txt lorem2.txt lorem3.txt | tac
+```
+
+A pipe is another way to redirect I/O. It takes the output (in the above case,
+both stdout and stderr) of the command ran on the left side of it as the input
+(stdin) for the command on the right side of it. So the output of
+`cat lorem1.txt lorem2.txt lorem3.txt` is taken as the input of `tac`. Doing
+this way, we do not need a medium file (like `result.txt`). We'll go over pipes
+in the next chapter.
+</details>
