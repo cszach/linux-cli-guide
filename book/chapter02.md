@@ -947,11 +947,12 @@ Chapter Quiz
 ------------
 
 <details>
-    <summary>
-        <b>If given multiple files, <code>tac</code> prints each file in reverse
+    <summary><b>
+        If given multiple files, <code>tac</code> prints each file in reverse
         <a href="#tacre">as explained</a>. What if you want to concatenate the
-        files first then reverse the whole thing?</b>
-    </summary>
+        files first then reverse the whole thing?
+    </b></summary>
+
 Using what we've learned so far:
 
 ```
@@ -972,4 +973,38 @@ both stdout and stderr) of the command ran on the left side of it as the input
 `cat lorem1.txt lorem2.txt lorem3.txt` is taken as the input of `tac`. Doing
 this way, we do not need a medium file (like `result.txt`). We'll go over pipes
 in the next chapter.
+</details>
+
+<details>
+    <summary><b>
+        Get <code>LICENSE-1</code> and <code>LICENSE-2</code>. Can you tell
+        which one is (a copy of) the GNU General Public License and which one is
+        (a copy of) the GNU Lesser General Public License? (hint: each file has
+        the license's name written in the first line!)
+    </b></summary>
+
+You could have `cat`ed them, but a better way to do this is just to see the
+first line, because that's where the name of each license is written.
+
+```
+$ head -1 LICENSE-1 LICENSE-2
+==> LICENSE-1 <==
+                   GNU LESSER GENERAL PUBLIC LICENSE
+
+==> LICENSE-2 <==
+                    GNU GENERAL PUBLIC LICENSE
+```
+
+So, `LICENSE-1` contains a text copy of the GNU Lesser General Public License,
+and `LICENSE-2` contains a text copy of the GNU General Public License.
+</details>
+
+<details>
+    <summary><b>
+        Think of more examples of stdout.
+    </b></summary>
+
+The standard output (stdout) is where a program writes its output to. Programs
+like `cat`, `tree`, `ls`, `pwd` print output to the terminal, and a lot of
+commands and terminal programs you are going to use will do that too.
 </details>
