@@ -705,8 +705,9 @@ refers to the current directory, so it is useless most of the time. The path
 
 A stack is an ordered list of items. There are two common operations to do with
 stacks:
-    - **push**, which adds an element to the end of the stack, and
-    - **pop**, which removes the element at the end of the stack
+
+- **push**, which adds an element to the end of the stack, and
+- **pop**, which removes the element at the end of the stack
 
 A directory stack in Unix systems is a stack of directory paths. It is involved
 in the commands `dirs`, `pushd` and `popd`.
