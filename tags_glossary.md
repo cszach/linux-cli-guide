@@ -14,6 +14,7 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 |Tag's name |                                            Description                                            |
 |   :---:   |                                                ---                                                |
 | directory |Related to directories.                                                                            |
+|  editing  |Section describes how to edit something.                                                           |
 |  extend   |Section contains more information about something that is introduced earlier in the guide document.|
 |   file    |Related to files.                                                                                  |
 |  folder   |Related to folders.                                                                                |
@@ -23,6 +24,7 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 |    new    |Section describes how to create something.                                                         |
 |new-command|At least 1 new command is introduced.                                                              |
 |new-concept|At least 1 new concept is introduced.                                                              |
+|new-program|At least 1 new graphical program is introduced.                                                    |
 |   path    |Related to path (i.e. file/folder's address).                                                      |
 |  remove   |Section describes how to remove something.                                                         |
 | text-file |Related to text files.                                                                             |
