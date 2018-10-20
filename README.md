@@ -19,7 +19,6 @@ Repository structure
 - `README.md`: This document
 - `book/`: Contains the guide's chapters written in Markdown
 - `tags_glossary.md`: Glossary for the tags used in the guide
-- `toc.md`: Full table of content which lists all the headers in the guide
 - `img/`: Images used in the guide
 - `img/thumb/`: Thumbnails of images
 - `svg/`: Original SVG images of some of the exported PNG images that appear in
