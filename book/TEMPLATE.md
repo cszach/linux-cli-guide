@@ -27,8 +27,8 @@ Table of Content
 ----------------
 
 1. [Section 1](#section-1)
-    1. [Sub-section 1](#sub--section-1)
-    2. [Sub-section 2](#sub--section-2)
+    1. [Sub-section 1](#sub-section-1)
+    2. [Sub-section 2](#sub-section-2)
 2. [Section 2](#section-2)
 3. [Chapter Summary](#chapter-summary)
 4. [Chapter Summary: Commands](#chapter-summary-commands)
