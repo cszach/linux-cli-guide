@@ -1,3 +1,32 @@
+<h3 align="center">Chapter 3</h3>
+<h1 align="center">More operations with files</h1>
+
+<p align="center">
+    <b><a style="text-decoration: none"
+          href="#chapter-summary">Chapter Summary</a></b>
+    &mdash;
+    <b><a style="text-decoration: none"
+          href="#chapter-summary-commands">Commands Summary</a></b>
+    &mdash;
+    <b><a style="text-decoration: none"
+          href="#chapter-quiz">Chapter Quiz</a></b>
+</p>
+
+**New commands**:  
+**Commands extended**:  
+**New concepts**:  
+
+<!-- Define link aliases (if any) here -->
+
+- - -
+
+In the prior chapter, you've learned several commands for file operations. In
+this chapter, you will be learning even more useful things, such as links, patch
+files, and how to find files.
+
+Table of Content
+----------------
+
 Symbolic links and hard links
 -----------------------------
 ###### Tags: `#new-concept`, `#new-command`, `#extend`
@@ -177,3 +206,29 @@ own way of handling inode numbering. Some filesystems don't even have inode
 numbering at all, like FAT32. Symbolic links, on the other hand, may work across
 filesystems, but symbolic links are inconsistent: If the target file is moved,
 symbolic links pointing to it will all be broken.
+
+Finding files
+-------------
+
+One of the most important tasks to do on a computer is finding files. Although
+finding files can be made easy by carefully organizing them using folders, there
+are still cases where file-finding commands come into play. For example, if you
+have a lot of screenshot images that are named by the date taken, you can use
+`find` to find files of the same month and delete them. Or if you mistakenly
+move a file to somewhere while working with Bash and you don't know where the
+file has gone, you can still find it using `locate`.
+
+### `find`
+
+### `locate`
+
+### Using wildcards
+
+Chapter Summary
+---------------
+
+Chapter Summary: Commands
+-------------------------
+
+Chapter Quiz
+------------
