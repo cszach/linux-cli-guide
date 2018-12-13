@@ -19,6 +19,7 @@ to it. "Contributors" are people who edited the text (excluding the author).
 |**Preamble**|Nguyen Hoang Duong ([@NOVAglow][aut0])||
 |**Chapter 1**|Nguyen Hoang Duong ([@NOVAglow][aut0])||
 |**Chapter 2**|Nguyen Hoang Duong ([@NOVAglow][aut0])||
+|**Chapter 3**|Nguyen Hoang Duong ([@NOVAglow][aut0])||
 
 Image Credits
 -------------
