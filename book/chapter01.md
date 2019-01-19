@@ -79,14 +79,15 @@ address (commonly called **paths**). There are 2 types of paths:
 folder (`/`) and traces down to the destination folder/file. For example, in the
 system in the above illustration, the absolute path of the file `bashrc` is
 `/etc/bashrc`.
-2. <a name="rev-path">**Relative path**</a>: The relative path of a file or folder
-is the path relative to a folder. For example, in the system illustrated above, the
-relative path of the `boot.log` file relative to the `var` directory is
-`log/boot.log`. Unlike absolute paths, relative paths don't begin with `/`.
+2. <a name="rev-path">**Relative path**</a>: The relative path of a file or
+folder is the path relative to a folder. For example, in the system illustrated
+above, the relative path of the `boot.log` file relative to the `var` directory
+is `log/boot.log`. Unlike absolute paths, relative paths don't begin with `/`.
 
 As you might have noticed, GNU/Linux systems (and Unix-like systems in general)
 use the forward slash character ("/") to separate folders at different
-hierarchical level (unlike Windows, which uses the backward slash character "\\").
+hierarchical level (unlike Windows, which uses the backward slash character
+"\\").
 
 There are three symbols, usually appear in paths, that are reserved for special
 purposes:
@@ -104,11 +105,10 @@ directory should be `/home/USERNAME`, replacing "USERNAME" with your username
 If you have logged in as root (equivalence of admin in Windows), the home
 directory should be `/root`.
 
-Just one final note before we proceed: "folder" and "directory" are the same
-concepts; the difference is, the term "folder" is used more in graphical
-interface, while the term "directory" is used more when talking about the
-command line interface. Hence, in this document, you will see the term
-"directory" appears more.
+> **Note**: "folder" and "directory" are the same concepts; the difference is,
+the term "folder" is used more in graphical interface, while the term
+"directory" is used more when talking about the command line interface. Hence,
+the term "directory" will be used more frequently throughout the tutorial.
 
 `pwd`
 -----

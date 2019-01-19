@@ -22,7 +22,7 @@
 
 In the prior chapter, you've learned several commands for file operations. In
 this chapter, you will be learning even more useful things, such as links, patch
-files, and how to find files.
+files, file compression, and how to find files.
 
 Table of Content
 ----------------

@@ -13,6 +13,9 @@ folder, program) is the only prerequisite for taking this guide, although
 besides that, you should also have a GNU/Linux distribution installed (either
 on your computer's disk or in a virtual machine) so that you can learn by doing.
 
+> **Note**: Different documents and different parts of any document might refer
+to the guide as "tutorial" or "book".
+
 Repository structure
 --------------------
 
