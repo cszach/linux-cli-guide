@@ -96,7 +96,7 @@ for img in images:
         md_author += (" ([@%s][%s])" % (img[3]["profile"][18:], auth_link_var))
     elif img[3]["profile"] != "":
         # Add link to any online profile if one is provided
-        md_author = "[%s](%s)" % (md_author, auth_link_var)
+        md_author = "[%s][%s]" % (md_author, auth_link_var)
 
     # *** PRINT MARKDOWN OUTPUT FOR TABLE ROW ***
     print(template % (
