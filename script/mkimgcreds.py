@@ -4,34 +4,45 @@
 from os.path import isfile
 
 # Authors
-author_01 = {
+hduong = {
     "name": "Nguyen Hoang Duong",
     "profile": "http://github.com/NOVAglow",
+}
+
+katst = {
+    "name": "Kat Stokes",
+    "profile": "https://unsplash.com/@katstokes_/portfolio"
 }
 
 # Licenses along with links
 cc0 = {
     "name": "Creative Commons Zero v1.0 Universal",
     "ident": "CC0",
-    "link": "http://creativecommons.org/publicdomain/zero/1.0/"
+    "link": "https://creativecommons.org/publicdomain/zero/1.0/"
+}
+
+unsplash = {
+    "name": "The Unsplash License",
+    "link": "https://unsplash.com/license"
 }
 
 # Collection of images
 #
 # images = [ [file_name, title, where, author, license], ... ]
 images = [
+    ["prem.jpg", "N/A", "Preamble", katst, unsplash],
     ["fsh.png", "Filesystem of Linux operating systems (Visualization)",
-     "Chapter 1", author_01, cc0],
+     "Chapter 1", hduong, cc0],
     ["pushd-vis.png", "GNU/Linux's pushd command (Visualization)", "Chapter 1",
-     author_01, cc0],
+     hduong, cc0],
     ["popd-vis.png", "GNU/Linux's popd command (Visualization)", "Chapter 1",
-     author_01, cc0],
+     hduong, cc0],
     ["symlink-vis.png", "Symbolic link - Visualization", "Chapter 3",
-     author_01, cc0],
+     hduong, cc0],
     ["broken_symlink-vis.png", "Broken Symbolic link - Visualization",
-    "Chapter 3",  author_01, cc0],
+    "Chapter 3",  hduong, cc0],
     ["hard_link-vis.png", "Hard link - Visualization", "Chapter 3",
-     author_01, cc0]
+     hduong, cc0]
 ]
 
 # **************************
