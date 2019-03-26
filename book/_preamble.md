@@ -1,5 +1,7 @@
 <h1 align="center">Preamble</h1>
 
+![](../img/prem.jpg)
+
 This is a GNU/Linux bash guide. The guide will go from the most simple commands
 to more advanced ones, hence this guide can be used for learning (i.e. education
 purposes). New GNU/Linux users who wish to learn Bash commands can take this
