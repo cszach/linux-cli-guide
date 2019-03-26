@@ -31,7 +31,7 @@ according to order of appearance in the guide.
 
 |Image|Metadata|
 |:---:|---|
-|![](img/thumb/prem.jpg) <br>  [PNG](img/prem.jpg)|**Title**: N/A <br> **Shown in**: Preamble <br> **Author**: [Kat Stokes](aut0) <br> **License**: [The Unsplash License][lic0]|
+|![](img/thumb/prem.jpg) <br>  [PNG](img/prem.jpg)|**Title**: N/A <br> **Shown in**: Preamble <br> **Author**: [Kat Stokes][aut0] <br> **License**: [The Unsplash License][lic0]|
 |![](img/thumb/fsh.png) <br> [SVG](svg/fsh.svg) &mdash;  [PNG](img/fsh.png)|**Title**: Filesystem of Linux operating systems (Visualization) <br> **Shown in**: Chapter 1 <br> **Author**: Nguyen Hoang Duong ([@NOVAglow][aut1]) <br> **License**: [Creative Commons Zero v1.0 Universal][lic1]|
 |![](img/thumb/pushd-vis.png) <br> [SVG](svg/pushd-vis.svg) &mdash;  [PNG](img/pushd-vis.png)|**Title**: GNU/Linux's pushd command (Visualization) <br> **Shown in**: Chapter 1 <br> **Author**: Nguyen Hoang Duong ([@NOVAglow][aut1]) <br> **License**: [Creative Commons Zero v1.0 Universal][lic1]|
 |![](img/thumb/popd-vis.png) <br> [SVG](svg/popd-vis.svg) &mdash;  [PNG](img/popd-vis.png)|**Title**: GNU/Linux's popd command (Visualization) <br> **Shown in**: Chapter 1 <br> **Author**: Nguyen Hoang Duong ([@NOVAglow][aut1]) <br> **License**: [Creative Commons Zero v1.0 Universal][lic1]|
