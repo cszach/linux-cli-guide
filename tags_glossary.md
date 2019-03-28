@@ -3,16 +3,14 @@ Tags Glossary
 
 This document contains a table with all the tags presented in the Bash guide
 along with their descriptions. The tags' names appear in the table are sorted
-alphabetically, from A to Z. In the guide document (README.md), each tag appears
-to have a hash tag symbol ("#") as its first character. The hash tag symbols,
-however, are not part of the tags' names and they appear so that the viewers can
-conveniently search & find by tags. The hash tag signs are omitted in the below
-table.
-
-A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+alphabetically, from A to Z. In the actual, each tag appears to have a hash tag
+symbol ("#") as its first character. The hash tag symbols, however, are not part
+of the tags' names and they appear so that the viewers can conveniently search
+& find by tags. The hash tag signs are omitted in the below table.
 
 |Tag's name |                                            Description                                            |
 |   :---:   |                                                ---                                                |
+|application|Section contains practical (i.e. real-world) usage of a command or concept.                        |
 | directory |Related to directories.                                                                            |
 |  editing  |Section describes how to edit something.                                                           |
 |  extend   |Section contains more information about something that is introduced earlier in the guide document.|
