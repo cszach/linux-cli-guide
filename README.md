@@ -13,6 +13,11 @@ never touched a command line interface before. It will guide you from the most
 fundamental concepts and commands to more advanced ones, with their practical
 applications alongside.
 
+<a href="book/\_preamble.md"><img src="img/read-btn.png" width="24%" /></a>
+<a href="book/GLOSSARY.md"><img src="img/glossary-btn.png" width="24%" /></a>
+<a href="CREDITS.md"><img src="img/credits-btn.png" width="24%" /></a>
+<a href="LICENSE"><img src="img/license-btn.png" width="24%" /></a>
+
 > **Note**: Different documents and different parts of any document might refer
 to the guide as "tutorial" or "book".
 
