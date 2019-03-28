@@ -1,7 +1,7 @@
 <h1 align="center">42tm's Bash Guide</h1>
 
 <p align="center">
-    <img src="repo-icon.png" width="200" height="200">
+    <img src="icon.png" width="200" height="200">
 </p>
 
 Description
@@ -20,15 +20,17 @@ Repository structure
 --------------------
 
 - `README.md`: This document
+- `TAGS.md`: Glossary for the tags used in the guide
 - `book/`: Contains the guide's chapters written in Markdown
-- `tags_glossary.md`: Glossary for the tags used in the guide
-- `img/`: Images used in the guide
+- `img/`: Images used in the guide in the form of raster graphics
 - `img/thumb/`: Thumbnails of images
 - `svg/`: Original SVG images of some of the exported PNG images that appear in
 the guide
 - `script/`: Some helpful scripts for repository development
-- `repo-icon.png`: The icon for the repository, seen above
-- `LICENSE`: This repository's license text
+- `icon.png`: The icon for the repository, seen above
+- `LICENSE`: A copy of the Creative Commons Zero v1.0 Universal, which is the
+license that most of the materials contained within this repository are licensed
+under
 
 Other Bash guides/references on GitHub
 --------------------------------------
@@ -44,14 +46,14 @@ from 42tm that gets upstreamed with 42tm's Bash Guide.
 however it is more of a reference because the explanations are short and some
 (if not all) technical terms are not explained.
 
-[rr1]: http://github.com/jlevy/the-art-of-command-line
-[rra1]: http://github.com/jlevy
-[rr2]: http://github.com/dylanaraps/pure-bash-bible
-[rra2]: http://github.com/dylanaraps
-[rr3]: http://github.com/42tm/bash-ref
-[rra3]: http://github.com/42tm
-[rr4]: http://github.com/Idnan/bash-guide
-[rra4]: http://github.com/Idnan
+[rr1]: https://github.com/jlevy/the-art-of-command-line
+[rra1]: https://github.com/jlevy
+[rr2]: https://github.com/dylanaraps/pure-bash-bible
+[rra2]: https://github.com/dylanaraps
+[rr3]: https://github.com/42tm/bash-ref
+[rra3]: https://github.com/42tm
+[rr4]: https://github.com/Idnan/bash-guide
+[rra4]: https://github.com/Idnan
 
 License
 -------
@@ -62,5 +64,9 @@ By licensing this work under the [Creative Commons Zero](LICENSE) (CC0) license,
 we dedicate it to the Public Domain. We do this for the benefit of the public at
 large.
 
-All text & image contents, as well as scripts found in `script/`, are all in the
-Public Domain.
+All text contents and the scripts found in `script/` are all CC0-licensed. Image
+contents are also in the Public Domain; in particular:
+- Illustrations found in the guide are our own work and are CC0-licensed.
+- High-res photographs were taken from [Unsplash](https://unsplash.com/) and
+were cropped to suit their intended usage in the guide. They are licensed under
+[The Unsplash License](https://unsplash.com/license).
