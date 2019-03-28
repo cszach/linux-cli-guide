@@ -30,11 +30,12 @@
 
 - - -
 
+![](../img/folders.jpg)
+
 This section introduces the basic commands that get you moving between different
-locations in the file system and viewing the items in a folder or many folders.
-If you are relatively new to the GNU/Linux system, you might want to read the
-brief description of the Linux file system first, before diving into the
-commands.
+locations in the file system and viewing items in a folder or many folders. If
+you are relatively new to the GNU/Linux system, you might want to read the brief
+description of the Linux file system first, before diving into the commands.
 
 Table of Content
 ----------------
@@ -64,9 +65,9 @@ The files & folders system in GNU/Linux (so-called "Linux") is hierarchical,
 like Windows. This means that a folder can contain files, as well as other
 folders, and those folders can contain more files and folders. <a name="root-dir">
 All accessible files and folders in a GNU/Linux system is stored in a folder, and
-this folder is called the root folder, denoted "/".</a> The below graph illustrates
-a small part of a file system on a typical GNU/Linux machine, according to the
-hierarchy.
+this folder is called the **root folder**, denoted "/".</a> The below graph
+illustrates a small part of a file system on a typical GNU/Linux machine,
+according to the hierarchy.
 
 ![File system hierarchy illustration](../img/fsh.png)
 **Figure 1.1** Each folder can contain other folders and files. Thus this system
@@ -86,7 +87,7 @@ is `log/boot.log`. Unlike absolute paths, relative paths don't begin with `/`.
 
 As you might have noticed, GNU/Linux systems (and Unix-like systems in general)
 use the forward slash character ("/") to separate folders at different
-hierarchical level (unlike Windows, which uses the backward slash character
+hierarchical levels (unlike Windows, which uses the backward slash character
 "\\").
 
 There are three symbols, usually appear in paths, that are reserved for special
@@ -108,7 +109,7 @@ directory should be `/root`.
 > **Note**: "folder" and "directory" are the same concepts; the difference is,
 the term "folder" is used more in graphical interface, while the term
 "directory" is used more when talking about the command line interface. Hence,
-the term "directory" will be used more frequently throughout the tutorial.
+the term "directory" will be used more frequently throughout the guide.
 
 `pwd`
 -----
@@ -131,8 +132,8 @@ wants to go to.
 
 |Example input|Description|
 |:--:|---|
-|`cd /home/john/Pictures`|Move to directory `/home/john/Pictures` (absolute path).|
-|`cd ../Code/Project1`|Move to directory `../Code/Project1` (relative path). Remember that the `..` symbol is<br>used to refer to the parent directory, as discussed in the introduction above.|
+|`cd /home/john/Pictures`|Move to the directory `/home/john/Pictures` (absolute path).|
+|`cd ../Code/Project1`|Move to the directory `../Code/Project1` (relative path). Remember that the `..` symbol is<br>used to refer to the parent directory, as discussed in the introduction above.|
 |`cd ~`|Move to the home directory. The `~` symbol refers to the home directory.|
 |`cd -`|Move to the previous directory that you were in. For example, if you were in `/home/john`,<br>and then you moved to `/home/john/Pictures/Family`, doing `cd -` will move you back<br>to `/home/john`.|
 |`cd ..`|Move to the parent directory.|
@@ -147,14 +148,14 @@ Moving between directories, advanced: `pushd`, `popd`, and `dirs`
 ###### Tags: `#new-concept`, `#directory`
 
 Stacks to computer science is like telescopes to astronomy. In computing, you
-can think of a stack as a collection of items. There are two basic operations
-with stacks, they are **push** and **pop**. The push operation adds an item to
-the _end_ of the stack, and the pop operation removes the most recently added
-item.
+can think of a **stack** as a collection of items. There are two basic
+operations with stacks, they are **push** and **pop**. The push operation adds
+an item to the _end_ of the stack, and the pop operation removes the most
+recently added item.
 
-Let's say we have a stack of fruit over here. They are numbered in order from
-the least recently added item (number 1) to the most recently added item (number
-5).
+For instance, we have a stack of fruit over here. They are numbered in order
+from the least recently added item (number 1) to the most recently added item
+(number 5).
 
 |     1      |   2    |     3      |  4   |     5     |
 |   :---:    | :---:  |   :---:    |:---: |   :---:   |

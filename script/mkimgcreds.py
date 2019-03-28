@@ -14,6 +14,11 @@ katst = {
     "profile": "https://unsplash.com/@katstokes_/portfolio"
 }
 
+samzell = {
+    "name": "Samuel Zeller",
+    "profile": "https://unsplash.com/@samuelzeller/portfolio"
+}
+
 # Licenses along with links
 cc0 = {
     "name": "Creative Commons Zero v1.0 Universal",
@@ -31,6 +36,7 @@ unsplash = {
 # images = [ [file_name, title, where, author, license], ... ]
 images = [
     ["prem.jpg", "N/A", "Preamble", katst, unsplash],
+    ["folders.jpg", "N/A", "Chapter 1", samzell, unsplash],
     ["fsh.png", "Filesystem of Linux operating systems (Visualization)",
      "Chapter 1", hduong, cc0],
     ["pushd-vis.png", "GNU/Linux's pushd command (Visualization)", "Chapter 1",
