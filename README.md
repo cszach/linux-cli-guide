@@ -8,13 +8,21 @@ Description
 -----------
 
 This repository contains a beginner-friendly Bash guide and all the resources
-used by the guide. Understanding of the most basic computer concepts (e.g. file,
-folder, program) is the only prerequisite for taking this guide, although
-besides that, you should also have a GNU/Linux distribution installed (either
-on your computer's disk or in a virtual machine) so that you can learn by doing.
+used by the guide. The guide is intended for beginners, even those who have
+never touched a command line interface before. It will guide you from the most
+fundamental concepts and commands to more advanced ones, with their practical
+applications alongside.
 
 > **Note**: Different documents and different parts of any document might refer
 to the guide as "tutorial" or "book".
+
+Prerequisites
+-------------
+
+- Understanding of the most basic computer concepts (e.g. file, folder, program)
+- Access to a command line environment running Bash (e.g. terminal emulator in
+a GNU/Linux distribution like Ubuntu or Fedora, terminal emulator provided as a
+web service, Windows Subsystem for Linux)
 
 Repository structure
 --------------------
