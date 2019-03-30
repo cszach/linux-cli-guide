@@ -39,7 +39,6 @@ according to order of appearance in the guide.
        -- Commited by @NOVAglow
 -->
 
-<center>
 |Image|Metadata|
 |:---:|---|
 |![](img/thumb/prem.jpg)<br/><br/>[JPG](img/thumb/prem.jpg)|**Originality**: Derivative work <br/> **Shown in**: Preamble <br/> **Author**: [Nguyen Hoang Duong][aut1] <br/> **Original author**: [Kat Stokes](https://unsplash.com/@katstokes_/portfolio) <br/> **License**: [Unsplash license](https://unsplash.com/license)<br/> **Note**: Image cropped by N. H. Duong|
@@ -50,4 +49,3 @@ according to order of appearance in the guide.
 |![](img/thumb/symlink-vis.png)<br/><br/>[PNG](img/thumb/symlink-vis.png) &mdash; [SVG](svg/symlink-vis.svg)|**Title**: Symbolic link - Visualization <br/> **Originality**: Original work <br/> **Shown in**: Chapter 3 <br/> **Author**: [Nguyen Hoang Duong][aut1] <br/> **License**: [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/legalcode)|
 |![](img/thumb/broken_symlink-vis.png)<br/><br/>[PNG](img/thumb/broken_symlink-vis.png) &mdash; [SVG](svg/broken_symlink-vis.svg)|**Title**: Broken Symbolic link - Visualization <br/> **Originality**: Original work <br/> **Shown in**: Chapter 3 <br/> **Author**: [Nguyen Hoang Duong][aut1] <br/> **License**: [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/legalcode)|
 |![](img/thumb/hard_link-vis.png)<br/><br/>[PNG](img/thumb/hard_link-vis.png) &mdash; [SVG](svg/hard_link-vis.svg)|**Title**: Hard link - Visualization <br/> **Originality**: Original work <br/> **Shown in**: Chapter 3 <br/> **Author**: [Nguyen Hoang Duong][aut1] <br/> **License**: [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/legalcode)|
-</center>
