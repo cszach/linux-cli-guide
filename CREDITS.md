@@ -27,8 +27,9 @@ to it. "Contributors" are people who edited the text (excluding the author).
 Image Credits
 -------------
 
-This table shows the author and the license of each image. The images are sorted
-according to order of appearance in the guide.
+This table shows the author, the license, as well as other information of every
+image found in `img/`. It is sorted by order of appearance of the images in the
+guide, excluding the first 4 images, which are presented in `README.md`.
 
 <!-- This table was generated using script/mkimgcreds.new.py -->
 <!--
