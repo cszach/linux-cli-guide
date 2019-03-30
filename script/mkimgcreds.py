@@ -47,8 +47,8 @@ with open(csvfname, newline='', encoding='utf-8') as csvfile:
         # This contains the thumbnail of the image (found in /img/thumb/), and
         # links to different formats which the image is available under
 
-        print("|![]({0})<br/><br/>[{1}]({0})"
-              .format("img/thumb/" + fname, fname[fname.rfind('.') + 1:].upper()),
+        print("|![](img/thumb/{0})<br/><br/>[{1}](img/{0})"
+              .format(fname, fname[fname.rfind('.') + 1:].upper()),
               end='')
         if isfile("../" + source):
             print(" &mdash; [SVG](%s)" % source, end='')
