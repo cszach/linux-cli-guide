@@ -11,7 +11,7 @@ from os.path import isfile, basename
 from csv import DictReader
 import logging
 
-csvfname = "img-credits.csv"
+csvfname = "../data/img-credits.csv"
 
 logging.basicConfig(format="%(message)s")
 
