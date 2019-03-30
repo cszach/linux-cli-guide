@@ -42,6 +42,7 @@ Repository structure
 - `svg/`: Original SVG images of some of the exported PNG images that appear in
 the guide
 - `script/`: Some helpful scripts for repository development
+- `data/`: Contains data files that serve the scripts
 - `icon.png`: The icon for the repository, seen above
 - `LICENSE`: A copy of the Creative Commons Zero v1.0 Universal, which is the
 license that most of the materials contained within this repository are licensed

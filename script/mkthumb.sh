@@ -2,6 +2,7 @@
 # Create thumbnails (stored in img/thumb) from PNGs found in img/
 
 imgdir="../img"  # Path of img/ relative to where this Shell script is located
+alias convert="/usr/bin/convert"  # Path to executable of ImageMagick's convert
 
 # Create img/thumb if needed
 ! [ -d $imgdir/thumb ] && mkdir $imgdir/thumb
