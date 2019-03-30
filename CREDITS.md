@@ -5,6 +5,9 @@
     and the licenses used for the guide's contents.
 </p>
 
+<!-- Link aliases -->
+[aut1]: https://github.com/NOVAglow
+
 Text Credits
 ------------
 
@@ -16,10 +19,10 @@ to it. "Contributors" are people who edited the text (excluding the author).
 
 ||Author|Contributors|
 |:---:|:---:|---|
-|**Preamble**|Nguyen Hoang Duong ([@NOVAglow][aut0])||
-|**Chapter 1**|Nguyen Hoang Duong ([@NOVAglow][aut0])||
-|**Chapter 2**|Nguyen Hoang Duong ([@NOVAglow][aut0])||
-|**Chapter 3**|Nguyen Hoang Duong ([@NOVAglow][aut0])||
+|**Preamble**|Nguyen Hoang Duong ([@NOVAglow][aut1])||
+|**Chapter 1**|Nguyen Hoang Duong ([@NOVAglow][aut1])||
+|**Chapter 2**|Nguyen Hoang Duong ([@NOVAglow][aut1])||
+|**Chapter 3**|Nguyen Hoang Duong ([@NOVAglow][aut1])||
 
 Image Credits
 -------------
@@ -27,22 +30,22 @@ Image Credits
 This table shows the author and the license of each image. The images are sorted
 according to order of appearance in the guide.
 
-<!-- This table was generated using script/mkimgcreds.py -->
+<!-- This table was generated using script/mkimgcreds.new.py -->
+<!--
+    EDIT:
+
+    1) Fix a link's Markdown formatting -- Commited by @NOVAglow
+    2) Replace full link "https://github.com/NOVAglow" with link alias "aut1"
+       -- Commited by @NOVAglow
+-->
 
 |Image|Metadata|
 |:---:|---|
-|![](img/thumb/prem.jpg) <br>  [PNG](img/prem.jpg)|**Title**: N/A <br> **Shown in**: Preamble <br> **Author**: [Kat Stokes][aut0] <br> **License**: [The Unsplash License][lic0]|
-|![](img/thumb/folders.jpg) <br>  [PNG](img/folders.jpg)|**Title**: N/A <br> **Shown in**: Chapter 1 <br> **Author**: [Samuel Zeller][aut1] <br> **License**: [The Unsplash License][lic0]|
-|![](img/thumb/fsh.png) <br> [SVG](svg/fsh.svg) &mdash;  [PNG](img/fsh.png)|**Title**: Filesystem of Linux operating systems (Visualization) <br> **Shown in**: Chapter 1 <br> **Author**: Nguyen Hoang Duong ([@NOVAglow][aut2]) <br> **License**: [Creative Commons Zero v1.0 Universal][lic1]|
-|![](img/thumb/pushd-vis.png) <br> [SVG](svg/pushd-vis.svg) &mdash;  [PNG](img/pushd-vis.png)|**Title**: GNU/Linux's pushd command (Visualization) <br> **Shown in**: Chapter 1 <br> **Author**: Nguyen Hoang Duong ([@NOVAglow][aut2]) <br> **License**: [Creative Commons Zero v1.0 Universal][lic1]|
-|![](img/thumb/popd-vis.png) <br> [SVG](svg/popd-vis.svg) &mdash;  [PNG](img/popd-vis.png)|**Title**: GNU/Linux's popd command (Visualization) <br> **Shown in**: Chapter 1 <br> **Author**: Nguyen Hoang Duong ([@NOVAglow][aut2]) <br> **License**: [Creative Commons Zero v1.0 Universal][lic1]|
-|![](img/thumb/symlink-vis.png) <br> [SVG](svg/symlink-vis.svg) &mdash;  [PNG](img/symlink-vis.png)|**Title**: Symbolic link - Visualization <br> **Shown in**: Chapter 3 <br> **Author**: Nguyen Hoang Duong ([@NOVAglow][aut2]) <br> **License**: [Creative Commons Zero v1.0 Universal][lic1]|
-|![](img/thumb/broken_symlink-vis.png) <br> [SVG](svg/broken_symlink-vis.svg) &mdash;  [PNG](img/broken_symlink-vis.png)|**Title**: Broken Symbolic link - Visualization <br> **Shown in**: Chapter 3 <br> **Author**: Nguyen Hoang Duong ([@NOVAglow][aut2]) <br> **License**: [Creative Commons Zero v1.0 Universal][lic1]|
-|![](img/thumb/hard_link-vis.png) <br> [SVG](svg/hard_link-vis.svg) &mdash;  [PNG](img/hard_link-vis.png)|**Title**: Hard link - Visualization <br> **Shown in**: Chapter 3 <br> **Author**: Nguyen Hoang Duong ([@NOVAglow][aut2]) <br> **License**: [Creative Commons Zero v1.0 Universal][lic1]|
-
-[lic0]: https://unsplash.com/license
-[lic1]: https://creativecommons.org/publicdomain/zero/1.0/
-
-[aut0]: https://unsplash.com/@katstokes_/portfolio
-[aut1]: https://unsplash.com/@samuelzeller/portfolio
-[aut2]: http://github.com/NOVAglow
+|![](img/thumb/prem.jpg)<br/><br/>[JPG](img/thumb/prem.jpg)|**Originality**: Derivative work <br/> **Shown in**: Preamble <br/> **Author**: [Nguyen Hoang Duong][aut1] <br/> **Original author**: [Kat Stokes](https://unsplash.com/@katstokes_/portfolio) <br/> **License**: [Unsplash license](https://unsplash.com/license)<br/> **Note**: Image cropped by N. H. Duong|
+|![](img/thumb/folders.jpg)<br/><br/>[JPG](img/thumb/folders.jpg)|**Originality**: Derivative work <br/> **Shown in**: Chapter 1 <br/> **Author**: [Nguyen Hoang Duong][aut1] <br/> **Original author**: [Samuel Zeller](https://unsplash.com/@samuelzeller/portfolio) <br/> **License**: [Unsplash license](https://unsplash.com/license)<br/> **Note**: Image cropped by N. H. Duong|
+|![](img/thumb/fsh.png)<br/><br/>[PNG](img/thumb/fsh.png) &mdash; [SVG](svg/fsh.svg)|**Title**: Filesystem of Linux operating systems (Visualization) <br/> **Originality**: Original work <br/> **Shown in**: Chapter 1 <br/> **Author**: [Nguyen Hoang Duong][aut1] <br/> **License**: [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/legalcode)|
+|![](img/thumb/pushd-vis.png)<br/><br/>[PNG](img/thumb/pushd-vis.png) &mdash; [SVG](svg/pushd-vis.svg)|**Title**: GNU/Linux's pushd command (Visualization) <br/> **Originality**: Original work <br/> **Shown in**: Chapter 1 <br/> **Author**: [Nguyen Hoang Duong][aut1] <br/> **License**: [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/legalcode)|
+|![](img/thumb/popd-vis.png)<br/><br/>[PNG](img/thumb/popd-vis.png) &mdash; [SVG](svg/popd-vis.svg)|**Title**: GNU/Linux's popd command (Visualization) <br/> **Originality**: Original work <br/> **Shown in**: Chapter 1 <br/> **Author**: [Nguyen Hoang Duong][aut1] <br/> **License**: [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/legalcode)|
+|![](img/thumb/symlink-vis.png)<br/><br/>[PNG](img/thumb/symlink-vis.png) &mdash; [SVG](svg/symlink-vis.svg)|**Title**: Symbolic link - Visualization <br/> **Originality**: Original work <br/> **Shown in**: Chapter 3 <br/> **Author**: [Nguyen Hoang Duong][aut1] <br/> **License**: [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/legalcode)|
+|![](img/thumb/broken_symlink-vis.png)<br/><br/>[PNG](img/thumb/broken_symlink-vis.png) &mdash; [SVG](svg/broken_symlink-vis.svg)|**Title**: Broken Symbolic link - Visualization <br/> **Originality**: Original work <br/> **Shown in**: Chapter 3 <br/> **Author**: [Nguyen Hoang Duong][aut1] <br/> **License**: [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/legalcode)|
+|![](img/thumb/hard_link-vis.png)<br/><br/>[PNG](img/thumb/hard_link-vis.png) &mdash; [SVG](svg/hard_link-vis.svg)|**Title**: Hard link - Visualization <br/> **Originality**: Original work <br/> **Shown in**: Chapter 3 <br/> **Author**: [Nguyen Hoang Duong][aut1] <br/> **License**: [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/legalcode)|
