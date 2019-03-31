@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Create thumbnails (stored in img/thumb) from PNGs found in img/
 
 imgdir="../img"  # Path of img/ relative to where this Shell script is located
