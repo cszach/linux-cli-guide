@@ -1,12 +1,14 @@
-Tags Glossary
-=============
+<h1 align="center">Tags Glossary</h1>
 
-This document contains a table with all the tags presented in the Bash guide
-along with their descriptions. The tags' names appear in the table are sorted
-alphabetically, from A to Z. In the actual, each tag appears to have a hash tag
-symbol ("#") as its first character. The hash tag symbols, however, are not part
-of the tags' names and they appear so that the viewers can conveniently search
-& find by tags. The hash tag signs are omitted in the below table.
+<p align="center">
+    This document contains a table with all the tags presented in the Bash guide
+    along with their descriptions. The tags' names appear in the table are
+    sorted alphabetically, from A to Z. In the actual, each tag appears to have
+    a hash tag symbol ("#") as its first character. The hash tag symbols,
+    however, are not part of the tags' names and they appear so that the viewers
+    can conveniently search & find by tags. The hash tag signs are omitted in
+    the below table.
+</p>
 
 |Tag's name |                                            Description                                            |
 |   :---:   |                                                ---                                                |
