@@ -36,6 +36,7 @@ Repository structure
 
 - `README.md`: This document
 - `TAGS.md`: Glossary for the tags used in the guide
+- `TODO.md`: Development to-dos
 - `book/`: Contains the guide's chapters written in Markdown
 - `img/`: Images used in the guide in the form of raster graphics
 - `img/thumb/`: Thumbnails of images
