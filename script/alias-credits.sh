@@ -3,6 +3,7 @@
 # Aliases are defined in /data/aliases
 
 data_file="../data/aliases"
+mkcred_script="mkimgcreds.py"
 alias wc="/usr/bin/wc"
 alias sed="/usr/bin/sed"
 alias head="/usr/bin/head"
@@ -19,4 +20,4 @@ do
     pipes="$pipes | sed \"s/($org)/[$als]/g\""
 done
 
-eval "./mkimgcreds.py $pipes"
+eval "./$mkcred_script $pipes" | sed "s/$mkcred_script/$(basename $0)/"
