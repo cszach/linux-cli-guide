@@ -6,6 +6,9 @@
 # NOTE: The output of this program may be incorrect. Please check to make sure
 # that the rendered output of the Markdown content produced by this program is
 # correct before commiting the changes.
+#
+# NOTE: This program should not be executed manually. It is now invoked in
+# the Shell script alias-credits.sh. Please run alias-credits.sh instead.
 
 from os.path import isfile, basename
 from csv import DictReader
@@ -58,8 +61,8 @@ with open(csvfname, newline='', encoding='utf-8') as csvfile:
 
         if row['Title'] != "":
             print("**Title**: %s <br/> " % row['Title'], end='')
-        print("**Originality**: %s <br/> " % row['Originality'], end='')
         print("**Shown in**: %s <br/> " % row['Shown in'], end='')
+        print("**Originality**: %s <br/> " % row['Originality'], end='')
 
         print("**Author**: ", end='') if len(authors) == 1 \
             else print("**Authors**: ", end='')
@@ -69,17 +72,17 @@ with open(csvfname, newline='', encoding='utf-8') as csvfile:
         print("\b\b <br/> ", end='')
 
         if row['Original author'] != "":
-            print("**Original author**: ", end='') if len(org_authors) == 1 \
-                else print("**Original authors**: ", end='')
+            print("**Original author%s**: " %
+                  ("" if len(org_authors) == 1 else "s"), end='')
             for author, link in zip(org_authors, links[len(authors):]):
-                print("[%s](%s), " % (author, link), end='') if link != "" \
-                    else print("%s, " % author, end='')
+                print("%s, " % author, end='') if link == "" \
+                    else print("[%s](%s), " % (author, link), end='')
             print("\b\b <br/> ", end='')
 
-        print("**License**: ", end='') if len(lics) == 1 \
-            else print("**Licenses**: ", end='')
+        print("**License%s**: " % ("" if len(lics) == 1 else "s"), end='')
         for lic_name, lic_link in lics.items():
-            print("[%s](%s), " % (lic_name, lic_link), end='')
+            print("%s, " % lic_name, end='') if lic_link == "" \
+                else print("[%s](%s), " % (lic_name, lic_link), end='')
         print("\b\b", end='')
         if row['Note'] != "":
             print("<br/> **Note**: %s" % row['Note'], end='')
