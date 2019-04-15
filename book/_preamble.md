@@ -2,10 +2,30 @@
 
 ![](../img/prem.jpg)
 
-This is a GNU/Linux bash guide. The guide will go from the most simple commands
-to more advanced ones, hence this guide can be used for learning (i.e. education
-purposes). New GNU/Linux users who wish to learn Bash commands can take this
-guide. For each command, we will also introduce its helpful options.
+If you've been using a graphical user interface for most of the time you've
+spent on the computer, you probably have wondered if there's a way to be more
+productive and efficient on the computer. Face it, moving the mouse cursor and
+navigating by clicking on folders again and again can be time-consuming!
+
+Luckily, there's a whole new type of digital environment out there. It's where
+you constantly type on the keyboard to get things done. And it's **much faster**
+to perform repetitive tasks, files management, etc. if you work in such an
+environment. Look no further, we've been talking about **the command line**.
+
+![](../img/bash-example.png)
+
+Behind all the text that appears, there's a program working under the hood. Its
+task is to interpret what you've typed. This program is usually **a Shell
+interpreter** when it comes to macOS or GNU/Linux. **Bash** is the Shell
+interpreter commonly used in those two families of operating systems.
+
+So, we present to you, a basic Bash guide. Learning Bash means learning the
+commands that Bash actually understands. The guide is intended for beginners
+and will go from the most simple commands to more advanced ones. For each
+command, we will also introduce its helpful options. The guide is intended for
+GNU/Linux users (especially those that are fairly new to GNU/Linux systems).
+macOS users can take this guide as well, since today's macOS systems come with
+Bash too.
 
 At a ground surface, this might just look like another Bash guide on GitHub.
 However, unlike other Bash guides on GitHub, this one is more oriented towards
