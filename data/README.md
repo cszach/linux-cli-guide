@@ -11,3 +11,4 @@ What's in this directory?
 - **`img-credits.csv`** _[Text CSV]_: CSV file containing image files' metadata.
 Read by `/script/mkimgcreds.py` in order to generate credits table in
 `/CREDITS.md`.
+- **`aliases`** _[Text file]_: Aliases defined for hyperlinks in CREDITS.md
