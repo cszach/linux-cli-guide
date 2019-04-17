@@ -5,6 +5,11 @@
     are welcomed!
 </p>
 
+Development
+===========
+
+- [ ] Add specifications (for data files, chapters, drawings,...) in the project's wiki
+
 Chapter 0
 =========
 
