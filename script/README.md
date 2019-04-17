@@ -12,37 +12,60 @@ What's in this directory
 `mkimgcreds.py` is a script that is used to generate a 2-column Markdown table
 that shows images found in `img/` on the left and their respective information
 on the right. The script is written in Python 3. The generated table is printed
-to stdout (i.e. the console, if you don't reroute the output to anywhere else)
-and should be copied to replace the existing table in `/CREDITS.md`.
+to `stdout` (i.e. the console, if you don't reroute the output to anywhere
+else).
 
-The typical workflow is this:
-1. You have just edited the data stored in `img-credits.csv`
-2. Run `mkimgcreds.py` to generate a new table i.e. by running
+A problem arose when it was necessary to replace full links in the table with
+aliases (these can be possibly defined in Markdown). Formerly, you would have to
+run this script and manually replace the links with their aliases,
+correspondingly. In the present, you can just execute `alias-credits.sh`
+instead (see section below).
+
+### `alias-credits.sh`
+
+This script invokes `mkimgcreds.py` and replace the links in the Python script's
+output with the links' available aliases. Aliases are defined in
+`/data/aliases`. The processed output is printed to `stdout`.
+
+To execute the script:
 ```shell
-./mkimgcreds.py
+bash alias-credits.sh
+# or, if the file is executable
+./alias-credits.sh
 ```
-or
+
+After that, replace the existing image credits table in `CREDITS.md` with the
+output. Make sure that all of the aliases are defined in `CREDITS.md`. To
+generate a chunk of Markdown code that define the aliases, run
+`getaliases.sh` (see section below).
+
+### `getaliases.sh`
+
+Generate a piece of Markdown code that defines aliases for links that appear
+multiple times in `CREDITS.md`.
+
+To execute the script:
 ```shell
-python3 mkimgcreds.py
+bash getaliases.sh
+# or, if the file is executable
+./getaliases.sh
 ```
-3. Copy the output and use it to replace the existing table in `/CREDITS.md`
-(in particular, the table that displays the information of the images)
+
+After that, copy the output and paste it in CREDITS.md (under the line with the
+comment `<!-- Link aliases -->`). Be sure to remove existing alias definitions
+first.
 
 ### `mkthumb.sh`
 
-This script generates thumbnails of images found in `/img`. The thumbnails are
-stored in `/img/thumb`. Should be executed after a new image is placed into
-`img/` or an existing image is replaced. The script leverages ImageMagick's
-`convert` utility to resize the images. Make sure the utility is available on
-your machine before running the script.
+Generate thumbnails of images found in `/img`. The thumbnails are stored in
+`/img/thumb`. Should be executed after a new image is placed into `img/` or an
+existing image is replaced. The script leverages ImageMagick's `convert` utility
+to resize the images. Make sure the utility is available on your machine before
+running the script.
 
-The script is written in Bash. There are 2 ways to execute it:
-
-1.
-```shell
-./mkthumb.sh
-```
-2.
+To execute the script:
 ```shell
 bash mkthumb.sh
+# or, if the file is executable
+./mkthumb.sh
 ```
