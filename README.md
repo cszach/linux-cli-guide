@@ -79,7 +79,9 @@ License
 
 By licensing this work under the [Creative Commons Zero](LICENSE) (CC0) license,
 we dedicate it to the Public Domain. We do this for the benefit of the public at
-large.
+large. Being in the Public Domain means this work can be freely used by anyone
+and by any means, even for commercial purposes, without attribution (although it
+is super appreciated).
 
 All text contents and the scripts found in `script/` are all CC0-licensed. Image
 contents are also in the Public Domain; in particular:
