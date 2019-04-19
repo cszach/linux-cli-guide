@@ -1,5 +1,7 @@
-<h3 align="center">Sample Chapter</h3>
-<h1 align="center">Chapter Title</h1>
+<p align="center">
+    <img src="" width="28%" />
+    <img src="" width="70.5%" />
+</p>
 
 <p align="center">
     <b><a style="text-decoration: none"
