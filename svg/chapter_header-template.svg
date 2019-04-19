@@ -52,74 +52,69 @@
      id="layer1" />
   <g
      id="layer3">
+    <rect
+       y="147.43181"
+       x="0"
+       height="417.09061"
+       width="417.09061"
+       id="rect187"
+       style="opacity:1;vector-effect:none;fill:#32dc00;fill-opacity:0.74509804;stroke:none;stroke-width:4.92214966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;vector-effect:none;fill:#000985;fill-opacity:0.74509804;stroke:none;stroke-width:7.7992568;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1559"
+       width="1047.1943"
+       height="417.09061"
+       x="421.77234"
+       y="147.43181" />
     <g
-       id="g881">
-      <rect
-         transform="translate(0,676.31405)"
-         style="opacity:1;vector-effect:none;fill:#32dc00;fill-opacity:0.74509804;stroke:none;stroke-width:4.90322495;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect187"
-         width="415.487"
-         height="415.487"
-         x="0"
-         y="-528.08044" />
-      <rect
-         transform="translate(0,676.31405)"
-         y="-528.08044"
-         x="425.79889"
-         height="415.487"
-         width="1043.1681"
-         id="rect1559"
-         style="opacity:1;vector-effect:none;fill:#000985;fill-opacity:0.74509804;stroke:none;stroke-width:7.76927042;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <g
-         id="g920"
-         transform="matrix(0.6940001,0,0,0.6940001,-18.054766,555.69055)">
-        <text
-           id="text1563"
-           y="-430.72507"
-           x="550.34869"
-           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:101.66504669px;font-family:Overpass;-inkscape-font-specification:Overpass;text-align:end;text-anchor:end;fill:#ffffff;stroke-width:0.26458332"
-             y="-430.72507"
-             x="550.34869"
-             id="tspan1561">Chapter</tspan><tspan
-             id="tspan911"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:101.66504669px;font-family:Overpass;-inkscape-font-specification:Overpass;text-align:end;text-anchor:end;fill:#ffffff;stroke-width:0.26458332"
-             y="-383.23691"
-             x="550.34869" /></text>
-        <text
-           id="text1567"
-           y="-75.624702"
-           x="574.29041"
-           style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:350.74441528px;font-family:Overpass;-inkscape-font-specification:Overpass;text-align:end;text-anchor:end;fill:#ffffff;stroke-width:0.26458332"
-             y="-75.624702"
-             x="574.29041"
-             id="tspan1565">00</tspan></text>
-      </g>
-      <flowRoot
-         id="flowRoot93"
+       transform="matrix(0.6940001,0,0,0.6940001,-16.450703,555.69056)"
+       id="g920">
+      <text
          xml:space="preserve"
-         transform="matrix(0.6940001,0,0,0.6940001,474.04835,246.91585)"><flowRegion
-           id="flowRegion87"><rect
-             id="rect85"
-             y="0"
-             x="0"
-             width="2116.667mm"
-             height="1411.111mm" /></flowRegion><flowPara
-           id="flowPara89"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:137.24781799px;font-family:Overpass;-inkscape-font-specification:Overpass;fill:#ffffff">Lorem ipsum dolor</flowPara><flowPara
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:137.24781799px;font-family:Overpass;-inkscape-font-specification:Overpass;fill:#ffffff"
-           id="flowPara104">sit amet</flowPara><flowPara
-           id="flowPara91"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:137.24781799px;font-family:Overpass;-inkscape-font-specification:Overpass;fill:#ffffff" /></flowRoot>      <rect
-         style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:0.00657895;stroke:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect57"
-         width="10.31189"
-         height="415.487"
-         x="415.487"
-         y="148.23358" />
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="550.34869"
+         y="-430.72507"
+         id="text1563"><tspan
+           id="tspan1561"
+           x="550.34869"
+           y="-430.72507"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:101.66504669px;font-family:Overpass;-inkscape-font-specification:Overpass;text-align:end;text-anchor:end;fill:#ffffff;stroke-width:0.26458332">Chapter</tspan><tspan
+           x="550.34869"
+           y="-383.23691"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:101.66504669px;font-family:Overpass;-inkscape-font-specification:Overpass;text-align:end;text-anchor:end;fill:#ffffff;stroke-width:0.26458332"
+           id="tspan911" /></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="574.29041"
+         y="-75.624702"
+         id="text1567"><tspan
+           id="tspan1565"
+           x="574.29041"
+           y="-75.624702"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:350.74441528px;font-family:Overpass;-inkscape-font-specification:Overpass;text-align:end;text-anchor:end;fill:#ffffff;stroke-width:0.26458332">00</tspan></text>
     </g>
+    <flowRoot
+       transform="matrix(0.6940001,0,0,0.6940001,470.02179,246.91586)"
+       xml:space="preserve"
+       id="flowRoot93"><flowRegion
+         id="flowRegion87"><rect
+           height="1411.111mm"
+           width="2116.667mm"
+           x="0"
+           y="0"
+           id="rect85" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:137.24781799px;font-family:Overpass;-inkscape-font-specification:Overpass;fill:#ffffff"
+         id="flowPara89">Lorem ipsum dolor</flowPara><flowPara
+         id="flowPara104"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:137.24781799px;font-family:Overpass;-inkscape-font-specification:Overpass;fill:#ffffff">sit amet</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:137.24781799px;font-family:Overpass;-inkscape-font-specification:Overpass;fill:#ffffff"
+         id="flowPara91" /></flowRoot>    <rect
+       y="148.23358"
+       x="415.487"
+       height="415.487"
+       width="10.31189"
+       id="rect57"
+       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:0.00657893;stroke:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
 </svg>
