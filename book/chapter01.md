@@ -1,5 +1,7 @@
-<h3 align="center">Chapter 1</h3>
-<h1 align="center">Basic operations with directories</h1>
+<p align="center">
+    <img src="../img/ch01/header.part1.png" width="28%" />
+    <img src="../img/ch01/header.part2.png" width="70.5%" />
+</p>
 
 <p align="center">
     <b><a style="text-decoration: none"

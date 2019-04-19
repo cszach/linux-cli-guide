@@ -1,5 +1,7 @@
-<h3 align="center">Chapter 3</h3>
-<h1 align="center">More operations with files</h1>
+<p align="center">
+    <img src="../img/ch03/header.part1.png" width="28%" />
+    <img src="../img/ch03/header.part2.png" width="70.5%" />
+</p>
 
 <p align="center">
     <b><a style="text-decoration: none"
