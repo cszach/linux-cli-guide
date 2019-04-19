@@ -18,7 +18,7 @@
 - - -
 
 <!-- This is where you introduce what the chapter is about. -->
-If you're new to Bash in specific and the command line in general, **welcome!**.
+If you're new to Bash in specific and the command line in general, **welcome!**
 In this very first chapter of the Bash Tutorial, you'll get to know about the
 command line environment, Shell, differences between Shell interpreters,
 terminal emulator's shortcuts, and more. Let's begin!
