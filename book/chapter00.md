@@ -1,10 +1,6 @@
 <p align="center">
     <img src="../img/ch00/header.part1.png" width="28%" />
-<<<<<<< HEAD
     <img src="../img/ch00/header.part2.png" width="70.5%" />
-=======
-    <img src="../img/ch00/header.part2.png" width="70%" />
->>>>>>> 74b3db2acb0ff7cb4aa72fa1674fa746a9c571cc
 </p>
 
 <p align="center">
