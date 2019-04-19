@@ -39,7 +39,7 @@ keyboard, but not all of the time. The screenshot below shows a graphical user
 interface that came with Fedora Core 2 - an old release of the Fedora operating
 system that was first released in 2004.
 
-![](../img/fedo_core_2-screenshot.png)
+![](../img/ch00/fedo_core_2-screenshot.png)
 **Figure 0.1** A screenshot of Fedora Core 2. The presence of graphical icons
 and a mouse pointer tells us that this is indeed a GUI.
 
