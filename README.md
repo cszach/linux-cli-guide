@@ -14,10 +14,10 @@ fundamental concepts and commands to more advanced ones, with their practical
 applications alongside.
 
 <p align="center">
-    <a href="book/\_preamble.md"><img src="img/read-btn.png" width="24%" /></a>
-    <a href="book/GLOSSARY.md"><img src="img/glossary-btn.png" width="24%" /></a>
-    <a href="CREDITS.md"><img src="img/credits-btn.png" width="24%" /></a>
-    <a href="LICENSE"><img src="img/license-btn.png" width="24%" /></a>
+    <a href="book/\_preamble.md"><img src="img/readme/read-btn.png" width="24%" /></a>
+    <a href="book/GLOSSARY.md"><img src="img/readme/glossary-btn.png" width="24%" /></a>
+    <a href="CREDITS.md"><img src="img/readme/credits-btn.png" width="24%" /></a>
+    <a href="LICENSE"><img src="img/readme/license-btn.png" width="24%" /></a>
 </p>
 
 > **Note**: Different documents and different parts of any document might refer
