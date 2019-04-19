@@ -1,6 +1,6 @@
 <p align="center">
-    <img src="../img/ch00/header.part1.png" width="28.3%" />
-    <img src="../img/ch00/header.part2.png" width="71%" />
+    <img src="../img/ch00/header.part1.png" width="28%" />
+    <img src="../img/ch00/header.part2.png" width="70%" />
 </p>
 
 <p align="center">
