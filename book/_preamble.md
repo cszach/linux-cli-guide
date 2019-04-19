@@ -1,6 +1,6 @@
 <h1 align="center">Preamble</h1>
 
-![](../img/prem.jpg)
+![](../img/prem/prem.jpg)
 
 If you've been using a graphical user interface for most of the time you've
 spent on the computer, you probably have wondered if there's a way to be more
@@ -12,7 +12,7 @@ you constantly type on the keyboard to get things done. And it's **much faster**
 to perform repetitive tasks, files management, etc. if you work in such an
 environment. Look no further, we've been talking about **the command line**.
 
-![](../img/bash-example.png)
+![](../img/prem/bash-example.png)
 
 Behind all the text that appears, there's a program working under the hood. Its
 task is to interpret what you've typed. This program is usually **a Shell

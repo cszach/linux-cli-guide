@@ -82,7 +82,7 @@ $ cat myfile-link.txt                  # Step 6
 Hello, student!
 ```
 
-![](../img/symlink-vis.png)
+![](../img/ch03/symlink-vis.png)
 **Figure 2.1** `myfile-link.txt` is a symbolic link that points to `myfile.txt`.
 
 7. Run `stat myfile.txt` and `stat myfile-link.txt` and see the sizes (labeled
@@ -127,7 +127,7 @@ actual file. When you move `myfile.txt` to another location, the relative path
 that `myfile-link.txt` has is not updated, thus the link is now referring to a
 non-existent file.
 
-![](../img/broken_symlink-vis.png)
+![](../img/ch03/broken_symlink-vis.png)
 **Figure 2.2** `myfile.txt` is moved into `~/Templates` but `myfile-link.txt` is
 still pointing to `./myfile.txt` which is now non-existent. Such links that
 point to non-existent destination are considered to be broken.
@@ -196,7 +196,7 @@ inode is the thing that actually holds the content, and any file linked to it
 has that content, thus moving or deleting a file does not have any effect on the
 other files.
 
-![Visualization of hard links](../img/hard_link-vis.png)
+![Visualization of hard links](../img/ch03/hard_link-vis.png)
 **Figure 2.3** Files that share the same inode number have the same content. To
 create a hard link is to create a file with the same inode number as another
 file.

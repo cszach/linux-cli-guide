@@ -30,7 +30,7 @@
 
 - - -
 
-![](../img/folders.jpg)
+![](../img/ch01/folders.jpg)
 
 This section introduces the basic commands that get you moving between different
 locations in the file system and viewing items in a folder or many folders. If
@@ -69,7 +69,7 @@ this folder is called the **root folder**, denoted "/".</a> The below graph
 illustrates a small part of a file system on a typical GNU/Linux machine,
 according to the hierarchy.
 
-![File system hierarchy illustration](../img/fsh.png)
+![File system hierarchy illustration](../img/ch01/fsh.png)
 **Figure 1.1** Each folder can contain other folders and files. Thus this system
 is hierarchical.
 
@@ -194,7 +194,7 @@ Just like `cd`, `pushd` (**push** <b>d</b>irectory) moves you to a new
 directory. However, `pushd` does one more thing: adding the new directory to the
 directory stack.
 
-![Visualization of pushd command](../img/pushd-vis.png)
+![Visualization of pushd command](../img/ch01/pushd-vis.png)
 **Figure 1.2** This image illustrates the `pushd` command in action.
 
 > **Note**: `cd .` is useless, but `pushd .` can be useful.
@@ -277,7 +277,7 @@ you will be moved to `~/Videos`, and `~/Templates` will be gone from the stack:
 ~
 ```
 
-![Visualization of popd command](../img/popd-vis.png)
+![Visualization of popd command](../img/ch01/popd-vis.png)
 **Figure 1.3** This image illustrates the `popd` command in action. After
 popping `~/Templates`, `~/Videos` becomes the end of the stack.
 
