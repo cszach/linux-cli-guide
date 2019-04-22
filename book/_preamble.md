@@ -1,6 +1,7 @@
-<h1 align="center">Preamble</h1>
-
-![](../img/prem/prem.jpg)
+<p align="center">
+    <img src="../img/prem/header.part1.png" width="28%" />
+    <img src="../img/prem/header.part2.png" width="70.5%" />
+</p>
 
 If you've been using a graphical user interface for most of the time you've
 spent on the computer, you probably have wondered if there's a way to be more
