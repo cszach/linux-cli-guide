@@ -25,4 +25,6 @@ do
                      $imgdir/thumb/$(/usr/bin/basename $imgpath)
 done
 
+eval /usr/bin/rm "$imgdir/thumb/header.*"
+
 /usr/bin/rm -f .thumbs.query
