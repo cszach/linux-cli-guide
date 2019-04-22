@@ -13,11 +13,11 @@ never touched a command line interface before. It will guide you from the most
 fundamental concepts and commands to more advanced ones, with their practical
 applications alongside.
 
-:white_check_mark: Learn to use Bash's built-ins, GNU utilities and their
+:heavy_check_mark: Learn to use Bash's built-ins, GNU utilities and their
 helpful options  
-:white_check_mark: Practical use cases of commands  
-:white_check_mark: Learn Bash scripting to automate tasks  
-:white_check_mark: Revise by taking a quiz at the end of every chapter
+:heavy_check_mark: Practical use cases of commands  
+:heavy_check_mark: Learn Bash scripting to automate tasks  
+:heavy_check_mark: Revise by taking a quiz at the end of every chapter
 
 <p align="center">
     <a href="book/\_preamble.md"><img src="img/readme/read-btn.png" width="24%" /></a>
