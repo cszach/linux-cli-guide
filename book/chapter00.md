@@ -39,7 +39,8 @@ keyboard, but not all of the time. The screenshot below shows a graphical user
 interface that came with Fedora Core 2 - an old release of the Fedora operating
 system that was first released in 2004.
 
-![](../img/ch00/fedo_core_2-screenshot.png)  
+![Screenshot of Fedora Core 2
+with a graphical user interface](../img/ch00/fedo_core_2-screenshot.png)  
 **Figure 0.1** A screenshot of Fedora Core 2. The presence of graphical icons
 and a mouse pointer tells us that this is indeed a GUI.
 
@@ -54,8 +55,37 @@ The graphical user interface is sufficient for average computer users. However,
 those who seek for more productivity and efficiency on the computer should know
 how to use a **command line interface** (abbreviated **_CLI_**).
 
-A command line interface is where you control your computer by typing commands
-to tell the computer what you want to do.
+A command line interface is where the user controls a computer primarily by
+typing commands. Typically, in a command line session, the user types a command
+to specify an action, then waits for the action to be done, and then types the
+next command. In general, a command line session has 3 distinctive components:
+the **prompt**, the **user input**, and the **console output**. They are shown
+in **Figure 0.2**.
+
+![Components of a command line session](../img/ch00/cli_components.png)  
+**Figure 0.2** 3 distinct types of components in a command line session.
+
+- The **prompt** is a string of text that appears when the computer is ready for
+the next command. It basically indicates that the user can now type the next
+command.
+- The **user input** is a command in the form of text typed in by the user to
+specify what the user wants to do.
+- The **console output** is a visible chunk of text produced during the
+execution of the user's command. The text can be log messages (such as warning
+messages or error messages) or the result the user expected to see. For an
+example, take a look at **Figure 0.2** again. The first command typed by the
+user is `cal`. It is a command used to see a calendar printed in the format
+typically used in ordinary calendars. Indeed, the console output produced by
+`cal` showed a calendar with the current date highlighted.
+
+As stated earlier, commands are successively executed in a command line
+interface. That means, after typing a command, the user will have to wait for
+the execution of that command to finish before he/she can issue the next
+command. To better understand what that means, see **Figure 0.3**.
+
+![A command line session (shown in an animated GIF)](../img/ch00/cli_session.gif)  
+**Figure 0.3** A command line session. Here, it can be clearly seen that
+command inputs are successive.
 
 Chapter Summary
 ---------------
