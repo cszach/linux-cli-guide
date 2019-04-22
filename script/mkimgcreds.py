@@ -50,9 +50,14 @@ with open(csvfname, newline='', encoding='utf-8') as csvfile:
         # This contains the thumbnail of the image (found in /img/thumb/), and
         # links to different formats which the image is available under
 
-        print("|![](img/thumb/{0})<br/><br/>[{1}](img/{2}/{0})"
-              .format(fname, fname[fname.rfind('.') + 1:].upper(), row['Subfolder']),
-              end='')
+        if fname[-3:].lower() != "gif":
+            print("|![](img/thumb/{0})<br/><br/>[{1}](img/{2}/{0})"
+                  .format(fname, fname[fname.rfind('.') + 1:].upper(), row['Subfolder']),
+                  end='')
+        else:
+            print("<img src=\"img/{1}/{0}\" width=\"300px\"/><br/><br/>[GIF](img/{1}/{0})"
+                  .format(fname, row['Subfolder']),
+                  end='')
         if isfile("../" + source):
             print(" &mdash; [SVG](%s)" % source, end='')
         print("|", end='')

@@ -11,16 +11,18 @@ imgdir="../img"  # Path of img/ relative to where this Shell script is located
 >&2 echo "ERROR: ImageMagick's convert utility not found" && exit 1
 
 # Find all images and write their paths in .thumbs.query
-/usr/bin/find $PWD/$imgdir \
-    -not -path "$PWD/$imgdir/thumb*" \
-    -not -path "$PWD/$imgdir/.ignore*" \
-    -not -path $PWD/$imgdir \
+/usr/bin/find $PWD/$imgdir -type f          \
+    -not -iname "*.gif"                      \
+    -not -path "$PWD/$imgdir/thumb/*"         \
+    -not -path "$PWD/$imgdir/.ignore/*"        \
+    -not -path "$PWD/$imgdir"                   \
     > .thumbs.query
 
 # Generate thumbnails
 for imgpath in $(cat ./.thumbs.query)
 do
-    /usr/bin/convert $imgpath -resize 300 $imgdir/thumb/$(/usr/bin/basename $imgpath)
+    /usr/bin/convert $imgpath -resize 300 \
+                     $imgdir/thumb/$(/usr/bin/basename $imgpath)
 done
 
 /usr/bin/rm -f .thumbs.query
