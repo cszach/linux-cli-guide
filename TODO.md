@@ -13,9 +13,9 @@ Development
 Chapter 0
 =========
 
-- [ ] The concept of a command line user interface (CLI)
-- [ ] Introduce the pure command line interface (TTY terminal)
+- [x] The concept of a command line user interface (CLI)
 - [ ] Introduce the terminal emulator
+- [ ] Introduce the pure command line interface (TTY terminal)
 - [ ] Introduce different Shell interpreters (`sh`, `zsh`, `bash`,...)
 - [ ] Explain the difference between a CLI input's components: Command, options
 and arguments
