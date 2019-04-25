@@ -15,29 +15,21 @@ on the right. The script is written in Python 3. The generated table is printed
 to `stdout` (i.e. the console, if you don't reroute the output to anywhere
 else).
 
-A problem arose when it was necessary to replace full links in the table with
-aliases (these can be possibly defined in Markdown). Formerly, you would have to
-run this script and manually replace the links with their aliases,
-correspondingly. In the present, you can just execute `alias-credits.sh`
-instead (see section below).
-
-### `alias-credits.sh`
-
-This script invokes `mkimgcreds.py` and replace the links in the Python script's
-output with the links' available aliases. Aliases are defined in
-`/data/aliases`. The processed output is printed to `stdout`.
-
 To execute the script:
-```shell
-bash alias-credits.sh
+```
+python3 mkimgcreds.py
 # or, if the file is executable
-./alias-credits.sh
+./mkimgcreds.py
 ```
 
 After that, replace the existing image credits table in `CREDITS.md` with the
 output. Make sure that all of the aliases are defined in `CREDITS.md`. To
 generate a chunk of Markdown code that define the aliases, run
 `getaliases.sh` (see section below).
+
+Date files used by the script:
+- `/data/img-credits.csv`: To fetch the images' information
+- `/data/aliases`: To replace full links with existing aliases for them
 
 ### `getaliases.sh`
 
@@ -69,3 +61,6 @@ bash mkthumb.sh
 # or, if the file is executable
 ./mkthumb.sh
 ```
+
+> **Note**: The script does not generate thumbnails for GIF files, but you don't
+have to worry about that.
