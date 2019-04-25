@@ -26,7 +26,7 @@ terminal emulator's shortcuts, and more. Let's begin!
 Table of Content
 ----------------
 
-
+1. [Command line user interface](#command-line-user-interface)
 
 Command line user interface
 ---------------------------
@@ -81,11 +81,25 @@ typically used in ordinary calendars. Indeed, the console output produced by
 As stated earlier, commands are successively executed in a command line
 interface. That means, after typing a command, the user will have to wait for
 the execution of that command to finish before he/she can issue the next
-command. To better understand what that means, see **Figure 0.3**.
+command<sup><a href="#footnote-1">[1]</a></sup>. To better understand what that
+means, see **Figure 0.3**.
 
 ![A command line session (shown in an animated GIF)](../img/ch00/cli_session.gif)  
 **Figure 0.3** A command line session. Here, it can be clearly seen that
 command inputs are successive.
+
+<a name="footnote-1"></a>
+> **[1]**: Strictly speaking, this is not true for most CLIs that go with macOS
+or GNU/Linux machines, because these are operating systems that can multi-task.
+You can technically start a process, let it run in the background, and continue
+executing other commands without waiting for the process started earlier to
+finish. There are also "terminal multiplexers" which can give you a better image
+of different running processes. But for now, let's not worry about those at the
+moment, and assume that CLIs don't offer the ability to multitask like they
+traditionally did.
+
+Why is it more efficient to use the command line and who use it?
+----------------------------------------------------------------
 
 Chapter Summary
 ---------------
