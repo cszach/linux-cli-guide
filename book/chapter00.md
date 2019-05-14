@@ -29,6 +29,11 @@ Table of Content
 ----------------
 
 1. [Command line user interface](#command-line-user-interface)
+2. [Command line efficiency](#command-line-efficiency)
+    1. [Control and Speed](#control-and-speed)
+    2. [System resources](#system-resources)
+    3. [GUI's advantages over CLI](#guis-advantages-over-cli)
+3. [Who use the command line interface?](#who-use-the-command-line-interface)
 
 Command line user interface
 ---------------------------
@@ -130,6 +135,11 @@ they are only available in the command line. In fact, CLI is the predecessor of
 GUI. CLI came first, and then there came GUI. Nowadays, many graphical programs
 actually rely on text commands under the hood. A button on such a program is
 tied to a specific command to carry out the intended instructions.
+
+![llustration of GUI over CLI](../img/ch00/gui_over_cli.png)  
+**Figure 0.4** GUI can be seen as the pretty layer on top of CLI. The graphical
+interface that the users see is usually referred to as the "front-end", and the
+underlying system is usually referred to as the "back-end".
 
 The command line also introduces ways to repeat a task again and again that
 would be otherwise impossible in a graphical environment.
