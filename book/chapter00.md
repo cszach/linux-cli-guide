@@ -23,6 +23,8 @@ In this very first chapter of the Bash Tutorial, you'll get to know about the
 command line environment, Shell, differences between Shell interpreters,
 terminal emulator's shortcuts, and more. Let's begin!
 
+> **Note**: <!-- Note about skipping content here -->
+
 Table of Content
 ----------------
 
@@ -31,13 +33,13 @@ Table of Content
 Command line user interface
 ---------------------------
 
-The majority of computer users make use of **graphical user interfaces**
-(abbreviated **_GUI_** or **_GUIs_** for plural) to control their machines. That
-is, they navigate and control their computers by clicking/sliding icons,
-buttons, sliders, etc. with a mouse pointer. Of course, they do use the
-keyboard, but not all of the time. The screenshot below shows a graphical user
-interface that came with Fedora Core 2 - an old release of the Fedora operating
-system that was first released in 2004.
+Most computer users make use of **graphical user interfaces** (abbreviated
+**_GUI_** or **_GUIs_** for plural) to control their machines. That is, they
+control their computers by clicking/sliding icons, buttons, sliders, etc. with
+mouse pointers. Of course, they do use the keyboard, but not all of the time.
+The screenshot below shows a graphical user interface that came with Fedora Core
+2 - an old release of the Fedora operating system that was first released in
+2004.
 
 ![Screenshot of Fedora Core 2
 with a graphical user interface](../img/ch00/fedo_core_2-screenshot.png)  
@@ -98,8 +100,97 @@ of different running processes. But for now, let's not worry about those at the
 moment, and assume that CLIs don't offer the ability to multitask like they
 traditionally did.
 
-Why is it more efficient to use the command line and who use it?
-----------------------------------------------------------------
+Command line efficiency
+-----------------------
+
+To be the most efficient on the computer, you need to use both the CLI and the
+GUI reasonably. Some tasks are more quickly done in the CLI and some are more
+quickly done in the GUI. Some are possible in the command line but not in the
+GUI and vice versa.
+
+### Control and Speed
+
+The command line gives you more control than a GUI. Programs used in the command
+line are often versatile and (as a result) complex, but since they don't get
+displayed as graphical windows, the complexity is just hidden.
+
+Imagine a complex file-finding program with many options (such as finding files
+that are executable, finding files that are recently edited, finding files
+whose names match a particular pattern, etc.). If such a program is available in
+the command line, the computer user will have to spend time through a
+(possibly) intimidating process of learning the program's options, but once that
+is done, the user will just have to type the options needed every time he/she
+wants to use the program. But if that program is available as a graphical
+application, either all the options get visually displayed or they get grouped
+and hide into tool bars and menus. Navigating through these is definitely more
+time-consuming.
+
+In addition, there are low-level tools to work with your operating system and
+they are only available in the command line. In fact, CLI is the predecessor of
+GUI. CLI came first, and then there came GUI. Nowadays, many graphical programs
+actually rely on text commands under the hood. A button on such a program is
+tied to a specific command to carry out the intended instructions.
+
+The command line also introduces ways to repeat a task again and again that
+would be otherwise impossible in a graphical environment.
+
+### System resources
+
+Using a GUI consumes more system resources than using a CLI. This is obvious,
+since a graphical environment requires loading images, icons, fonts, videos and
+other graphical components, which are heavier and more complex than just plain
+text. No wonder why many graphical applications take a long time to load. In a
+command line interface, lagging is something perhaps unbeknownst to many.
+
+### GUI's advantages over CLI
+
+Some tasks are more quickly done in the GUI. A graphical button may be tied with
+multiple commands. Clicking such a button gets the work done faster than
+manually issuing the commands. For example, if you want to safely eject a USB
+device from your computer, you will only have to click one button<sup><a
+href="#footnote-2">[2]</a></sup>. But if you want to eject it by typing
+commands, 3 commands (or even more) will have to be issued:
+
+```shell
+lsblk                # Find the mount point of the mounted partition in the USB device
+umount /dev/sdb1     # Un-mount the partition
+sudo eject /dev/sdb  # Eject the USB device, requires typing user password
+```
+
+There are also tasks that are possible in the GUI but not in the CLI, such as
+image editing or video editing<sup><a href="#footnote-3">[3]</a></sup>.
+
+<a name="footnote-2"></a>
+> **[2]**: At least that's true if you are using the GNOME desktop environment.
+
+<a name="footnote-3"></a>
+> **[3]**: Strictly speaking, that's possible but not to a great extent. Not
+even to a _good_ extent. It's obvious that no image editor uses the CLI for much
+of their work.
+
+Who use the command line interface?
+-----------------------------------
+
+- **Computer programmers**: They develop applications and need to sort out their
+ideas in a command line environment first before putting a pretty layer - the
+graphical interface - on top. Programmers also use lots of command line programs
+for speed and productivity.
+- **Back-end developers**: They work on the inner-working components, not the
+outer layer that is intended to be visually nice, so they work in CLI a lot.
+- **Website/Server maintainers**: Website and server maintenance is done much
+faster in the CLI.
+- **Computer scientists**: When they want to test their new ideas such as
+algorithms or ways to optimize an operating system, text commands are usually
+their preferred way.
+- **Supercomputer operators**: GUI is not featured in supercomputers in order
+for these behemoths to work to their fullest extends. Managing a supercomputer
+is also more quickly done in CLI.
+- **Retro computing hobbyists**: Retro computers (i.e. old computers, made in
+the 20<sup>th</sup> century) don't have GUI.
+- **A small portion of non-technicians**: They just want to play around with the
+text commands or get things done quickly.
+- ~~Gormless kids who try to look like hackers~~
+- ...and more
 
 Chapter Summary
 ---------------
