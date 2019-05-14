@@ -69,7 +69,11 @@ next command. In general, a command line session has 3 distinctive components:
 the **prompt**, the **user input**, and the **console output**. They are shown
 in **Figure 0.2**.
 
-![Components of a command line session](../img/ch00/cli_components.png)  
+<p align="center">
+    <img src="../img/ch00/cli_components.png"
+         alt="Components of a command line session" /><br/>
+</p>
+
 **Figure 0.2** 3 distinct types of components in a command line session.
 
 - The **prompt** is a string of text that appears when the computer is ready for
