@@ -51,7 +51,7 @@ an old release of the Fedora operating system that was first released in 2004.
 graphical icons and a graphical mouse pointer.
 
 <img src="../img/ch00/misleading_button.png"
-     alt="A misleading button" align="left" width="300px" />
+     alt="A misleading button" align="left" width="90px" height="90px" />
 In a graphical user interface, the visual design (i.e. UI/UX design) takes a
 very important role in how the user understands and experiences. For example, if
 a button on web page that links to the site's Search page contains an icon that
