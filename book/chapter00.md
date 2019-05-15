@@ -45,8 +45,8 @@ mouse pointers. Of course, they do use keyboards, but not all of the time. The
 screenshot below shows a graphical user interface that came with Fedora Core 2
 - an old release of the Fedora operating system that was first released in 2004.
 
-![Screenshot of Fedora Core 2
-with a graphical user interface](../img/ch00/fedo_core_2-screenshot.png)  
+<img width="100%" src="../img/ch00/fedo_core_2-screenshot.png"
+     alt="Screenshot of Fedora Core 2 with a graphical user interface" /> <br />
 **Figure 0.1** A screenshot of Fedora Core 2. This is a GUI because there are
 graphical icons and a graphical mouse pointer.
 
