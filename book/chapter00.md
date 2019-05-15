@@ -42,20 +42,21 @@ Most computer users make use of **graphical user interfaces** (abbreviated
 **_GUI_** or **_GUIs_** for plural) to control their machines. That is, they
 control their computers by clicking/sliding icons, buttons, sliders, etc. with
 mouse pointers. Of course, they do use keyboards, but not all of the time. The
-screenshot below shows a graphical user interface that came with Fedora Core 2
-- an old release of the Fedora operating system that was first released in 2004.
+screenshot below shows a graphical user interface that came with Fedora Core 2 -
+an old release of the Fedora operating system that was first released in 2004.
 
 <img width="100%" src="../img/ch00/fedo_core_2-screenshot.png"
      alt="Screenshot of Fedora Core 2 with a graphical user interface" /> <br />
 **Figure 0.1** A screenshot of Fedora Core 2. This is a GUI because there are
 graphical icons and a graphical mouse pointer.
 
+<img src="../img/ch00/misleading_button.png"
+     alt="A misleading button" align="left" width="300px" />
 In a graphical user interface, the visual design (i.e. UI/UX design) takes a
-very important role in the user's interpretation and experience. One example of
-the effect that the design has on the user's interpretation is, if a button on a
-web page that links to the site's Search page contains an icon that illustrates
-a house, the user will think that the button will lead to the site's homepage.
-Visual design is the key in GUIs.
+very important role in how the user understands and experiences. For example, if
+a button on web page that links to the site's Search page contains an icon that
+illustrates a house, the user will think that the button will lead to the site's
+homepage. Visual design is the key in GUIs.
 
 The graphical user interface is sufficient for average computer users. However,
 those who seek for more productivity and efficiency on the computer should know
