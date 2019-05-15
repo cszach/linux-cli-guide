@@ -41,15 +41,14 @@ Command line user interface
 Most computer users make use of **graphical user interfaces** (abbreviated
 **_GUI_** or **_GUIs_** for plural) to control their machines. That is, they
 control their computers by clicking/sliding icons, buttons, sliders, etc. with
-mouse pointers. Of course, they do use the keyboard, but not all of the time.
-The screenshot below shows a graphical user interface that came with Fedora Core
-2 - an old release of the Fedora operating system that was first released in
-2004.
+mouse pointers. Of course, they do use keyboards, but not all of the time. The
+screenshot below shows a graphical user interface that came with Fedora Core 2
+- an old release of the Fedora operating system that was first released in 2004.
 
 ![Screenshot of Fedora Core 2
 with a graphical user interface](../img/ch00/fedo_core_2-screenshot.png)  
-**Figure 0.1** A screenshot of Fedora Core 2. The presence of graphical icons
-and a mouse pointer tells us that this is indeed a GUI.
+**Figure 0.1** A screenshot of Fedora Core 2. This is a GUI because there are
+graphical icons and a graphical mouse pointer.
 
 In a graphical user interface, the visual design (i.e. UI/UX design) takes a
 very important role in the user's interpretation and experience. One example of
