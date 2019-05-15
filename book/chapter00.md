@@ -54,9 +54,9 @@ graphical icons and a graphical mouse pointer.
      alt="A misleading button" align="left" width="90px" height="90px" />
 In a graphical user interface, the visual design (i.e. UI/UX design) takes a
 very important role in how the user understands and experiences. For example, if
-a button on web page that links to the site's Search page contains an icon that
-illustrates a house, the user will think that the button will lead to the site's
-homepage. Visual design is the key in GUIs.
+a button on a web page that links to the site's Search page contains an icon of
+a house (like the one on the left), the user will think that the button will
+lead to the site's homepage. Visual design is the key in GUIs.
 
 The graphical user interface is sufficient for average computer users. However,
 those who seek for more productivity and efficiency on the computer should know
