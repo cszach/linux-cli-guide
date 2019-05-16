@@ -11,7 +11,9 @@
           href="#chapter-quiz">Chapter Quiz</a></b>
 </p>
 
-**New concepts**:  
+**New concepts**: [graphical user interface](#term-gui), [command line
+interface](#term-cli), [prompt](#term-prompt), [user input](#term-user_input),
+[console output](#term-console_output).
 
 <!-- Define link aliases (if any) here -->
 
@@ -38,12 +40,13 @@ Table of Content
 Command line user interface
 ---------------------------
 
-Most computer users make use of **graphical user interfaces** (abbreviated
-**_GUI_** or **_GUIs_** for plural) to control their machines. That is, they
-control their computers by clicking/sliding icons, buttons, sliders, etc. with
-mouse pointers. Of course, they do use keyboards, but not all of the time. The
-screenshot below shows a graphical user interface that came with Fedora Core 2 -
-an old release of the Fedora operating system that was first released in 2004.
+Most computer users make use of <a name="term-gui">**graphical user interfaces**
+</a>(abbreviated **_GUI_** or **_GUIs_** for plural) to control their machines.
+That is, they control their computers by clicking/sliding icons, buttons,
+sliders, etc. with mouse pointers. Of course, they do use keyboards, but not all
+of the time. The screenshot below shows a graphical user interface that came
+with Fedora Core 2 - an old release of the Fedora operating system that was
+first released in 2004.
 
 <img width="100%" src="../img/ch00/fedo_core_2-screenshot.png"
      alt="Screenshot of Fedora Core 2 with a graphical user interface" /> <br />
@@ -59,14 +62,15 @@ a house (like the one on the left), the user will think that the button will
 lead to the site's homepage. Visual design is the key in GUIs.
 
 GUI is suitable and enough for average computer users. However, if you want to be more productive and efficient on the computer, you should know how to use a
-command line interface (abbreviated **_CLI_**).
+<a name="term-cli">command line interface</a> (abbreviated **_CLI_**).
 
 A command line interface is where the user controls a computer mainly by typing
 commands. Typically, in a command line session, the user types a command to draw
 an action, then waits for the action to be done, and then types the next
 command. In general, a command line session has 3 distinctive components: the
-**prompt**, the **user input**, and the **console output**. They are shown in
-**Figure 0.2**.
+<a name="term-prompt">**prompt**</a>, the <a name="term-user_input">**user
+input**</a>, and the <a name="term-console_output">**console output**</a>. They
+are shown in **Figure 0.2**.
 
 <p align="center">
     <img src="../img/ch00/cli_components.png"
