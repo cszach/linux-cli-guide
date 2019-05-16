@@ -10,6 +10,8 @@
     the below table.
 </p>
 
+<!-- Reference alphabet: a b c d e f g h i j k l m n o p q r s t u v w x y z -->
+
 |Tag's name |                                            Description                                            |
 |   :---:   |                                                ---                                                |
 |application|Section contains practical (i.e. real-world) usage of a command or concept.                        |
@@ -20,6 +22,8 @@
 |  folder   |Related to folders.                                                                                |
 | hierarchy |Related to or about hierarchy.                                                                     |
 |    io     |Related to input/output.                                                                           |
+|linux-only |Section is intended for GNU/Linux users only.                                                      |
+|macos-only |Section is intended for macOS users only.                                                          |
 |navigating |Related to navigating in the file system.                                                          |
 |    new    |Section describes how to create something.                                                         |
 |new-command|At least 1 new command is introduced.                                                              |
