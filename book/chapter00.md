@@ -58,16 +58,15 @@ a button on a web page that links to the site's Search page contains an icon of
 a house (like the one on the left), the user will think that the button will
 lead to the site's homepage. Visual design is the key in GUIs.
 
-The graphical user interface is sufficient for average computer users. However,
-those who seek for more productivity and efficiency on the computer should know
-how to use a **command line interface** (abbreviated **_CLI_**).
+GUI is suitable and enough for average computer users. However, if you want to be more productive and efficient on the computer, you should know how to use a
+command line interface (abbreviated **_CLI_**).
 
-A command line interface is where the user controls a computer primarily by
-typing commands. Typically, in a command line session, the user types a command
-to specify an action, then waits for the action to be done, and then types the
-next command. In general, a command line session has 3 distinctive components:
-the **prompt**, the **user input**, and the **console output**. They are shown
-in **Figure 0.2**.
+A command line interface is where the user controls a computer mainly by typing
+commands. Typically, in a command line session, the user types a command to draw
+an action, then waits for the action to be done, and then types the next
+command. In general, a command line session has 3 distinctive components: the
+**prompt**, the **user input**, and the **console output**. They are shown in
+**Figure 0.2**.
 
 <p align="center">
     <img src="../img/ch00/cli_components.png"
@@ -76,24 +75,23 @@ in **Figure 0.2**.
 
 **Figure 0.2** 3 distinct types of components in a command line session.
 
-- The **prompt** is a string of text that appears when the computer is ready for
-the next command. It basically indicates that the user can now type the next
-command.
+- The **prompt** is a piece of text that appears when the computer is ready for
+the next command. It basically says that the user can now type the next command.
 - The **user input** is a command in the form of text typed in by the user to
 specify what the user wants to do.
-- The **console output** is a visible chunk of text produced during the
-execution of the user's command. The text can be log messages (such as warning
-messages or error messages) or the result the user expected to see. For an
-example, take a look at **Figure 0.2** again. The first command typed by the
-user is `cal`. It is a command used to see a calendar printed in the format
-typically used in ordinary calendars. Indeed, the console output produced by
-`cal` showed a calendar with the current date highlighted.
+- The **console output** is a visible chunk of text that is produced while the
+command is running. The text can be log messages (such as warning messages or
+error messages) or the result the user expected to see. For example, take a look
+at **Figure 0.2** again. The first command typed by the user is `cal`. It is a
+command used to see a calendar printed in the format typically used in printed
+calendars. Indeed, the console output produced by `cal` showed a calendar with
+the current date highlighted.
 
-As stated earlier, commands are successively executed in a command line
-interface. That means, after typing a command, the user will have to wait for
-the execution of that command to finish before he/she can issue the next
-command<sup><a href="#footnote-1">[1]</a></sup>. To better understand what that
-means, see **Figure 0.3**.
+As said earlier, commands are successively executed in a command line interface.
+That means, after typing a command, the user will have to wait for that command
+to finish running before he/she can issue the next command<sup><a
+href="#footnote-1">[1]</a></sup>. To better understand what that means, see
+**Figure 0.3**.
 
 ![A command line session (shown in an animated GIF)](../img/ch00/cli_session.gif)  
 **Figure 0.3** A command line session. Here, it can be clearly seen that
@@ -101,13 +99,13 @@ command inputs are successive.
 
 <a name="footnote-1"></a>
 > **[1]**: Strictly speaking, this is not true for most CLIs that go with macOS
-or GNU/Linux machines, because these are operating systems that can multi-task.
-You can technically start a process, let it run in the background, and continue
-executing other commands without waiting for the process started earlier to
-finish. There are also "terminal multiplexers" which can give you a better image
-of different running processes. But for now, let's not worry about those at the
-moment, and assume that CLIs don't offer the ability to multitask like they
-traditionally did.
+or GNU/Linux machines, because these are operating systems that can multi-task
+(carry multiple tasks at the same time). You can technically start a process,
+let it run in the background, and continue executing other commands without
+waiting for the process started earlier to finish. There are also "terminal
+multiplexers" which can give you a better image of different running processes.
+But for now, let's not worry about those at the moment, and assume that CLIs
+don't offer the ability to multitask like they traditionally did.
 
 Command line efficiency
 -----------------------
@@ -123,16 +121,15 @@ The command line gives you more control than a GUI. Programs used in the command
 line are often versatile and (as a result) complex, but since they don't get
 displayed as graphical windows, the complexity is just hidden.
 
-Imagine a complex file-finding program with many options (such as finding files
-that are executable, finding files that are recently edited, finding files
-whose names match a particular pattern, etc.). If such a program is available in
-the command line, the computer user will have to spend time through a
-(possibly) intimidating process of learning the program's options, but once that
-is done, the user will just have to type the options needed every time he/she
-wants to use the program. But if that program is available as a graphical
-application, either all the options get visually displayed or they get grouped
-and hide into tool bars and menus. Navigating through these is definitely more
-time-consuming.
+Imagine a universal file-finding program with many options (such as finding
+executable files, finding files that are recently edited, finding files whose
+names match a particular pattern, etc.). If such a program is available in the
+command line, the computer user will have to spend time through a (possibly)
+intimidating process of learning the program's options, but once that is done, the
+user will just have to type the options needed every time he/she wants to use the
+program. But if that program is available as a graphical application, either all
+the options get visually displayed or they get grouped and hide into tool bars
+and menus. Navigating through these is definitely more time-consuming.
 
 In addition, there are low-level tools to work with your operating system and
 they are only available in the command line. In fact, CLI is the predecessor of
@@ -160,7 +157,7 @@ command line interface, lagging is something perhaps unbeknownst to many.
 
 Some tasks are more quickly done in the GUI. A graphical button may be tied with
 multiple commands. Clicking such a button gets the work done faster than
-manually issuing the commands. For example, if you want to safely eject a USB
+manually typing the commands. For example, if you want to safely eject a USB
 device from your computer, you will only have to click one button<sup><a
 href="#footnote-2">[2]</a></sup>. But if you want to eject it by typing
 commands, 3 commands (or even more) will have to be issued:
@@ -170,6 +167,8 @@ lsblk                # Find the mount point of the mounted partition in the USB 
 umount /dev/sdb1     # Un-mount the partition
 sudo eject /dev/sdb  # Eject the USB device, requires typing user password
 ```
+
+> **Note**: Please do not worry about learning the commands above at the moment.
 
 There are also tasks that are possible in the GUI but not in the CLI, such as
 image editing or video editing<sup><a href="#footnote-3">[3]</a></sup>.
