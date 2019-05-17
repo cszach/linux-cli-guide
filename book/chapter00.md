@@ -61,7 +61,8 @@ a button on a web page that links to the site's Search page contains an icon of
 a house (like the one on the left), the user will think that the button will
 lead to the site's homepage. Visual design is the key in GUIs.
 
-GUI is suitable and enough for average computer users. However, if you want to be more productive and efficient on the computer, you should know how to use a
+GUI is suitable and enough for average computer users. However, if you want to
+be more productive and efficient on the computer, you should know how to use a
 <a name="term-cli">command line interface</a> (abbreviated **_CLI_**).
 
 A command line interface is where the user controls a computer mainly by typing
@@ -260,6 +261,38 @@ for it and open it.
 </p>
 
 **Figure 0.8** A macOS Terminal window.
+
+Pure command line interface
+---------------------------
+
+Terminal emulators do their job well, but advanced users and tech-savvy people
+doing certain jobs sometimes have to use pure CLI because they want to use even
+less hardware resources. In a pure command line environment, the desktop
+environment does not run, thus less hardware resources are needed.
+
+<img alt="A TTY" src="../img/prem/bash-example.png" width="100%" />
+
+**Figure 0.9** A TTY (as shown in Preamble).
+
+In the UNIX world, pure command line is called "terminal" (as you might have
+guessed) or "tty". To access a tty, try the keyboard combination `Ctrl` +
+`Alt` + `F1`. But, there are a few things to watch out:
+- A GNU/Linux distribution might offer multiple ttys. These are labeled `tty1`,
+`tty2`, `tty3`, and so on. The keyboard combination `Ctrl` + `Alt` + `F1` is
+used to open `tty1`, `Ctrl` + `Alt` + `F2` is used to open `tty2`, and so on.
+- Depends on the system you are running, some ttys might be replaced with
+graphical displays. For example, in Ubuntu 17.04 and earlier releases of Ubuntu,
+`tty1`, `tty2`, `tty3`, ..., `tty6` are ttys, and `tty7` (can be opened by
+`Ctrl` + `Alt` + `F7`) is actually the primary graphical environment. In Ubuntu
+17.10 and later releases, pure command line ttys are available from `tty3` to
+`tty7`. As for my Fedora Workstation 30 system, command line ttys are available
+from `tty3` to `tty6`, and `tty2` is the graphical environment.
+- If you switch to a tty from a graphical environment, the graphical environment
+will still be running (and consume hardware resources). You'll have to manually
+disable it (if you want less hardware resources consumption).
+
+> **Note**: It is recommended that you use a terminal emulator to practice using
+Bash throughout the guide instead of a tty.
 
 Chapter Summary
 ---------------
