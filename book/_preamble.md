@@ -13,7 +13,9 @@ you constantly type on the keyboard to get things done. And it's **much faster**
 to perform repetitive tasks, files management, etc. if you work in such an
 environment. Look no further, we've been talking about **the command line**.
 
-![](../img/prem/bash-example.png)
+<p align="center">
+    <img alt="A command line session" src="../img/prem/bash-example.png" />
+</p>
 
 Behind all the text that appears, there's a program working under the hood. Its
 task is to interpret what you've typed. This program is usually **a Shell
