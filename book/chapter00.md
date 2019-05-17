@@ -72,11 +72,7 @@ command. In general, a command line session has 3 distinctive components: the
 input**</a>, and the <a name="term-console_output">**console output**</a>. They
 are shown in **Figure 0.2**.
 
-<p align="center">
-    <img src="../img/ch00/cli_components.png"
-         alt="Components of a command line session" /><br/>
-</p>
-
+![Components of a command line session](../img/ch00/cli_components.png)  
 **Figure 0.2** 3 distinct types of components in a command line session.
 
 - The **prompt** is a piece of text that appears when the computer is ready for
@@ -208,6 +204,58 @@ the 20<sup>th</sup> century) don't have GUI.
 text commands or get things done quickly.
 - ~~Gormless kids who try to look like hackers~~
 - ...and more
+
+How do I access a command line interface on my (graphical) system?
+------------------------------------------------------------------
+
+On any graphical system that is either GNU/Linux or macOS, there should be a
+program that ships with the system that lets its users use a command line. This
+program is called "terminal emulator". The reason why it is called an "emulator"
+is because the interface introduced by such a program is not actually CLI; you
+can change its font, its background color, etc. yet these attributes are tied to
+GUI (see **Figure 0.5**).
+
+![2 terminal emulator windows opened
+with different looks](../img/ch00/gnome_terminals.png)  
+**Figure 0.5** 2 terminal emulator windows opened, each with a different look.
+
+Terminal emulators come in handy and useful, providing that you need both GUI
+and CLI to maximize your productivity. In this section, we provide instructions
+on how to open a terminal emulator in GNU/Linux and also in macOS.
+
+### On GNU/Linux
+
+If you use GNU/Linux, the terminal emulator ships with your desktop environment.
+For instance, if you're using GNOME - the most widely used Linux desktop
+environment - then a terminal emulator called "GNOME Terminal" (as seen in
+**Figure 0.6**) should have already been provided as a software component of
+GNOME, and you can search for it like how you search other applications on your
+computer.
+
+![A GNOME Terminal window](../img/ch00/gnome_terminal.png)  
+**Figure 0.6** A GNOME Terminal window, as seen in the GNOME desktop
+environment.
+
+In KDE (another desktop environment), the terminal emulator Konsole is provided
+as part of the desktop environment itself. In LXDE, the terminal emulator is
+called "LXTerminal".
+
+In Ubuntu (arguably the most popular Linux distribution), you can use the
+keyboard shortcut `Ctrl` + `Alt` + `T` to open a terminal emulator.
+
+Perhaps in any desktop environment, you can just search for "terminal".
+
+### On macOS
+
+The terminal emulator that ships with macOS is called "Terminal". Try searching
+for it and open it.
+
+<p align="center">
+    <img src="../img/ch00/macos_terminal.png"
+         alt="macOS's terminal emulator window" />
+</p>
+
+**Figure 0.7** A macOS Terminal window.
 
 Chapter Summary
 ---------------
