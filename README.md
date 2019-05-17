@@ -129,9 +129,5 @@ large. Being in the Public Domain means this work can be freely used by anyone
 and by any means, even for commercial purposes, without attribution (although it
 is super appreciated).
 
-All text contents and the scripts found in `script/` are all CC0-licensed. Image
-contents are also in the Public Domain; in particular:
-- Illustrations found in the guide are our own work and are CC0-licensed.
-- High-res photographs were taken from [Unsplash](https://unsplash.com/) and
-were cropped to suit their intended usage in the guide. They are licensed under
-[The Unsplash License](https://unsplash.com/license).
+All text contents and the scripts found in `script/` are all CC0-licensed.
+Licenses of images are listed in details in [CREDITS.md](CREDITS.md).
