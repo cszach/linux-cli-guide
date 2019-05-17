@@ -36,6 +36,11 @@ Table of Content
     2. [System resources](#system-resources)
     3. [GUI's advantages over CLI](#guis-advantages-over-cli)
 3. [Who use the command line interface?](#who-use-the-command-line-interface)
+4. [How do I access a command line interface on my (graphical)
+system?](#how-do-i-access-a-command-line-interface-on-my-graphical-system)
+    - [On GNU/Linux](#on-gnulinux)
+    - [On macOS](#on-macos)
+5. [Pure command line interface](#pure-command-line-interface)
 
 Command line user interface
 ---------------------------
