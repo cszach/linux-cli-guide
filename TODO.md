@@ -27,11 +27,13 @@ Chapter 1
 =========
 
 - [ ] Finish making the quiz
+- [ ] Language: Simple English
 
 Chapter 2
 =========
 
 - [ ] Finish making the quiz
+- [ ] Language: Simple English
 
 Chapter 3
 =========
