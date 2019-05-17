@@ -24,7 +24,7 @@
         <dc:title>3 Types of Components in a Command Line Session</dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
-        <dc:date>22 April, 2019</dc:date>
+        <dc:date>22 April 2019</dc:date>
         <dc:creator>
           <cc:Agent>
             <dc:title>Nguyen Hoang Duong</dc:title>
@@ -197,8 +197,8 @@
   <g
      id="layer1">
     <g
-       id="g59"
-       style="">
+       transform="translate(-8.6141386,-1.5258789e-5)"
+       id="g59">
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -208,9 +208,9 @@
            id="tspan859"
            x="60.225128"
            y="153.59276"
-           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:26.66666603px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';fill:#000000">Prompt</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666603px;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';fill:#000000">Prompt</tspan></text>
       <rect
-         y="126.30615"
+         y="125.67459"
          x="10.114139"
          height="41.943008"
          width="41.943008"
@@ -218,35 +218,35 @@
          style="opacity:1;vector-effect:none;fill:none;fill-opacity:0.98684208;stroke:#ffff00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
     <g
-       id="g65"
-       style="">
+       transform="translate(-8.6141386,-1.6255181)"
+       id="g65">
       <rect
          style="opacity:1;vector-effect:none;fill:none;fill-opacity:0.98684208;stroke:#00ff00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect871"
          width="41.943008"
          height="41.943008"
          x="10.114139"
-         y="195.22244" />
+         y="194.88422" />
       <text
          id="text875"
          y="209.06789"
          x="60.225128"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:0.67205811;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:26.66666603px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';fill:#000000"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666603px;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';fill:#000000"
            y="209.06789"
            x="60.225128"
            id="tspan877">User</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:26.66666603px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';fill:#000000"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666603px;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';fill:#000000"
            y="235.95021"
            x="60.225128"
            id="tspan881">input</tspan></text>
     </g>
     <g
-       id="g71"
-       style="">
+       transform="translate(-8.6141386)"
+       id="g71">
       <rect
-         y="264.1387"
+         y="264.11911"
          x="10.114139"
          height="41.943008"
          width="41.943008"
@@ -261,11 +261,11 @@
            id="tspan885"
            x="60.225128"
            y="278.59613"
-           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:26.66666603px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';fill:#000000">Console</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666603px;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';fill:#000000">Console</tspan><tspan
            id="tspan887"
            x="60.225128"
            y="305.47845"
-           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:26.66666603px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';fill:#000000">output</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.66666603px;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';fill:#000000">output</tspan></text>
     </g>
   </g>
 </svg>

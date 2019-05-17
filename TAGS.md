@@ -10,6 +10,8 @@
     the below table.
 </p>
 
+<!-- Reference alphabet: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z -->
+
 |Tag's name |                                            Description                                            |
 |   :---:   |                                                ---                                                |
 |application|Section contains practical (i.e. real-world) usage of a command or concept.                        |
@@ -20,6 +22,8 @@
 |  folder   |Related to folders.                                                                                |
 | hierarchy |Related to or about hierarchy.                                                                     |
 |    io     |Related to input/output.                                                                           |
+|linux-only |Section is intended for GNU/Linux users only.                                                      |
+|macos-only |Section is intended for macOS users only.                                                          |
 |navigating |Related to navigating in the file system.                                                          |
 |    new    |Section describes how to create something.                                                         |
 |new-command|At least 1 new command is introduced.                                                              |
@@ -27,6 +31,7 @@
 |new-program|At least 1 new graphical program is introduced.                                                    |
 |   path    |Related to path (i.e. file/folder's address).                                                      |
 |  remove   |Section describes how to remove something.                                                         |
+| skippable |Section can be skipped without loss of continuity.                                                 |
 | text-file |Related to text files.                                                                             |
 | timestamp |Related to timestamp.                                                                              |
 |   view    |Section describes how to view something (e.g. file's content, CPU information, disk usage,...)     |

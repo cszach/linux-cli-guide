@@ -41,6 +41,35 @@ Prerequisites
 a GNU/Linux distribution like Ubuntu or Fedora, terminal emulator provided as a
 web service, Windows Subsystem for Linux, recent macOS system)
 
+### I use macOS, can I take the guide?
+
+Mostly yes.
+
+Mac OS X Jaguar (released in 2002) and its successors come with Bash. However,
+the guide does not just stop at teaching Bash. It also contains guides on how to
+use some common compiled command line programs. This is where GNU/Linux and
+macOS differ (e.g. macOS has `pbcopy`, GNU/Linux does not). The guide was
+originally intended for GNU/Linux users, thus it is GNU/Linux-oriented and most
+of it contains instructions for procedures that will definitely be possible on
+GNU/Linux, but _maybe_ not on macOS. We rather see this whole situation as an
+existing downside of the guide and will endeavor to fix it. We welcome and much
+appreciate contributions from dedicated macOS users to make the guide more
+complete.
+
+Sections that are only for GNU/Linux users are labeled **`#linux-only`**.
+Sections that are only for macOS users are labeled **`#macos-only`**.
+
+### I use Microsoft Windows, can I take the guide?
+
+If you can access Bash on it, yes. Consider [Windows Subsystem for
+Linux](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) if you want to
+use Bash on Windows 10.
+
+Please note that we do **not** guarantee that every procedure introduced in the
+guide will work in Windows Subsystem for Linux or a similar technology. The best
+option is still getting yourself a GNU/Linux system running. Please consult the
+Web for detailed instructions.
+
 Goals for Bash Tutorial
 -----------------------
 
@@ -100,9 +129,5 @@ large. Being in the Public Domain means this work can be freely used by anyone
 and by any means, even for commercial purposes, without attribution (although it
 is super appreciated).
 
-All text contents and the scripts found in `script/` are all CC0-licensed. Image
-contents are also in the Public Domain; in particular:
-- Illustrations found in the guide are our own work and are CC0-licensed.
-- High-res photographs were taken from [Unsplash](https://unsplash.com/) and
-were cropped to suit their intended usage in the guide. They are licensed under
-[The Unsplash License](https://unsplash.com/license).
+All text contents and the scripts found in `script/` are all CC0-licensed.
+Licenses of images are listed in details in [CREDITS.md](CREDITS.md).
