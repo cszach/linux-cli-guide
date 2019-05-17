@@ -10,7 +10,7 @@
     the below table.
 </p>
 
-<!-- Reference alphabet: a b c d e f g h i j k l m n o p q r s t u v w x y z -->
+<!-- Reference alphabet: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z -->
 
 |Tag's name |                                            Description                                            |
 |   :---:   |                                                ---                                                |
@@ -31,6 +31,7 @@
 |new-program|At least 1 new graphical program is introduced.                                                    |
 |   path    |Related to path (i.e. file/folder's address).                                                      |
 |  remove   |Section describes how to remove something.                                                         |
+| skippable |Section can be skipped without loss of continuity.                                                 |
 | text-file |Related to text files.                                                                             |
 | timestamp |Related to timestamp.                                                                              |
 |   view    |Section describes how to view something (e.g. file's content, CPU information, disk usage,...)     |
