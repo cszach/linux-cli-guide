@@ -8,7 +8,10 @@
 Development
 ===========
 
-- [ ] Add specifications (for data files, chapters, drawings,...) in the project's wiki
+- [ ] Create `CONTRIBUTING.md`
+- [ ] Add specifications (for data files, chapters, drawings,...) in the
+project's wiki
+- [ ] Add a section named 'Contributing' for contributors in `README.md`
 
 Chapter 0
 =========
