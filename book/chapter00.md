@@ -243,6 +243,10 @@ called "LXTerminal".
 In Ubuntu (arguably the most popular Linux distribution), you can use the
 keyboard shortcut `Ctrl` + `Alt` + `T` to open a terminal emulator.
 
+![An XFCE4 Terminal window](../img/ch00/xfce4_terminal.png)  
+**Figure 0.7** An XFCE4 Terminal window, as seen in the XFCE desktop
+environment.
+
 Perhaps in any desktop environment, you can just search for "terminal".
 
 ### On macOS
@@ -255,7 +259,7 @@ for it and open it.
          alt="macOS's terminal emulator window" />
 </p>
 
-**Figure 0.7** A macOS Terminal window.
+**Figure 0.8** A macOS Terminal window.
 
 Chapter Summary
 ---------------
