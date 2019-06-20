@@ -18,9 +18,7 @@ helpful options
 :heavy_check_mark: Learn concepts with illustrations  
 :heavy_check_mark: Practical use cases of commands  
 :heavy_check_mark: Learn Bash scripting to automate tasks  
-:heavy_check_mark: Learn how to use common compiled programs and commonly
-installed packages (such as `nano` for text editing, `rsync` for backing up
-data, `ssh` for remote login, etc.)  
+:heavy_check_mark: Learn how to use common CLI programs (e.g. `nano`, `rsync`, `ssh`, etc.)
 :heavy_check_mark: Revise by taking a quiz at the end of every chapter  
 :heavy_check_mark: Written in simple English, suitable for English learners  
 :heavy_check_mark: Contents are in the Public Domain, contributions are welcomed
