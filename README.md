@@ -1,4 +1,4 @@
-<h1 align="center">42tm's Bash Guide</h1>
+<h1 align="center">42tm's Linux Command Line Guide</h1>
 
 <p align="center">
     <img src="icon.png" width="200" height="200">
@@ -7,18 +7,20 @@
 Description
 -----------
 
-This repository contains a beginner-friendly Bash guide and all the resources
-used by the guide. The guide is intended for beginners, even those who have
-never touched a command line interface before. It will guide you from the most
-fundamental concepts and commands to more advanced ones, with their practical
-applications alongside.
+This repository contains a beginner-friendly Linux command line guide and all
+the resources used by the guide. The guide is intended for beginners, including
+those who have never touched a command line interface before. It will guide you
+from the most fundamental concepts and commands to more advanced ones, with
+their practical applications alongside.
 
 :heavy_check_mark: Learn to use Bash's built-ins, GNU utilities and their
 helpful options  
 :heavy_check_mark: Learn concepts with illustrations  
 :heavy_check_mark: Practical use cases of commands  
 :heavy_check_mark: Learn Bash scripting to automate tasks  
-:heavy_check_mark: Learn how to use common compiled programs and commonly installed packages (such as `nano` for text editing, `rsync` for backing up data, `ssh` for remote login, etc.)  
+:heavy_check_mark: Learn how to use common compiled programs and commonly
+installed packages (such as `nano` for text editing, `rsync` for backing up
+data, `ssh` for remote login, etc.)  
 :heavy_check_mark: Revise by taking a quiz at the end of every chapter  
 :heavy_check_mark: Written in simple English, suitable for English learners  
 :heavy_check_mark: Contents are in the Public Domain, contributions are welcomed
@@ -70,10 +72,10 @@ guide will work in Windows Subsystem for Linux or a similar technology. The best
 option is still getting yourself a GNU/Linux system running. Please consult the
 Web for detailed instructions.
 
-Goals for Bash Tutorial
------------------------
+Goals for Linux Command Line Guide
+----------------------------------
 
-- Become an easily-understood and extended Bash learning resource
+- Become an easily-understood and extended Linux command line learning resource
 - Establish a friendly community and be a community-contributed guide
 - Available in the Public Domain with no licensing conflict
 
@@ -95,16 +97,16 @@ the guide
 license that most of the materials contained within this repository are licensed
 under
 
-Other Bash guides/references on GitHub
---------------------------------------
+Other Linux Command Line guides/references on GitHub
+----------------------------------------------------
 
 - [**The Art of Command Line**][rr1] by [**jlevy**][rra1]: A guide that covers
 both Bash commands and Bash programming. However it assumes that you already
 knew the basic stuff.
 - [**Pure Bash Bible**][rr2] by [**dylanaraps**][rra2]: A document focused on
 Bash programming "using only built-in `bash` features".
-- [**42tm's Bash Reference**][rr3] by [**42tm**][rra3]: A reference for Bash
-from 42tm that gets upstreamed with 42tm's Bash Guide.
+- [**42tm's Linux CLI Reference**][rr3] by [**42tm**][rra3]: A reference for the
+Linux command line that gets upstreamed with 42tm's Linux Command Line Guide.
 - [**`bash-guide`**][rr4] by [**Idnan**][rra4]: A supposedly guide for Bash,
 however it is more of a reference because the explanations are short and some
 (if not all) technical terms are not explained.
@@ -113,7 +115,7 @@ however it is more of a reference because the explanations are short and some
 [rra1]: https://github.com/jlevy
 [rr2]: https://github.com/dylanaraps/pure-bash-bible
 [rra2]: https://github.com/dylanaraps
-[rr3]: https://github.com/42tm/bash-ref
+[rr3]: https://github.com/42tm/linux-cli-ref
 [rra3]: https://github.com/42tm
 [rr4]: https://github.com/Idnan/bash-guide
 [rra4]: https://github.com/Idnan
