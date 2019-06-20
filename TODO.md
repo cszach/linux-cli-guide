@@ -5,6 +5,13 @@
     are welcomed!
 </p>
 
+
+General
+=======
+
+- [ ] Make appropriate changes regarding the recent change to the project's name
+(i.e. Bash Guide -> Linux Command Line Guide)
+
 Development
 ===========
 
