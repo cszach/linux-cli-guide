@@ -18,7 +18,7 @@ helpful options
 :heavy_check_mark: Learn concepts with illustrations  
 :heavy_check_mark: Practical use cases of commands  
 :heavy_check_mark: Learn Bash scripting to automate tasks  
-:heavy_check_mark: Learn how to use common CLI programs (e.g. `nano`, `rsync`, `ssh`, etc.)
+:heavy_check_mark: Learn how to use common CLI programs (e.g. `nano`, `rsync`, `ssh`, etc.)  
 :heavy_check_mark: Revise by taking a quiz at the end of every chapter  
 :heavy_check_mark: Written in simple English, suitable for English learners  
 :heavy_check_mark: Contents are in the Public Domain, contributions are welcomed
@@ -103,7 +103,7 @@ both Bash commands and Bash programming. However it assumes that you already
 knew the basic stuff.
 - [**Pure Bash Bible**][rr2] by [**dylanaraps**][rra2]: A document focused on
 Bash programming "using only built-in `bash` features".
-- [**42tm's Linux CLI Reference**][rr3] by [**42tm**][rra3]: A reference for the
+- [**42tm's Linux CLI Reference**][rr3] by [**42tm**][rra3]: A reference for
 Linux command line that gets upstreamed with 42tm's Linux Command Line Guide.
 - [**`bash-guide`**][rr4] by [**Idnan**][rra4]: A supposedly guide for Bash,
 however it is more of a reference because the explanations are short and some
