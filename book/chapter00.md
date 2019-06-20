@@ -21,7 +21,7 @@ interface](#term-cli), [prompt](#term-prompt), [user input](#term-user_input),
 
 <!-- This is where you introduce what the chapter is about. -->
 If you're new to Bash in specific and the command line in general, **welcome!**
-In this very first chapter of the Bash Tutorial, you'll get to know about the
+In this very first chapter of Bash Tutorial, you'll get to know about the
 command line environment, Shell, differences between Shell interpreters,
 terminal emulator's shortcuts, and more. Let's begin!
 
@@ -58,6 +58,8 @@ first released in 2004.
 **Figure 0.1** A screenshot of Fedora Core 2. This is a GUI because there are
 graphical icons and a graphical mouse pointer.
 
+<!-- This chunk of text is being considered for removal
+
 <img src="../img/ch00/misleading_button.png"
      alt="A misleading button" align="left" width="90px" height="90px" />
 In a graphical user interface, the visual design (i.e. UI/UX design) takes a
@@ -65,6 +67,8 @@ very important role in how the user understands and experiences. For example, if
 a button on a web page that links to the site's Search page contains an icon of
 a house (like the one on the left), the user will think that the button will
 lead to the site's homepage. Visual design is the key in GUIs.
+
+-->
 
 GUI is suitable and enough for average computer users. However, if you want to
 be more productive and efficient on the computer, you should know how to use a
@@ -93,7 +97,7 @@ command used to see a calendar printed in the format typically used in printed
 calendars. Indeed, the console output produced by `cal` showed a calendar with
 the current date highlighted.
 
-As said earlier, commands are successively executed in a command line interface.
+As said earlier, commands run one after another in a command line interface.
 That means, after typing a command, the user will have to wait for that command
 to finish running before he/she can issue the next command<sup><a
 href="#footnote-1">[1]</a></sup>. To better understand what that means, see
@@ -282,9 +286,9 @@ environment does not run, thus less hardware resources are needed.
 In the UNIX world, pure command line is called "terminal" (as you might have
 guessed) or "tty". To access a tty, try the keyboard combination `Ctrl` +
 `Alt` + `F1`. But, there are a few things to watch out:
-- A GNU/Linux distribution might offer multiple ttys. These are labeled `tty1`,
-`tty2`, `tty3`, and so on. The keyboard combination `Ctrl` + `Alt` + `F1` is
-used to open `tty1`, `Ctrl` + `Alt` + `F2` is used to open `tty2`, and so on.
+- A GNU/Linux distribution might offer multiple ttys, called `tty1`, `tty2`,
+`tty3`, and so on. The keyboard combination `Ctrl` + `Alt` + `F1` is used to
+open `tty1`, `Ctrl` + `Alt` + `F2` is used to open `tty2`, and so on.
 - Depends on the system you are running, some ttys might be replaced with
 graphical displays. For example, in Ubuntu 17.04 and earlier releases of Ubuntu,
 `tty1`, `tty2`, `tty3`, ..., `tty6` are ttys, and `tty7` (can be opened by
@@ -298,6 +302,13 @@ disable it (if you want less hardware resources consumption).
 
 > **Note**: It is recommended that you use a terminal emulator to practice using
 Bash throughout the guide instead of a tty.
+
+Shell interpreter
+-----------------
+
+There's a big program that works under the text commands that you see. In the
+UNIX world, this program is commonly known as the **Shell interpreter**, or just
+**shell**. Its job is to process the commands typed in and execute them.
 
 Chapter Summary
 ---------------
