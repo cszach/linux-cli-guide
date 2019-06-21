@@ -91,6 +91,8 @@ the guide
 - `script/`: Some helpful scripts for repository development
 - `data/`: Contains data files that serve the scripts
 - `icon.png`: The icon for the repository, seen above
+- `42tm.png`: 42tm Team's logo
+- `42tm-circular.png`: 42tm Team's logo rounded with a grey border
 - `LICENSE`: A copy of the Creative Commons Zero v1.0 Universal, which is the
 license that most of the materials contained within this repository are licensed
 under
