@@ -42,7 +42,7 @@ command line all along.
 
 <p align="right">
     Sincerely,<br />
-    <b>42tm Team</b><br/>
+    <b>42tm Team</b><br/><br/>
     <img src="../42tm-circular.png"
          style="border-radius: 50%" width="120px" height="120px" />
 </p>
