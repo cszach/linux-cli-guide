@@ -227,10 +227,10 @@ How do I access a command line interface on my (graphical) system?
 
 On any graphical system that is either GNU/Linux or macOS, there should be a
 program that ships with the system that lets its users use a command line. This
-program is called "terminal emulator". The reason why it is called an "emulator"
-is because the interface introduced by such a program is not actually CLI; you
-can change its font, its background color, etc. yet these attributes are tied to
-GUI (see **Figure 0.5**).
+program is called **terminal emulator**. The reason why it is called an
+"emulator" is because the interface introduced by such a program is not actually
+CLI; you can change its font, its background color, etc. yet these attributes
+are tied to GUI (see **Figure 0.5**).
 
 ![2 terminal emulator windows opened
 with different looks](../img/ch00/gnome_terminals.png)  
@@ -244,7 +244,7 @@ on how to open a terminal emulator in GNU/Linux and also in macOS.
 
 If you use GNU/Linux, the terminal emulator ships with your desktop environment.
 For instance, if you're using GNOME - the most widely used Linux desktop
-environment - then a terminal emulator called "GNOME Terminal" (as seen in
+environment - then a terminal emulator called _GNOME Terminal_ (as seen in
 **Figure 0.6**) should have already been provided as a software component of
 GNOME, and you can search for it like how you search other applications on your
 computer.
@@ -253,9 +253,9 @@ computer.
 **Figure 0.6** A GNOME Terminal window, as seen in the GNOME desktop
 environment.
 
-In KDE (another desktop environment), the terminal emulator Konsole is provided
-as part of the desktop environment itself. In LXDE, the terminal emulator is
-called "LXTerminal".
+In KDE (another desktop environment), the terminal emulator _Konsole_ is
+provided as part of the desktop environment itself. In LXDE, the terminal
+emulator is called _LXTerminal_.
 
 In Ubuntu (arguably the most popular Linux distribution), you can use the
 keyboard shortcut `Ctrl` + `Alt` + `T` to open a terminal emulator.
@@ -268,7 +268,7 @@ Perhaps in any desktop environment, you can just search for "terminal".
 
 ### On macOS
 
-The terminal emulator that ships with macOS is called "Terminal". Try searching
+The terminal emulator that ships with macOS is called _Terminal_. Try searching
 for it and open it.
 
 <p align="center">
@@ -290,8 +290,8 @@ environment does not run, thus less hardware resources are needed.
 
 **Figure 0.9** A TTY (as shown in Preamble).
 
-In the UNIX world, pure command line is called "terminal" (as you might have
-guessed) or "tty". To access a tty, try the keyboard combination `Ctrl` +
+In the UNIX world, pure command line is called **terminal** (as you might have
+guessed) or **tty**. To access a tty, try the keyboard combination `Ctrl` +
 `Alt` + `F1`. But, there are a few things to watch out:
 - A GNU/Linux distribution might offer multiple ttys, called `tty1`, `tty2`,
 `tty3`, and so on. The keyboard combination `Ctrl` + `Alt` + `F1` is used to
@@ -347,7 +347,7 @@ do differ in many ways. The following table lists common Shell dialects.
 |       tcsh       |               `tcsh`                |An improved version of C Shell.|
 |     Z Shell      |                `zsh`                |An improved version of Bourne-again shell.|
 
-Of all the shells, Bash (Bourne-again shell) is the most popular. Our Linux
+Of all the shells, **Bash** (Bourne-again shell) is the most popular. Our Linux
 Command Line Guide aims to teach Bash and not the other shells for the following
 reasons:
 
