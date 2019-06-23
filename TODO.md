@@ -20,6 +20,11 @@ Development
 project's wiki
 - [ ] Add a section named 'Contributing' for contributors in `README.md`
 
+How to use the guide
+====================
+
+- [ ] Create a dedicated document on how to use the guide (for readers)
+
 Chapter 0
 =========
 
