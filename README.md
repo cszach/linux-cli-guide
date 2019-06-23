@@ -37,6 +37,8 @@ Prerequisites
 -------------
 
 - Understanding of the most basic computer concepts (e.g. file, folder, program)
+- Considerable experience in using a GNU/Linux system (e.g. Ubuntu, Linux Mint,
+Fedora, etc.)
 - Access to a command line environment running Bash (e.g. terminal emulator in
 a GNU/Linux distribution like Ubuntu or Fedora, terminal emulator provided as a
 web service, Windows Subsystem for Linux, recent macOS system)
