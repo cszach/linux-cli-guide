@@ -16,16 +16,18 @@ interface](#term-cli), [prompt](#term-prompt), [user input](#term-user_input),
 [console output](#term-console_output).
 
 <!-- Define link aliases (if any) here -->
+[gnu-project]: https://www.gnu.org/gnu/thegnuproject.en.html
 
 - - -
 
 <!-- This is where you introduce what the chapter is about. -->
 If you're new to Bash in specific and the command line in general, **welcome!**
-In this very first chapter of Bash Tutorial, you'll get to know about the
-command line environment, Shell, differences between Shell interpreters,
-terminal emulator's shortcuts, and more. Let's begin!
+In this very first chapter of **Linux Command Line Guide**, you'll get to know
+about the command line environment, Shell, differences between Shell
+interpreters, terminal emulator's shortcuts, and more. Let's begin!
 
-> **Note**: <!-- Note about skipping content here -->
+> **Note**: Take a glance at the Table of Content and skip anything you've
+previously learned about.
 
 Table of Content
 ----------------
@@ -83,16 +85,19 @@ input**</a>, and the <a name="term-console_output">**console output**</a>. They
 are shown in **Figure 0.2**.
 
 ![Components of a command line session](../img/ch00/cli_components.png)  
-**Figure 0.2** 3 distinct types of components in a command line session.
+**Figure 0.2** Three distinct types of components in a command line session.
 
 - The **prompt** is a piece of text that appears when the computer is ready for
-the next command. It basically says that the user can now type the next command.
+the next command. It basically says that the user can now type the next command
+(e.g. in the figure shown above, `[localhost] $ ` is the prompt).
 - The **user input** is a command in the form of text typed in by the user to
-specify what the user wants to do.
-- The **console output** is a visible chunk of text that is produced while the
-command is running. The text can be log messages (such as warning messages or
-error messages) or the result the user expected to see. For example, take a look
-at **Figure 0.2** again. The first command typed by the user is `cal`. It is a
+specify what the user wants to do (e.g. in the figure shown above, the user
+inputs include `cal`, `cd ~/.local/bin`, and `ls -w 60`).
+- The **console output** (also called **terminal output**, **output**, or
+**stdout**) is a visible chunk of text that is produced while the command is
+running. The text can be log messages (such as warning messages or error
+messages) or the result the user expected to see. For example, take a look at
+**Figure 0.2** again. The first command typed by the user is `cal`. It is a
 command used to see a calendar printed in the format typically used in printed
 calendars. Indeed, the console output produced by `cal` showed a calendar with
 the current date highlighted.
@@ -308,7 +313,51 @@ Shell interpreter
 
 There's a big program that works under the text commands that you see. In the
 UNIX world, this program is commonly known as the **Shell interpreter**, or just
-**shell**. Its job is to process the commands typed in and execute them.
+**shell**. Its job is to read and process the commands typed in and execute
+those commands. In addition, a Shell interpreter can be thought of as something
+similar to an interpreted programming language interpreter (e.g. Python
+interpreter) that can read and execute text files containing valid commands,
+called **Shell scripts**.
+
+<!-- TODO: Add an illustration here -->
+
+If you are still having troubles understanding what it is, let's think
+analogously. Python is a programming language, Python commands are read by a
+Python interpreter, and there are Python shells, like IPython, to type Python
+commands interactively, indeed? In a similar fashion, Shell is a _scripting_
+language, Shell commands are read by a Shell interpreter, and the language also
+has Shell shells (which are actually terminals and terminal emulators) where you
+can type Shell commands interactively.
+
+Different Shell interpreters
+----------------------------
+
+A programming language may have dialects (e.g. Python is a programming language,
+its dialects include CPython, PyPy, and Stackless Python). Similarly, Shell has
+various dialects. These dialects are quite similar at the ground level, but they
+do differ in many ways. The following table lists common Shell dialects.
+
+|      Name        |Abbreviation<br/>(or executable name)|Description|
+|      :---:       |                :---:                |:---|
+|   Bourne shell   |                `sh`                 |Ancestor of modern Shell interpreters, standardized.|
+|Bourne-again shell|               `bash`                |A very widely used Shell interpreter, especially in GNU/Linux systems, developed as part of [The GNU Project.][gnu-project]|
+|     C Shell      |                `csh`                |A Shell dialect with syntax similar to that of the C programming language.|
+|       tcsh       |               `tcsh`                |An improved version of C Shell.|
+|     Z Shell      |                `zsh`                |A (supposedly) improved version of Bourne-again shell.|
+
+Of all the shells, Bash (Bourne-again shell) is the most popular. Our Linux
+Command Line Guide aims to teach Bash and not the other shells for the following
+reasons:
+
+1. Bash is the most popular of all shells
+2. Many other shells are compatible with it (i.e. Bash commands can be executed
+by those shells)
+3. Bash is not just available on most GNU/Linux systems, but also macOS, and,
+yes, Windows (via Windows Subsystem for Linux)
+
+Thus, if you want to proceed further in the guide, you should use Bash or any
+shell that is compatible with it (e.g. you may use the increasingly-popular
+Z Shell).
 
 Chapter Summary
 ---------------

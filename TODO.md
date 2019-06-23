@@ -26,7 +26,7 @@ Chapter 0
 - [x] The concept of a command line user interface (CLI)
 - [x] Introduce the terminal emulator
 - [x] Introduce the pure command line interface (TTY terminal)
-- [ ] Introduce different Shell interpreters (`sh`, `zsh`, `bash`,...)
+- [X] Introduce different Shell interpreters (`sh`, `zsh`, `bash`,...)
 - [ ] Explain the difference between a CLI input's components: Command, options
 and arguments
 - [ ] Escaping special characters
