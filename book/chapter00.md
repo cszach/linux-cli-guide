@@ -43,6 +43,8 @@ system?](#how-do-i-access-a-command-line-interface-on-my-graphical-system)
     - [On GNU/Linux](#on-gnulinux)
     - [On macOS](#on-macos)
 5. [Pure command line interface](#pure-command-line-interface)
+6. [Shell interpreter](#shell-interpreter)
+7. [Different Shell implementations](#different-shell-implementations)
 
 Command line user interface
 ---------------------------
@@ -329,8 +331,8 @@ language, Shell commands are read by a Shell interpreter, and the language also
 has Shell shells (which are actually terminals and terminal emulators) where you
 can type Shell commands interactively.
 
-Different Shell interpreters
-----------------------------
+Different Shell implementations
+-------------------------------
 
 A programming language may have dialects (e.g. Python is a programming language,
 its dialects include CPython, PyPy, and Stackless Python). Similarly, Shell has
