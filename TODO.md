@@ -11,10 +11,13 @@ General
 
 - [ ] Make appropriate changes regarding the recent change to the project's name
 (i.e. Bash Guide -> Linux Command Line Guide)
+- [ ] For each chapter, provide information regarding how much time
+(approximately) should be spent to read the chapter
 
 Development
 ===========
 
+- [ ] Move TODO to the project's wiki
 - [ ] Create `CONTRIBUTING.md`
 - [ ] Add specifications (for data files, chapters, drawings,...) in the
 project's wiki
