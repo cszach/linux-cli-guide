@@ -308,7 +308,7 @@ will still be running (and consume hardware resources). You'll have to manually
 disable it (if you want less hardware resources consumption).
 
 > **Note**: It is recommended that you use a terminal emulator to practice using
-Bash throughout the guide instead of a tty.
+the Linux command line throughout the guide instead of a tty.
 
 Shell interpreter
 -----------------
@@ -345,7 +345,7 @@ do differ in many ways. The following table lists common Shell dialects.
 |Bourne-again shell|               `bash`                |A very widely used Shell interpreter, especially in GNU/Linux systems, developed as part of [The GNU Project.][gnu-project]|
 |     C Shell      |                `csh`                |A Shell dialect with syntax similar to that of the C programming language.|
 |       tcsh       |               `tcsh`                |An improved version of C Shell.|
-|     Z Shell      |                `zsh`                |A (supposedly) improved version of Bourne-again shell.|
+|     Z Shell      |                `zsh`                |An improved version of Bourne-again shell.|
 
 Of all the shells, Bash (Bourne-again shell) is the most popular. Our Linux
 Command Line Guide aims to teach Bash and not the other shells for the following
