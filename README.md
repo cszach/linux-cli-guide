@@ -36,12 +36,29 @@ to the guide as "tutorial" or "book".
 Prerequisites
 -------------
 
-- Understanding of the most basic computer concepts (e.g. file, folder, program)
-- Considerable experience in using a GNU/Linux system (e.g. Ubuntu, Linux Mint,
-Fedora, etc.)
-- Access to a command line environment running Bash (e.g. terminal emulator in
-a GNU/Linux distribution like Ubuntu or Fedora, terminal emulator provided as a
-web service, Windows Subsystem for Linux, recent macOS system)
+- **Understanding of basic computer concepts** (e.g. file, folder, program,
+mouse pointer, keyboard): These won't be explained.
+- **Moderate experience in using a graphical (GNU/)Linux system** (e.g. Ubuntu,
+Linux Mint, Fedora): This includes capability of searching for applications,
+downloading software, and navigating around using a graphical interface.
+- **Access to a command line environment running Bash** (e.g. terminal emulator
+in a GNU/Linux distribution or macOS, online terminal emulator): So that you can
+learn by doing. If you only read the text, you will forget quickly. The best
+option is having a GNU/Linux distribution or macOS running.
+
+### Bonuses
+
+In addition, these are not prerequisites, but are great bonuses.
+
+- **Solid experience in computer programming** (e.g. in C, Java, Python): Bash
+scripting and computer programming share many technical terms and both boil down
+to how computer works. The guide also contains analogies to various aspects of
+computer programming.
+- **Multiple working computers**: They'll better help you learn about computer
+networking and network-related tasks (e.g. remote login using `ssh`, remote
+backup using `rsync`, sharing a NFS file system).
+- **Previous experience using the Linux command line**: If you've learned Bash
+and/or the Linux command line and are here for a refresher, that's a good start.
 
 ### I use macOS, can I take the guide?
 
