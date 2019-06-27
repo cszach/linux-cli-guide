@@ -79,12 +79,15 @@ be more productive and efficient on the computer, you should know how to use a
 <a name="term-cli">command line interface</a> (abbreviated **_CLI_**).
 
 A command line interface is where the user controls a computer mainly by typing
-commands. Typically, in a command line session, the user types a command to draw
-an action, then waits for the action to be done, and then types the next
-command. In general, a command line session has 3 distinctive components: the
-<a name="term-prompt">**prompt**</a>, the <a name="term-user_input">**user
-input**</a>, and the <a name="term-console_output">**console output**</a>. They
-are shown in **Figure 0.2**.
+commands. Creating files and folders, editing documents, connecting to a Wi-Fi
+network, browsing the Web, etc. are all possible to do by typing commands and
+not just by using a GUI. Typically, in a command line session, the user types a
+command to draw an action, then waits for the action to be done, and then types
+the next command. In general, a command line session has 3 distinctive
+components: the <a name="term-prompt">**prompt**</a>, the
+<a name="term-user_input">**user input**</a>, and the
+<a name="term-console_output">**console output**</a>. They are shown in
+**Figure 0.2**.
 
 ![Components of a command line session](../img/ch00/cli_components.png)  
 **Figure 0.2** Three distinct types of components in a command line session.
