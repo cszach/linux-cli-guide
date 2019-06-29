@@ -1,7 +1,7 @@
 <h1 align="center">Tags Glossary</h1>
 
 <p align="center">
-    This document contains a table with all the tags presented in the Bash guide
+    This document contains a table with all the tags presented in the guide
     along with their descriptions. The tags' names appear in the table are
     sorted alphabetically, from A to Z. In the actual, each tag appears to have
     a hash tag symbol ("#") as its first character. The hash tag symbols,
