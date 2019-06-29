@@ -24,8 +24,8 @@ helpful options
 :heavy_check_mark: Contents are in the Public Domain, contributions are welcomed
 
 <p align="center">
-    <a href="book/\_preamble.md"><img src="img/readme/read-btn.png" width="24%" /></a>
-    <a href="book/GLOSSARY.md"><img src="img/readme/glossary-btn.png" width="24%" /></a>
+    <a href="guide/\_preamble.md"><img src="img/readme/read-btn.png" width="24%" /></a>
+    <a href="guide/GLOSSARY.md"><img src="img/readme/glossary-btn.png" width="24%" /></a>
     <a href="CREDITS.md"><img src="img/readme/credits-btn.png" width="24%" /></a>
     <a href="LICENSE"><img src="img/readme/license-btn.png" width="24%" /></a>
 </p>
@@ -102,7 +102,7 @@ Repository structure
 - `README.md`: This document
 - `TAGS.md`: Glossary for the tags used in the guide
 - `TODO.md`: Development to-dos
-- `book/`: Contains the guide's chapters written in Markdown
+- `guide/`: Contains the guide's chapters written in Markdown
 - `img/`: Images used in the guide in the form of raster graphics
 - `img/thumb/`: Thumbnails of images
 - `svg/`: Original SVG images of some of the exported PNG images that appear in
