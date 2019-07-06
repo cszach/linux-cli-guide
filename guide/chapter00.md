@@ -324,8 +324,6 @@ similar to an interpreted programming language interpreter (e.g. Python
 interpreter) that can read and execute text files containing valid commands,
 called **Shell scripts**.
 
-<!-- TODO: Add an illustration here -->
-
 If you are still having troubles understanding what it is, let's think
 analogously. Python is a programming language, Python commands are read by a
 Python interpreter, and there are Python shells, like IPython, to type Python
@@ -363,6 +361,214 @@ yes, Windows (via Windows Subsystem for Linux)
 Thus, if you want to proceed further in the guide, you should use Bash or any
 shell that is compatible with it (e.g. you may use the increasingly-popular
 Z Shell).
+
+A closer look at individual commands
+------------------------------------
+
+### The basics
+
+Each text command starts a program that does what the user wants to do. Thus
+when typing a text command, the user has to type the name of the program's
+executable file.
+
+> **Note**: In Microsoft Windows, executable files have the ".EXE" suffix, or
+file extension. In UNIX-like operating systems (e.g. macOS), most executable
+files don't have file extensions.
+
+For this section, please open a terminal emulator window and follow along. Now,
+let's say you want to see a calendar. You probably have a graphical calendar
+application, probably ships with your desktop environment (e.g. GNOME Calendar
+or KOrganizer). But you can view a text calendar in the command line too! This
+is handy when you're working in CLI and you don't want to leave your environment
+just to quickly see a calendar.
+
+1. With a terminal emulator window opened, type "cal".
+
+```shell
+cal
+```
+
+2. Hit the Enter key on your keyboard to execute this command. A calendar is
+displayed. Look how cool it is! A calendar made of text characters and spaces!
+
+![](../img/ch00/cal_executed.png)
+
+You may feel unfamiliar with this calendar at first, but you will soon realize
+that it looks quite the same as ordinary calendars.
+
+> **Note**: Your command prompt may look different from the one shown in the
+image above. In the image above, the command prompt is "$ " (a dollar sign
+followed by a space). This is not an issue. You will eventually learn how to
+change the command prompt.
+
+What you just did is running the `cal` program, which is a calendar program
+available in the command line ("cal" is short for "calendar").
+
+Graphical calendar applications typically offer options and preferences such as
+the option to view the whole year (and not just the current month), the option
+to set Sunday as the first day of the week, etc. How do you do the same in the
+command line? Fortunately, the `cal` program offers many additional options to
+show you what you want, and to use those options, you have to type a little bit
+more.
+
+3. Let's say you want to view the whole year and not just the current month.
+Again, type "cal", but don't hit Enter yet.
+
+4. Type " -y" (a space, followed by a hyphen, followed by the lowercase letter
+_y_). Your command should now be like this:
+
+```shell
+cal -y
+```
+
+5. Hit Enter. You should now see a calendar for the whole year displayed by
+`cal`.
+
+![](../img/ch00/cal_executed-option1.png)
+
+This is exactly how you can choose options to modify command line programs'
+default behaviors. Just type the option's name out, separately from the
+program's name (i.e. typing "cal-y" does not work because your Shell
+interpreter will think that you are trying to use a program named `cal-y`).
+
+6. You can type multiple options and not just one. Let's make `cal` show the
+whole year with Monday as first day of week. Type "cal -y".
+
+```shell
+cal -y
+```
+
+7. Now type " --monday" (a space, followed by 2 hyphens, followed by the word
+_monday_). Your command should now look like this:
+
+```shell
+cal -y --monday
+```
+
+8. Hit Enter.
+
+![](../img/ch00/cal_executed-option2.png)
+
+Can you see the difference? `cal` now shows the whole year just like last time,
+but now Monday is the first day of every week!
+
+9. Now, let's make `cal` display only 2 months instead of the whole year or just
+the current month. `cal` always displays the current month, so when asked to
+show 2 months, `cal` shows the current month and the next month. First, type
+`cal --monday`. We still need Monday to be displayed as first day of week.
+
+10. Type " -n 2" (a space, followed by a hyphen, followed by the lowercase
+letter _n_, followed by another space, followed by the number _2_).
+
+```shell
+cal --monday -n 2
+```
+
+You may have noticed that there's something different here. This time, you have
+to type 2 space characters. It looks like we're specifying 2 options, `-n` and
+`2`, but this is not the case. `-n` is still an option, like `-y` and
+`--monday`. But `2` is not an option. It is the _**input for the option `-n`**_.
+In particular, `-n` is the option to specify the number of months to be
+displayed by `cal`, and clearly it needs an input, so we've specified `2` as the
+input for this option.
+
+Some options don't need inputs, some options do. Think of these as check boxes
+and value fields in graphical applications. Options that don't require inputs
+are like the check boxes, options that do are like the text fields, as
+illustrated in **Figure 0.10**.
+
+![An illustration of cal as a GUI program](../img/ch00/cal-gui.png)  
+**Figure 0.10** Like graphical programs, command line programs also have options
+and preferences. Some require inputs (like the "Number of months" option above),
+some don't (like the "Show the whole year" option above).
+
+A command line program may have options that do the same job, and `cal` is such
+a program. The `-n` option that we just covered has another option that does the
+same job, which is `--months`. Again, it does exactly the same job as the `-n`
+option, the only difference is that `--months` is longer to type. This makes the
+option look redundant, but it's easier to be recalled.
+
+`cal` has another interesting option which is `--reform`. It requires an input
+(just like the `-n` option does). Basically, this option lets you choose which
+calendar reform to be used.
+
+11. Type "cal -y --monday -n 2". Don't hit Enter yet. These options tell `cal`
+to show the whole year, use Monday as the first day of every week, and display
+2 months, respectively.
+
+```shell
+cal -y --monday -n 2
+```
+
+12. Type " --reform=julian" (a space, followed by 2 hyphens, followed by the
+word _reform_, followed by an equal sign, followed by the word _julian_). This
+makes `cal` use the Julian reform because we've specified `julian` to be the
+input for the option `--reform`. Hit Enter to run the command.
+
+```shell
+cal -y --monday -n 2 --reform=julian
+```
+
+You may have noticed that there's a difference in specifying the input for our
+new option here. This time, you have to type an equal sign, not a space like how
+you did with the `-n` option (`-n 2`).
+
+### Looking into smaller details
+
+Let us consider this command:
+
+```shell
+cal -y --monday -n 2 --reform=julian
+```
+
+The space characters in between the words are crucial, so that the command will
+not misinterpret your intentions. If we separate the command into parts
+according to the space characters, we get 6 parts:
+1. `cal`: The name of the program we want to use, which must always go first in
+a text command
+2. `-y`: An option that does not require an input
+3. `--monday`: Another option that does not require an input
+4. `-n`: An option that requires an input
+5. `2`: The input to the option that precedes it, which is `-n`
+6. `--reform=julian`: An option (`--reform`) and its input (`julian`). This
+relationship is set by the equal sign (`=`).
+
+Notice that each of the options has at least one leading hyphen (`-`). This is
+a well known standard in the world of Linux command line. In particular, there
+are 2 types of options:
+- **Short options**: These are options that start with one hyphen followed by a
+single character. `-n`, `-c`, `-J`, `-v` are examples of short options.
+- **Long options**: These are options that start with two hyphens followed by
+2 or more characters, which form one or more words. If there are many words,
+they are separated by hyphens (and not space characters). `--reform`, `--all`,
+`--color`, `--show-all`, `--names-only` are examples of long options.
+
+The following table gives more details regarding the differences between these
+2 types of options.
+
+|                    |  Short option  |              Long option               |
+|        :--:        |      ---       |                  ---                   |
+|Number of leading hyphens|     1     |                   2                    |
+|        Name        |Single character|One or more words separated by hyphens  |
+|Input declaration (if an input is required)|` ` (space)|`=` (equal sign)      |
+|      Examples      |`-v`, `-c`, `-b`|`--all`, `--update`, `--match-case`     |
+|Examples with inputs|`-n 3`, `-i ignore`, `-s ","`|`--color=always`, `--num=9`|
+
+> **Note**: Most command line programs follow this standard, but not all. Thus
+before using a command line program, it is best to read its documentation first.
+
+![Different parts of a text command](../img/ch00/command_parts.png)  
+**Figure 0.11** Different parts of a text command.
+
+Earlier we divided a command into 6 "parts", including the program's name.
+Generally speaking, any "part" that follows the program's name is called an
+**argument** to that program. For instance, the command we divided earlier has
+5 arguments. They are: `-y`, `--monday`, `-n`, `2`, and `--reform=julian`. Think
+of the arguments of a program as inputs to that program. Arguments are often
+options and options' inputs, but they don't always have to be (as we shall see
+later).
+
+![Arguments of a text command](../img/ch00/command_parts-arg.png)
 
 Chapter Summary
 ---------------
