@@ -362,14 +362,37 @@ Thus, if you want to proceed further in the guide, you should use Bash or any
 shell that is compatible with it (e.g. you may use the increasingly-popular
 Z Shell).
 
+Command line programs
+---------------------
+
+Programs installed on your computer include graphical programs (e.g. your Web
+browser, your To-do app, your file browser) and command line programs. Command
+line programs are those that are only accessible in the command line, so if
+you've never used the command line, you've never used a command line
+program<a href="#footnote-4"><sup>[4]</sup></a>.
+
+<a name="footnote-4"></a>
+> **[4]**: At least not directly. Recall that graphical programs may make use of
+command line programs.
+
+Every text command employs a command line program. There are 2 types of command
+line programs, they are **Shell built-in commands** and **external programs**.
+Shell built-in commands are the programs that are contained within the Shell
+interpreter itself. External programs are not (e.g. those that are installed on
+your computer's disk drive).
+
+> **Note**: You can see all of your Shell built-in commands (along with their
+overall usage) by typing "`help`" and then hitting Enter in the command line.
+The output may contain a lot of text and look like it's scrambled.
+
 A closer look at individual commands
 ------------------------------------
 
 ### The basics
 
-Each text command starts a program that does what the user wants to do. Thus
-when typing a text command, the user has to type the name of the program's
-executable file.
+As we learned earlier, each text command starts a program that does what the
+user wants to do. Thus when typing a text command, the user has to type the name
+of the program's executable file.
 
 > **Note**: In Microsoft Windows, executable files have the ".EXE" suffix, or
 file extension. In UNIX-like operating systems (e.g. macOS), most executable
@@ -569,6 +592,87 @@ options and options' inputs, but they don't always have to be (as we shall see
 later).
 
 ![Arguments of a text command](../img/ch00/command_parts-arg.png)
+
+### Shorthands
+
+Many command line programs (especially the built-ins) offer shorthands to type
+out options faster. These shorthands work in general.
+
+For this section, you'll use a different command line program, called `uname`.
+`uname` is used to print various system information. This includes the kernel
+name, the operating system, the processor type.
+
+1. Open a terminal emulator window (if necessary).
+2. Type "uname". Again, the name of the program you wish to use must always be
+typed first.
+
+```shell
+uname
+```
+
+3. Hit Enter. By default, `uname` prints the name of the kernel you are using
+(e.g. if you're using Linux, the output should be "Linux").
+4. Like `cal` and countless other command line programs, `uname` offers options.
+Use the `-s` and `-r` options to print the kernel name along with its release
+name.
+
+```shell
+uname -s -r
+```
+
+5. There is an established shorthand for multiple short options, allowing these
+to be specified in just one argument instead of many. Using this shorthand, the
+leading hyphen in every option (except for the first one) is absent, and the
+space characters between them are also absent. In this sense, the previous
+command can be shortened to:
+
+```shell
+uname -sr
+```
+
+6. Now we'll use `uname` to print the kernel name, the kernel's realease name,
+and the processor type. This requires using the `-s`, `-r`, and `-p` options,
+respectively. Instead of typing `uname -s -r -p`, try to apply the shorthand
+you just learned.
+
+```shell
+uname -srp
+```
+
+This shorthand can be used for as many short options as there are.
+
+Another shorthand also exists for specifying inputs. In particular, for short
+options that require inputs, the space characters between the options and the
+inputs can be omitted. Thus, this command:
+
+```shell
+cal -n 2
+```
+
+is the same as this command:
+
+```shell
+cal -n2
+```
+
+The two shorthands that we've learned can be used together in a single command,
+providing that after an input used in a shorthand, there's no single option that
+directly follows it (i.e. without a space character). Observe that this command
+is valid:
+
+```shell
+cal -mn2
+```
+
+but this is not:
+
+```shell
+cal -n2m
+```
+
+The above command is invalid because `2m` is thought to be the input for the
+option `-n`, thus making it an invalid input, since the `-n` option requires a
+whole number.
 
 Chapter Summary
 ---------------
