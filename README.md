@@ -38,9 +38,10 @@ Prerequisites
 
 - **Understanding of basic computer concepts** (e.g. file, folder, program,
 mouse pointer, keyboard): These won't be explained.
-- **Moderate experience in using a graphical (GNU/)Linux system** (e.g. Ubuntu,
-Linux Mint, Fedora): This includes capability of searching for applications,
-downloading software, and navigating around using a graphical interface.
+- **Moderate experience in using a graphical operating system** (e.g. Ubuntu,
+Linux Mint, Fedora, macOS): This includes capability of searching for
+applications, downloading software, and navigating around using a graphical
+interface.
 - **Access to a command line environment running Bash** (e.g. terminal emulator
 in a GNU/Linux distribution or macOS, online terminal emulator): So that you can
 learn by doing. If you only read the text, you will forget quickly. The best
@@ -101,7 +102,6 @@ Repository structure
 
 - `README.md`: This document
 - `TAGS.md`: Glossary for the tags used in the guide
-- `TODO.md`: Development to-dos
 - `guide/`: Contains the guide's chapters written in Markdown
 - `img/`: Images used in the guide in the form of raster graphics
 - `img/thumb/`: Thumbnails of images
