@@ -664,6 +664,9 @@ is valid:
 cal -mn2
 ```
 
+> **Note**: Here `cal` is used with 2 options: `-n` and `-m`. `-m` is the same
+as `--monday`.
+
 but this is not:
 
 ```shell
@@ -673,6 +676,32 @@ cal -n2m
 The above command is invalid because `2m` is thought to be the input for the
 option `-n`, thus making it an invalid input, since the `-n` option requires a
 whole number.
+
+Shortcut keys
+-------------
+
+Bash has several shortcut keys to make editing your text command faster. A
+number of useful Bash shortcut keys are presented in the following table.
+
+|Shortcut|Description                                                       |
+| :---:  |---                                                               |
+|Ctrl + A|Move cursor to the start of the command.                          |
+|Ctrl + E|Move cursor to the end of the command.                            |
+|Ctrl + W|Delete the word that precedes the cursor.                         |
+|Ctrl + U|Delete from the start of the command to the cursor.               |
+|Ctrl + K|Delete from the cursor to the end of the command.                 |
+|Ctrl + L|Clear the screen.                                                 |
+
+If you are interested in learning more Bash keyboard shortcuts, see one of the
+following:
+
+1. [Free Software Foundation, May 2019: Bash Reference Manual, section 8,
+_Command Line Editing_][sec8-bashman]
+2. [Lowell Heddings on How-To Geek: _The Best Keyboard Shortcuts for Bash (aka
+the Linux and macOS Terminal)_][htg-bash-shcuts]
+
+[sec8-bashman]: https://www.gnu.org/software/bash/manual/bash.pdf#Command%20Line%20Editing
+[htg-bash-shcuts]: https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/
 
 Chapter Summary
 ---------------
