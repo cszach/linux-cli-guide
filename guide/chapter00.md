@@ -31,6 +31,8 @@ interpreters, terminal emulator's shortcuts, and more. Let's begin!
 > **Note**: Take a glance at the Table of Content and skip anything you've
 previously learned about.
 
+:alarm_clock: This chapter takes approximately 40 to 45 minutes to complete.
+
 Table of Content
 ----------------
 
