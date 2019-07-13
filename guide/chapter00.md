@@ -78,7 +78,7 @@ lead to the site's homepage. Visual design is the key in GUIs.
 
 GUI is suitable and enough for average computer users. However, if you want to
 be more productive and efficient on the computer, you should know how to use a
-<a name="term-cli">command line interface</a> (abbreviated **_CLI_**).
+<a name="term-cli">**command line interface**</a> (abbreviated **_CLI_**).
 
 A command line interface is where the user controls a computer mainly by typing
 commands. Creating files and folders, editing documents, connecting to a Wi-Fi
