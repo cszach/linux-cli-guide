@@ -804,11 +804,44 @@ ls --almost-all /boot/
 `/boot` is a folder, or more specifically, the address of that folder. This
 shows us that Bash can indeed auto-complete folders' addresses.
 
-In conclusion, Bash can auto-complete program names, options, and addresses of
+In conclusion, Bash can auto-complete programs' names, options, and addresses of
 folders.
 
 Chapter Summary
 ---------------
+
+:tada: **Congratulations!** :tada:
+
+You've finished reading the very first chapter of the Linux Command Line Guide.
+You are now ready to move on and learn how to use command line programs. We hope
+you will have fun in the next chapters. Before you proceed, let's recap what
+we've learned in this chapter.
+
+1. The _command line interface_ (abbreviated _CLI_) is where the computer user
+types text commands to control the computer.
+2. A command line has 3 types of components: _prompt_, _user input_, and
+_console output_.
+3. It is more efficient to manage system resources and perform repetitive tasks
+in CLI than in GUI.
+4. A _terminal emulator_ is a graphical program that lets you type text commands
+without leaving your graphical environment.
+5. A pure _terminal_, or _tty_, on the other hand, cannot be accessed without
+leaving your graphical environment.
+6. A _Shell interpreter_ or _shell_ reads and executes your text commands. The
+most popular Shell interpreter is _Bash_.
+7. Every text command employs a command line program. There are 2 types of
+command line programs: _Shell built-in commands_ and _external programs_.
+8. In a text command, the would-be-employed program's name goes first, followed
+by _arguments_, which are separated by space characters. Often times these
+arguments are _options_, which let you change the program's behaviors as you
+wish.
+9. There are 2 types of options: _short options_ (those that start with one
+hyphen) and _long options_ (those that start with two hyphens). Regardless of
+what type it is, an option may or may not require an input.
+10. Shells (including Bash) offer:
+    - Shorthands for specifying short options and their inputs
+    - Shortcut keys
+    - Auto completion of programs' names, options, and addresses of folders
 
 Chapter Quiz
 ------------
