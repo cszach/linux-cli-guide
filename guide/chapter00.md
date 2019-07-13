@@ -55,7 +55,7 @@ system?](#how-do-i-access-a-command-line-interface-on-my-graphical-system)
 10. [Shortcut keys](#shortcut-keys)
 11. [Auto completion](#auto-completion)
 12. [Chapter Summary](#chapter-summary)
-13. [Chapter Quiz](#chapter-summary)
+13. [Chapter Quiz](#chapter-quiz)
 
 Command line user interface
 ---------------------------
