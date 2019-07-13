@@ -13,10 +13,12 @@
 
 **New concepts**: [graphical user interface](#term-gui), [command line
 interface](#term-cli), [prompt](#term-prompt), [user input](#term-user_input),
-[console output](#term-console_output).
-
-<!-- Define link aliases (if any) here -->
-[gnu-project]: https://www.gnu.org/gnu/thegnuproject.en.html
+[console output](#term-console_output), [terminal emulator](#term-termemu),
+[terminal](#term-terminal), [tty](#term-tty), [Shell
+interpreter](#term-sh-intprt), [shell](#term-shell), [Shell
+script](#term-sh-script), [Bash](#term-bash), [Shell built-in
+commands](#term-builtin), [external programs](#term-ext-program), [short
+option](#term-short-opt), [long option](#term-long-opt), [argument](#term-arg).
 
 - - -
 
@@ -230,10 +232,10 @@ How do I access a command line interface on my (graphical) system?
 
 On any graphical system that is either GNU/Linux or macOS, there should be a
 program that ships with the system that lets its users use a command line. This
-program is called **terminal emulator**. The reason why it is called an
-"emulator" is because the interface introduced by such a program is not actually
-CLI; you can change its font, its background color, etc. yet these attributes
-are tied to GUI (see **Figure 0.5**).
+program is called <a name="term-termemu">**terminal emulator**</a>. The reason
+why it is called an "emulator" is because the interface introduced by such a
+program is not actually CLI; you can change its font, its background color, etc.
+yet these attributes are tied to GUI (see **Figure 0.5**).
 
 ![2 terminal emulator windows opened
 with different looks](../img/ch00/gnome_terminals.png)  
@@ -293,9 +295,11 @@ environment does not run, thus less hardware resources are needed.
 
 **Figure 0.9** A TTY (as shown in Preamble).
 
-In the UNIX world, pure command line is called **terminal** (as you might have
-guessed) or **tty**. To access a tty, try the keyboard combination `Ctrl` +
-`Alt` + `F1`. But, there are a few things to watch out:
+In the UNIX world, pure command line is called
+<a name="term-terminal">**terminal** </a>(as you might have guessed) or
+<a name="term-tty">**tty**</a>. To access a tty, try the keyboard combination
+`Ctrl` + `Alt` + `F1`. But, there are a few things to watch out:
+
 - A GNU/Linux distribution might offer multiple ttys, called `tty1`, `tty2`,
 `tty3`, and so on. The keyboard combination `Ctrl` + `Alt` + `F1` is used to
 open `tty1`, `Ctrl` + `Alt` + `F2` is used to open `tty2`, and so on.
@@ -317,12 +321,14 @@ Shell interpreter
 -----------------
 
 There's a big program that works under the text commands that you see. In the
-UNIX world, this program is commonly known as the **Shell interpreter**, or just
-**shell**. Its job is to read and process the commands typed in and execute
-those commands. In addition, a Shell interpreter can be thought of as something
-similar to an interpreted programming language interpreter (e.g. Python
-interpreter) that can read and execute text files containing valid commands,
-called **Shell scripts**.
+UNIX world, this program is commonly known as the
+<a name="term-sh-intprt">**Shell interpreter**</a>, or just
+<a name="term-shell">**shell**. Its job is to read and process the commands
+typed in and execute those commands. In addition, a Shell interpreter can be
+thought of as something similar to an interpreted programming language
+interpreter (e.g. Python interpreter) that can read and execute text files
+containing valid commands, called <a name="term-sh-script">**Shell
+scripts**</a>.
 
 If you are still having troubles understanding what it is, let's think
 analogously. Python is a programming language, Python commands are read by a
@@ -334,6 +340,8 @@ can type Shell commands interactively.
 
 Different Shell implementations
 -------------------------------
+
+[gnu-project]: https://www.gnu.org/gnu/thegnuproject.en.html
 
 A programming language may have dialects (e.g. Python is a programming language,
 its dialects include CPython, PyPy, and Stackless Python). Similarly, Shell has
@@ -348,9 +356,9 @@ do differ in many ways. The following table lists common Shell dialects.
 |       tcsh       |               `tcsh`                |An improved version of C Shell.|
 |     Z Shell      |                `zsh`                |An improved version of Bourne-again shell.|
 
-Of all the shells, **Bash** (Bourne-again shell) is the most popular. Our Linux
-Command Line Guide aims to teach Bash and not the other shells for the following
-reasons:
+Of all the shells, <a name="term-bash">**Bash**</a> (Bourne-again shell) is the
+most popular. Our Linux Command Line Guide aims to teach Bash and not the other
+shells for the following reasons:
 
 1. Bash is the most popular of all shells
 2. Many other shells are compatible with it (i.e. Bash commands can be executed
@@ -376,10 +384,11 @@ program<a href="#footnote-4"><sup>[4]</sup></a>.
 command line programs.
 
 Every text command employs a command line program. There are 2 types of command
-line programs, they are **Shell built-in commands** and **external programs**.
-Shell built-in commands are the programs that are contained within the Shell
-interpreter itself. External programs are not (e.g. those that are installed on
-your computer's disk drive).
+line programs, they are <a name="term-builtin">**Shell built-in commands**</a>
+and <a name="term-ext-program">**external programs**</a>. Shell built-in
+commands are the programs that are contained within the Shell interpreter
+itself. External programs are not (e.g. those that are installed on your
+computer's disk drive).
 
 > **Note**: You can see all of your Shell built-in commands (along with their
 overall usage) by typing "`help`" and then hitting Enter in the command line.
@@ -559,12 +568,14 @@ relationship is set by the equal sign (`=`).
 Notice that each of the options has at least one leading hyphen (`-`). This is
 a well known standard in the world of Linux command line. In particular, there
 are 2 types of options:
-- **Short options**: These are options that start with one hyphen followed by a
-single character. `-n`, `-c`, `-J`, `-v` are examples of short options.
-- **Long options**: These are options that start with two hyphens followed by
-2 or more characters, which form one or more words. If there are many words,
-they are separated by hyphens (and not space characters). `--reform`, `--all`,
-`--color`, `--show-all`, `--names-only` are examples of long options.
+- <a name="term-short-opt">**Short options**</a>: These are options that start
+with one hyphen followed by a single character. `-n`, `-c`, `-J`, `-v` are
+examples of short options.
+- <a name="term-long-opt">**Long options**</a>: These are options that start
+with two hyphens followed by 2 or more characters, which form one or more words.
+If there are many words, they are separated by hyphens (and not space
+characters). `--reform`, `--all`, `--color`, `--show-all`, `--names-only` are
+examples of long options.
 
 The following table gives more details regarding the differences between these
 2 types of options.
@@ -585,11 +596,11 @@ before using a command line program, it is best to read its documentation first.
 
 Earlier we divided a command into 6 "parts", including the program's name.
 Generally speaking, any "part" that follows the program's name is called an
-**argument** to that program. For instance, the command we divided earlier has
-5 arguments. They are: `-y`, `--monday`, `-n`, `2`, and `--reform=julian`. Think
-of the arguments of a program as inputs to that program. Arguments are often
-options and options' inputs, but they don't always have to be (as we shall see
-later).
+<a name="term-arg">**argument**</a> to that program. For instance, the command
+we divided earlier has 5 arguments. They are: `-y`, `--monday`, `-n`, `2`, and
+`--reform=julian`. Think of the arguments of a program as inputs to that
+program. Arguments are often options and options' inputs, but they don't always
+have to be (as we shall see later).
 
 ![Arguments of a text command](../img/ch00/command_parts-arg.png)
 
