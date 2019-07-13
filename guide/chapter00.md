@@ -506,7 +506,7 @@ show 2 months, `cal` shows the current month and the next month. First, type
 `cal --monday`. We still need Monday to be displayed as first day of week.
 
 10. Type " -n 2" (a space, followed by a hyphen, followed by the lowercase
-letter _n_, followed by another space, followed by the number _2_).
+letter _n_, followed by another space, followed by the number _2_). Hit Enter.
 
 ```shell
 cal --monday -n 2
@@ -540,12 +540,11 @@ option look redundant, but it's easier to be recalled.
 (just like the `-n` option does). Basically, this option lets you choose which
 calendar reform to be used.
 
-11. Type "cal -y --monday -n 2". Don't hit Enter yet. These options tell `cal`
-to show the whole year, use Monday as the first day of every week, and display
-2 months, respectively.
+11. Type "cal -y --monday". Don't hit Enter yet. These options tell `cal` to
+show the whole year and use Monday as the first day of every week, respectively.
 
 ```shell
-cal -y --monday -n 2
+cal -y --monday
 ```
 
 12. Type " --reform=julian" (a space, followed by 2 hyphens, followed by the
@@ -567,7 +566,7 @@ you did with the `-n` option (`-n 2`).
 Let us consider this command:
 
 ```shell
-cal -y --monday -n 2 --reform=julian
+cal -S --monday -n 2 --reform=julian
 ```
 
 The space characters in between the words are crucial, so that the command will
@@ -575,7 +574,7 @@ not misinterpret your intentions. If we separate the command into parts
 according to the space characters, we get 6 parts:
 1. `cal`: The name of the program we want to use, which must always go first in
 a text command
-2. `-y`: An option that does not require an input
+2. `-S`: An option that does not require an input
 3. `--monday`: Another option that does not require an input
 4. `-n`: An option that requires an input
 5. `2`: The input to the option that precedes it, which is `-n`
@@ -614,7 +613,7 @@ before using a command line program, it is best to read its documentation first.
 Earlier we divided a command into 6 "parts", including the program's name.
 Generally speaking, any "part" that follows the program's name is called an
 <a name="term-arg">**argument**</a> to that program. For instance, the command
-we divided earlier has 5 arguments. They are: `-y`, `--monday`, `-n`, `2`, and
+we divided earlier has 5 arguments. They are: `-S`, `--monday`, `-n`, `2`, and
 `--reform=julian`. Think of the arguments of a program as inputs to that
 program. Arguments are often options and options' inputs, but they don't always
 have to be (as we shall see later).
@@ -629,7 +628,7 @@ out options faster. These shorthands work in general.
 
 For this section, you'll use a different command line program, called `uname`.
 `uname` is used to print various system information. This includes the kernel
-name, the operating system, the processor type.
+name, the operating system, and the processor type.
 
 1. Open a terminal emulator window (if necessary).
 2. Type "uname". Again, the name of the program you wish to use must always be
@@ -744,8 +743,8 @@ feature that you will very frequently use to gain productivity in the command
 line.
 
 The auto-completion is triggered by the Tab key on your keyboard. This will
-complete command names, long options' names, or directory paths. Let's see how
-it in action.
+complete command names, long options' names, or directory paths. Let's see it in
+action.
 
 1. Open a terminal window (if necessary).
 
