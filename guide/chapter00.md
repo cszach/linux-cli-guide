@@ -845,3 +845,79 @@ what type it is, an option may or may not require an input.
 
 Chapter Quiz
 ------------
+
+A chapter quiz is at the end of every chapter in this guide. Some help you
+recap. Some make you brainstorm! :scream:
+
+Click on any question to see its answer.
+
+<details>
+    <summary>What is the console output also called?</summary>
+
+The console output is also called _output_ or _stdout_. You will find that these
+two are more frequently used to refer to the console output than any other
+(including the term _console output_ itself). _stdout_ is, strictly speaking,
+not necessary the console output, as we shall see in Chapter 2.
+</details>
+
+
+<details>
+    <summary>
+        Why does CLI generally consume less hardware resources than GUI?
+    </summary>
+
+In general, CLI consumes less hardware resources than GUI because CLI does not
+load graphical components (like images, fonts, widgets) which demand
+considerable hardware resources.
+</details>
+
+
+<details>
+    <summary>What is Bash and who develops it?</summary>
+
+Bash is a Shell interpreter and is developed by the GNU Project.
+</details>
+
+
+<details>
+    <summary>
+        What do we call programs in the command line and what are the types?
+    </summary>
+
+Programs in the command line are called _command line programs_. There are 2
+types of them: the Shell built-ins, which are included in the shell, and
+external programs.
+</details>
+
+
+<details>
+    <summary>
+        How can we make this command shorter?
+        <code>uname -o -s -r --hardware-platform -p</code>
+    </summary>
+
+We can use shorthands.
+
+```shell
+uname -osrp --hardware-platform
+```
+</details>
+
+
+<details>
+    <summary>What shortcut key is used to clear the terminal screen?</summary>
+
+Ctrl + L. Try typing some text commands (e.g. with the `cal`, `uname` or `ls`
+program) and use that shortcut key. You will find it very useful. It is one of
+the most frequently used Shell shortcut keys.
+</details>
+
+
+<details>
+    <summary>
+        True or False? To use Bash's auto-complete feature, we have to press the
+        Enter key.
+    </summary>
+
+False. We have to press the Tab key to make Bash auto-complete our commands.
+</details>
