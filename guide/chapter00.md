@@ -697,11 +697,95 @@ following:
 
 1. [Free Software Foundation, May 2019: Bash Reference Manual, section 8,
 _Command Line Editing_][sec8-bashman]
-2. [Lowell Heddings on How-To Geek: _The Best Keyboard Shortcuts for Bash (aka
+2. [Computer Hope: _Unix and Linux shortcut keys_][ch-unix-shcuts]
+3. [Lowell Heddings on How-To Geek: _The Best Keyboard Shortcuts for Bash (aka
 the Linux and macOS Terminal)_][htg-bash-shcuts]
 
 [sec8-bashman]: https://www.gnu.org/software/bash/manual/bash.pdf#Command%20Line%20Editing
+[ch-unix-shcuts]: https://www.computerhope.com/ushort.htm
 [htg-bash-shcuts]: https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/
+
+Auto completion
+---------------
+
+Bash offers auto-completion of commands and options. This is a very great
+feature that you will very frequently use to gain productivity in the command
+line.
+
+The auto-completion is triggered by the Tab key on your keyboard. This will
+complete command names, long options' names, or directory paths. Let's see how
+it in action.
+
+1. Open a terminal window (if necessary).
+
+For this section, you will use yet another command line program called `ls`.
+`ls`, which is essentially short for "list", lists files and folders inside a
+given folder. You will learn how to use the `ls` command in details in the next
+chapter. For now, it will be used to demonstrate Bash's auto complete feature.
+
+2. Type "l" (lowercase L, _**not**_ "ls", for now).
+
+```shell
+l
+```
+
+3. Hit the Tab key **_twice_**. If a prompt shows up saying "Display all...",
+hit the Y key on your keyboard for yes. A list of programs whose names start
+with the lowercase L is displayed. If there's a text saying "--More--" appears
+at the bottom of your terminal window, hit the space bar until it disappears.
+
+![](../img/ch00/autocomplete-1.png)
+
+Notice how the "l" you typed is preserved. It is not completed, since there are
+many command line programs whose names start with "l". Command completion is
+useful especially when the program you are looking for has a long name or you
+vaguely remember its name.
+
+4. Type "s".
+
+```shell
+ls
+```
+
+5. Type " --" (a space, followed by 2 hyphens).
+
+```shell
+ls --
+```
+
+6. Repeat step 3. This time, `ls`'s long options are displayed.
+
+![](../img/ch00/autocomplete-2.png)
+
+Again, the completion does not yet happen because `ls` has many long options and
+Bash cannot magically read your mind and be able to tell which one you are
+trying to use.
+
+7. Type "alm". Hit the Tab key **_once_**. Now Bash auto-completes our long
+option, which is `--almost-all`. It is able to complete this time because `ls`
+does not have any other option that starts with `--alm`.
+
+```shell
+ls --almost-all
+```
+
+A space is also automatically appended so that you don't have to manually type
+it.
+
+As mentioned, `ls` is used to list files and folders. Let's give `ls` a folder
+to work with.
+
+8. Type "/bo". Hit the Tab key once. Bash auto-completes it to "/boot/".
+
+```shell
+ls --almost-all /boot/
+```
+
+`/boot` is a folder, or more specifically, the address of that folder. This
+shows us that Bash can indeed auto-complete folders' addresses.
+
+In conclusion, Bash can auto-complete program names, options, and addresses of
+folders.
 
 Chapter Summary
 ---------------
