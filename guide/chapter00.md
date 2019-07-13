@@ -47,6 +47,15 @@ system?](#how-do-i-access-a-command-line-interface-on-my-graphical-system)
 5. [Pure command line interface](#pure-command-line-interface)
 6. [Shell interpreter](#shell-interpreter)
 7. [Different Shell implementations](#different-shell-implementations)
+8. [Command line programs](#command-line-programs)
+9. [A closer look at individual commands](#a-closer-look-at-individual-commands)
+    1. [The basics](#the-basics)
+    2. [Looking into smaller details](#looking-into-smaller-details)
+    3. [Shorthands](#shorthands)
+10. [Shortcut keys](#shortcut-keys)
+11. [Auto completion](#auto-completion)
+12. [Chapter Summary](#chapter-summary)
+13. [Chapter Quiz](#chapter-summary)
 
 Command line user interface
 ---------------------------
