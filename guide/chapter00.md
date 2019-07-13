@@ -147,11 +147,11 @@ Imagine a universal file-finding program with many options (such as finding
 executable files, finding files that are recently edited, finding files whose
 names match a particular pattern, etc.). If such a program is available in the
 command line, the computer user will have to spend time through a (possibly)
-intimidating process of learning the program's options, but once that is done, the
-user will just have to type the options needed every time he/she wants to use the
-program. But if that program is available as a graphical application, either all
-the options get visually displayed or they get grouped and hide into tool bars
-and menus. Navigating through these is definitely more time-consuming.
+intimidating process of learning the program's options, but once that is done,
+the user will just have to type the options needed every time he/she wants to
+use the program. But if that program is available as a graphical application,
+either all the options get visually displayed or they get grouped and hide into
+tool bars and menus. Navigating through these is definitely more time-consuming.
 
 In addition, there are low-level tools to work with your operating system and
 they are only available in the command line. In fact, CLI is the predecessor of
