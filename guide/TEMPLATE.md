@@ -18,8 +18,6 @@
 **Commands extended**:  
 **New concepts**:  
 
-<!-- Define link aliases (if any) here -->
-
 - - -
 
 <!-- This is where you introduce what the chapter is about. -->
