@@ -59,6 +59,7 @@ system?](#how-do-i-access-a-command-line-interface-on-my-graphical-system)
 
 Command line user interface
 ---------------------------
+###### Tags: `new-concept`
 
 Most computer users make use of <a name="term-gui">**graphical user interfaces**
 </a>(abbreviated **_GUI_** or **_GUIs_** for plural) to control their machines.
@@ -140,6 +141,7 @@ don't offer the ability to multitask like they traditionally did.
 
 Command line efficiency
 -----------------------
+###### Tags: `skippable`
 
 To be the most efficient on the computer, you need to use both the CLI and the
 GUI reasonably. Some tasks are more quickly done in the CLI and some are more
@@ -214,6 +216,7 @@ of their work.
 
 Who use the command line interface?
 -----------------------------------
+###### Tags: `skippable`
 
 - **Computer programmers**: They develop applications and need to sort out their
 ideas in a command line environment first before putting a pretty layer - the
@@ -238,6 +241,7 @@ text commands or get things done quickly.
 
 How do I access a command line interface on my (graphical) system?
 ------------------------------------------------------------------
+###### Tags: `instructions`
 
 On any graphical system that is either GNU/Linux or macOS, there should be a
 program that ships with the system that lets its users use a command line. This
@@ -294,6 +298,7 @@ for it and open it.
 
 Pure command line interface
 ---------------------------
+###### Tags: `new-concept`, `skippable`
 
 Terminal emulators do their job well, but advanced users and tech-savvy people
 doing certain jobs sometimes have to use pure CLI because they want to use even
@@ -328,6 +333,7 @@ the Linux command line throughout the guide instead of a tty.
 
 Shell interpreter
 -----------------
+###### Tags: `new-concept`
 
 There's a big program that works under the text commands that you see. In the
 UNIX world, this program is commonly known as the
@@ -381,6 +387,7 @@ Z Shell).
 
 Command line programs
 ---------------------
+###### Tags: `new-concept`
 
 Programs installed on your computer include graphical programs (e.g. your Web
 browser, your To-do app, your file browser) and command line programs. Command
@@ -555,6 +562,7 @@ new option here. This time, you have to type an equal sign, not a space like how
 you did with the `-n` option (`-n 2`).
 
 ### Looking into smaller details
+###### Tags: `new-concept`
 
 Let us consider this command:
 
@@ -614,6 +622,7 @@ have to be (as we shall see later).
 ![Arguments of a text command](../img/ch00/command_parts-arg.png)
 
 ### Shorthands
+###### Tags: `shortcut`
 
 Many command line programs (especially the built-ins) offer shorthands to type
 out options faster. These shorthands work in general.
@@ -699,6 +708,7 @@ whole number.
 
 Shortcut keys
 -------------
+###### Tags: `shortcut`
 
 Bash has several shortcut keys to make editing your text command faster. A
 number of useful Bash shortcut keys are presented in the following table.
@@ -727,6 +737,7 @@ the Linux and macOS Terminal)_][htg-bash-shcuts]
 
 Auto completion
 ---------------
+###### Tags: `shortcut`
 
 Bash offers auto-completion of commands and options. This is a very great
 feature that you will very frequently use to gain productivity in the command
