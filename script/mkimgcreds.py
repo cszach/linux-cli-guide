@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # Script used to generate image credits table in CREDITS.md.
-# Data is extracted from a CSV file named "img-credits.csv"
-# in the same directory as this script.
+# Data is extracted from /data/img-credits.csv (CSV file).
 #
 # NOTE: The output of this program may be incorrect. Please check to make sure
 # that the rendered output of the Markdown content produced by this program is
